@@ -14,8 +14,8 @@ GameObject:
   - component: {fileID: -1524002791861866127}
   - component: {fileID: 2947401831371283063}
   - component: {fileID: 3539909171195358765}
-  - component: {fileID: 7124125761491179537}
   - component: {fileID: 4426884967765399641}
+  - component: {fileID: 7390093678400849242}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -219,7 +219,7 @@ MonoBehaviour:
   RotationMaxInterpolationTime: 0.1
   ScaleLerpSmoothing: 1
   ScaleMaxInterpolationTime: 0.1
-  AuthorityMode: 0
+  AuthorityMode: 1
   TickSyncChildren: 0
   UseUnreliableDeltas: 0
   SyncPositionX: 1
@@ -241,7 +241,25 @@ MonoBehaviour:
   SwitchTransformSpaceWhenParented: 0
   Interpolate: 1
   SlerpPosition: 0
---- !u!114 &7124125761491179537
+--- !u!114 &4426884967765399641
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5063067659318817004}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f1ca2096c3ec8684a8a7b58607528be5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerMovement
+  ShowTopMostFoldoutHeaderGroup: 1
+  moveSpeed: 10
+  moveSmooth: 10
+  rotSmooth: 10
+  bounceForce: 10
+  spriteRenderer: {fileID: 1076462751519390729}
+--- !u!114 &7390093678400849242
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -258,24 +276,6 @@ MonoBehaviour:
   UseRigidBodyForMotion: 0
   AutoUpdateKinematicState: 1
   AutoSetKinematicOnDespawn: 1
---- !u!114 &4426884967765399641
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5063067659318817004}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f1ca2096c3ec8684a8a7b58607528be5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::PlayerMovement
-  ShowTopMostFoldoutHeaderGroup: 1
-  movementSpeed: 10
-  rotationSmoothness: 10
-  movementSmoothness: 10
-  bounceForce: 10
-  spriteRenderer: {fileID: 1076462751519390729}
 --- !u!1 &6587657793121645514
 GameObject:
   m_ObjectHideFlags: 0
