@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "YsfBVD3eo7E=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\frede\\OneDrive\\Skrivebord\\Project Game\\Immune-Defense\\Assets\\Hathora\\Hathora.Cloud.Sdk\\HathoraCloud\\HathoraCloud.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\frede\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512",
+    "C:\\Users\\frede\\.nuget\\packages\\nodatime\\3.1.9\\nodatime.3.1.9.nupkg.sha512",
+    "C:\\Users\\frede\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\4.7.1\\system.runtime.compilerservices.unsafe.4.7.1.nupkg.sha512"
+  ],
+  "logs": []
+}
