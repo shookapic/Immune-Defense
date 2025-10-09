@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/NGO_Setup.unity
+    guid: b82c2c1e3bbe4bd42a4cbb62a31339b1
+  - enabled: 1
     path: Assets/Scenes/MainMenu.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
@@ -14,11 +17,5 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/MultiplayerExample.unity
     guid: 0f8ef51a8450d864f9ffd8b26ab49714
-  - enabled: 1
-    path: Assets/Widgets/Scenes/WidgetsQuickstart.unity
-    guid: b6426ca26233be34ebc7933c583c65f5
-  - enabled: 1
-    path: Assets/NGO_Minimal_Setup/NGO_Setup.unity
-    guid: b82c2c1e3bbe4bd42a4cbb62a31339b1
   m_configObjects: {}
   m_UseUCBPForAssetBundles: 0

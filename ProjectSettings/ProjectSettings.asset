@@ -732,11 +732,11 @@ PlayerSettings:
   captureStartupLogs: {}
   activeInputHandler: 2
   windowsGamepadBackendHint: 0
-  cloudProjectId: acfdf01b-f3c2-4c76-ab68-7fc5d0f6ec70
+  cloudProjectId: 0671b021-c452-4224-ae0e-d626170f3d83
   framebufferDepthMemorylessMode: 0
   qualitySettingsNames: []
   projectName: Immune-Defense
-  organizationId: shookapic
+  organizationId: kiemyung-university
   cloudEnabled: 0
   legacyClampBlendShapeWeights: 0
   hmiLoadingImage: {fileID: 0}
