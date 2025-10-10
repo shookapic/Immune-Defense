@@ -68,11 +68,17 @@ public class PlayerMovement : NetworkBehaviour
 
     void OnCollisionEnter2D(Collision2D collision)
     {
-        if (!IsServer) return;
+        if (!IsServer) return;  // only the server should process
 
         if (!collision.gameObject.TryGetComponent(out PlayerMovement other)) return;
 
         Vector2 direction = (transform.position - other.transform.position).normalized;
         rb.AddForce(direction * bounceForce, ForceMode2D.Impulse);
+
+        // push the other player back
+        Rigidbody2D otherRb = other.GetComponent<Rigidbody2D>();
+        if (otherRb != null)
+            otherRb.AddForce(-direction * bounceForce, ForceMode2D.Impulse);
     }
+
 }

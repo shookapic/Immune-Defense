@@ -1,22 +1,28 @@
 using System;
 using System.Threading.Tasks;
-using UnityEngine;
-using UnityEngine.UI;
+using System.Collections;
 using TMPro;
-using Unity.Services.Core;
-using Unity.Services.Authentication;
-using Unity.Services.Multiplayer;
 using Unity.Netcode;
+using Unity.Services.Authentication;
+using Unity.Services.Core;
+using Unity.Services.Multiplayer;
+using UnityEngine;
+using UnityEngine.EventSystems;
+using UnityEngine.UI;
 
 public class SessionManager : MonoBehaviour
 {
     [SerializeField] GameObject mainPanel;
-    [SerializeField] GameObject hostPanel;
-    [SerializeField] GameObject joinPanel;
+    [SerializeField] GameObject lobbyPanel;
+    [SerializeField] GameObject sessionPanel;
 
-    [SerializeField] Button hostButton;
-    [SerializeField] Button joinButton;
-    [SerializeField] Button quitButton;
+    [SerializeField] Button hostGameButton;
+    [SerializeField] Button joinWithCodeButton;
+    [SerializeField] Button quitApplicationButton;
+    [SerializeField] Button leaveSessionButton;
+    [SerializeField] Button disbandSessionButton;
+    [SerializeField] Button viewSessionsButton;
+    [SerializeField] Button copyCodeButton;
 
     [SerializeField] TextMeshProUGUI codeText;
     [SerializeField] TMP_InputField inputCode;
@@ -25,13 +31,17 @@ public class SessionManager : MonoBehaviour
     void Awake()
     {
         // Always set up listeners early
-        hostButton.onClick.AddListener(() => _ = CreateSessionAsHost());
-        joinButton.onClick.AddListener(() => _ = JoinSessionByCode(inputCode.text));
-        quitButton.onClick.AddListener(Quit);
+        hostGameButton.onClick.AddListener(() => _ = CreateSessionAsHost());
+        joinWithCodeButton.onClick.AddListener(() => _ = JoinSessionByCode(inputCode.text));
+        viewSessionsButton.onClick.AddListener(ShowSessions);
+        leaveSessionButton.onClick.AddListener(() => _ = LeaveSession());
+        disbandSessionButton.onClick.AddListener(() => _ = DisbandSession());
+        quitApplicationButton.onClick.AddListener(() => _ = QuitAsync());
+        copyCodeButton.onClick.AddListener(CopyCodeToClipboard);
 
         // Hide panels before render
-        hostPanel?.SetActive(false);
-        joinPanel?.SetActive(false);
+        lobbyPanel?.SetActive(false);
+        sessionPanel?.SetActive(false);
         mainPanel?.SetActive(true);
     }
 
@@ -62,9 +72,6 @@ public class SessionManager : MonoBehaviour
 
         try
         {
-            DisableMainPanel();
-            hostPanel?.SetActive(true);
-
             string displayName = string.IsNullOrEmpty(AuthenticationService.Instance.PlayerName)
                 ? AuthenticationService.Instance.PlayerId.Substring(0, 6)
                 : AuthenticationService.Instance.PlayerName;
@@ -90,6 +97,10 @@ public class SessionManager : MonoBehaviour
         {
             Debug.LogError($"[SessionManager] Create session failed: {e}");
         }
+        finally
+        {
+            ShowLobby();
+        }
     }
 
     private async Task JoinSessionByCode(string code)
@@ -98,13 +109,17 @@ public class SessionManager : MonoBehaviour
 
         try
         {
-            DisableMainPanel();
-            joinPanel?.SetActive(true);
+            JoinSessionOptions options = new JoinSessionOptions
+            {
+
+            };
 
             _session = await MultiplayerService.Instance.JoinSessionByCodeAsync(code);
 
             // Session API should have internally configured transport
             NetworkManager.Singleton.StartClient();
+
+            ShowLobby();
         }
         catch (Exception e)
         {
@@ -112,14 +127,147 @@ public class SessionManager : MonoBehaviour
         }
     }
 
-    void Quit()
+    private async Task DisbandSession()
+    {
+        try
+        {
+            if (_session == null) return;
+
+            if (!_session.IsHost)
+            {
+                Debug.LogWarning("[SessionManager] Only the host can disband a session.");
+                return;
+            }
+
+            // Delete the session for everyone
+            await _session.AsHost().DeleteAsync(); // host-only
+            Debug.Log("[SessionManager] Disbanded session.");
+
+            // Shut down NGO host
+            if (NetworkManager.Singleton && NetworkManager.Singleton.IsHost)
+                NetworkManager.Singleton.Shutdown();
+
+            _session = null;
+
+            mainPanel.SetActive(true);
+            lobbyPanel.SetActive(false);
+            sessionPanel.SetActive(false);
+        }
+        catch (Exception e)
+        {
+            Debug.LogError($"[SessionManager] DisbandSession failed: {e}");
+        }
+    }
+
+    private async Task LeaveSession()
+    {
+        try
+        {
+            if (_session == null) return;
+
+            // Tell UGS you're leaving this session
+            await _session.LeaveAsync(); // client/host can call this
+            Debug.Log("[SessionManager] Left session.");
+
+            // Shut down NGO transport
+            if (NetworkManager.Singleton && (NetworkManager.Singleton.IsClient || NetworkManager.Singleton.IsHost))
+                NetworkManager.Singleton.Shutdown();
+
+            _session = null;
+        }
+        catch (Exception e)
+        {
+            Debug.LogError($"[SessionManager] LeaveSession failed: {e}");
+        }
+        finally
+        {
+            // Back to menu UI
+            mainPanel.SetActive(true);
+            lobbyPanel.SetActive(false);
+            sessionPanel.SetActive(false);
+        }
+    }
+
+    private void CopyCodeToClipboard()
+    {
+        // Deselect the button so it doesn’t stay highlighted
+        if (EventSystem.current) EventSystem.current.SetSelectedGameObject(null);
+
+        // Prefer the live session’s code
+        string code = _session?.Code;
+
+        // Fallback: try to parse from the label if you formatted it as "Code: XYZ123"
+        if (string.IsNullOrEmpty(code) && codeText != null && !string.IsNullOrEmpty(codeText.text))
+        {
+            var txt = codeText.text.Trim();
+            const string prefix = "Code:";
+            if (txt.StartsWith(prefix, StringComparison.OrdinalIgnoreCase))
+                code = txt.Substring(prefix.Length).Trim();
+            else
+                code = txt.Trim();
+        }
+
+        if (string.IsNullOrEmpty(code))
+        {
+            Debug.LogWarning("[SessionManager] No session code to copy.");
+            return;
+        }
+
+        GUIUtility.systemCopyBuffer = code;
+
+        // Optional: quick visual confirmation
+        if (codeText) StartCoroutine(FlashCopied(code));
+    }
+
+    private IEnumerator FlashCopied(string code)
+    {
+        string prev = codeText.text;
+        codeText.text = $"Code: {code}\n<color=#6aff6a>Copied!</color>";
+        yield return new WaitForSeconds(1f);
+        codeText.text = $"Code: {code}";
+    }
+
+    private void ShowLobby()
+    {
+        mainPanel.SetActive(false);
+        lobbyPanel.SetActive(true);
+        sessionPanel.SetActive(false);
+    }
+
+    private void ShowSessions()
+    {
+        mainPanel.SetActive(false);
+        lobbyPanel.SetActive(false);
+        sessionPanel.SetActive(true);
+    }
+
+    private async Task QuitAsync()
     {
 #if UNITY_EDITOR
         UnityEditor.EditorApplication.isPlaying = false;
 #else
+    try
+    {
+        if (_session != null)
+        {
+            if (_session.IsHost)
+                await _session.AsHost().DeleteAsync();
+            else
+                await _session.LeaveAsync();
+        }
+    }
+    catch (Exception e)
+    {
+        Debug.LogWarning($"[SessionManager] Quit cleanup warning: {e}");
+    }
+    finally
+    {
+        if (NetworkManager.Singleton)
+            NetworkManager.Singleton.Shutdown();
+
         Application.Quit();
+    }
 #endif
     }
 
-    private void DisableMainPanel() => mainPanel?.SetActive(false);
 }
