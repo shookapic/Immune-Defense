@@ -10,6 +10,13 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
+
+// TODO:
+// 1. Client should disconnect and change back to main menu, when hosts disbands
+// 2. Make PlayerCards appear
+// 3. Cleanup code 
+
+
 public class SessionManager : MonoBehaviour
 {
     [SerializeField] GameObject mainPanel;
@@ -27,22 +34,21 @@ public class SessionManager : MonoBehaviour
     [SerializeField] TextMeshProUGUI codeText;
     [SerializeField] TMP_InputField inputCode;
 
+    [SerializeField] LobbySync LobbySyncInstance;
+
     private ISession _session;
+    public bool IsHost => _session?.IsHost ?? (NetworkManager.Singleton && NetworkManager.Singleton.IsHost);
     void Awake()
     {
         // Always set up listeners early
         hostGameButton.onClick.AddListener(() => _ = CreateSessionAsHost());
         joinWithCodeButton.onClick.AddListener(() => _ = JoinSessionByCode(inputCode.text));
         viewSessionsButton.onClick.AddListener(ShowSessions);
-        leaveSessionButton.onClick.AddListener(() => _ = LeaveSession());
-        disbandSessionButton.onClick.AddListener(() => _ = DisbandSession());
         quitApplicationButton.onClick.AddListener(() => _ = QuitAsync());
         copyCodeButton.onClick.AddListener(CopyCodeToClipboard);
 
-        // Hide panels before render
-        lobbyPanel?.SetActive(false);
-        sessionPanel?.SetActive(false);
-        mainPanel?.SetActive(true);
+        ShowMainPanel();
+        
     }
 
     private async Task PreMultiplayer()
@@ -65,8 +71,7 @@ public class SessionManager : MonoBehaviour
     }
 
 
-
-    private async Task CreateSessionAsHost()
+    async Task CreateSessionAsHost()
     {
         await PreMultiplayer();
 
@@ -89,17 +94,11 @@ public class SessionManager : MonoBehaviour
             string joinCode = _session.Code;
             codeText.text = "Code: " + joinCode;
 
-            // Now the underlying transport should already be configured by the session API
-            // You can just start host
-            NetworkManager.Singleton.StartHost();
+            ShowLobby();
         }
         catch (Exception e)
         {
             Debug.LogError($"[SessionManager] Create session failed: {e}");
-        }
-        finally
-        {
-            ShowLobby();
         }
     }
 
@@ -116,9 +115,6 @@ public class SessionManager : MonoBehaviour
 
             _session = await MultiplayerService.Instance.JoinSessionByCodeAsync(code);
 
-            // Session API should have internally configured transport
-            NetworkManager.Singleton.StartClient();
-
             ShowLobby();
         }
         catch (Exception e)
@@ -127,31 +123,22 @@ public class SessionManager : MonoBehaviour
         }
     }
 
-    private async Task DisbandSession()
+    public async Task DisbandSession()
     {
         try
         {
-            if (_session == null) return;
+            if (_session == null || !_session.IsHost) return;
 
-            if (!_session.IsHost)
-            {
-                Debug.LogWarning("[SessionManager] Only the host can disband a session.");
-                return;
-            }
+            await _session.AsHost().DeleteAsync();
 
-            // Delete the session for everyone
-            await _session.AsHost().DeleteAsync(); // host-only
-            Debug.Log("[SessionManager] Disbanded session.");
+            if (LobbySyncInstance) LobbySyncInstance.ClearLobbyRpc(); // BEFORE shutdown
 
-            // Shut down NGO host
             if (NetworkManager.Singleton && NetworkManager.Singleton.IsHost)
                 NetworkManager.Singleton.Shutdown();
 
             _session = null;
 
-            mainPanel.SetActive(true);
-            lobbyPanel.SetActive(false);
-            sessionPanel.SetActive(false);
+            ShowMainPanel();
         }
         catch (Exception e)
         {
@@ -159,32 +146,26 @@ public class SessionManager : MonoBehaviour
         }
     }
 
-    private async Task LeaveSession()
+    public async Task LeaveSession()
     {
         try
         {
             if (_session == null) return;
 
-            // Tell UGS you're leaving this session
-            await _session.LeaveAsync(); // client/host can call this
-            Debug.Log("[SessionManager] Left session.");
+            await _session.LeaveAsync();
 
-            // Shut down NGO transport
             if (NetworkManager.Singleton && (NetworkManager.Singleton.IsClient || NetworkManager.Singleton.IsHost))
                 NetworkManager.Singleton.Shutdown();
 
             _session = null;
+
+            Debug.Log("Successfully did session.LeaveSync()");
+
+            ShowMainPanel();
         }
         catch (Exception e)
         {
             Debug.LogError($"[SessionManager] LeaveSession failed: {e}");
-        }
-        finally
-        {
-            // Back to menu UI
-            mainPanel.SetActive(true);
-            lobbyPanel.SetActive(false);
-            sessionPanel.SetActive(false);
         }
     }
 
@@ -241,6 +222,12 @@ public class SessionManager : MonoBehaviour
         sessionPanel.SetActive(true);
     }
 
+    private void ShowMainPanel()
+    {
+        lobbyPanel?.SetActive(false);
+        sessionPanel?.SetActive(false);
+        mainPanel?.SetActive(true);
+    }
     private async Task QuitAsync()
     {
 #if UNITY_EDITOR
@@ -250,7 +237,7 @@ public class SessionManager : MonoBehaviour
     {
         if (_session != null)
         {
-            if (_session.IsHost)
+            if (IsHost)
                 await _session.AsHost().DeleteAsync();
             else
                 await _session.LeaveAsync();

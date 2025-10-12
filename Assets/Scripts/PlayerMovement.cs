@@ -60,7 +60,7 @@ public class PlayerMovement : NetworkBehaviour
         }
     }
 
-    [ServerRpc]
+    [Rpc(SendTo.Server)]
     void FireServerRpc()
     {
         Debug.Log($"[Server] Player {OwnerClientId} used Fire!");
@@ -68,7 +68,7 @@ public class PlayerMovement : NetworkBehaviour
 
     void OnCollisionEnter2D(Collision2D collision)
     {
-        if (!IsServer) return;  // only the server should process
+        //if (!IsServer) return;  // only the server should process
 
         if (!collision.gameObject.TryGetComponent(out PlayerMovement other)) return;
 
