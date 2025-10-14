@@ -13,7 +13,6 @@ using UnityEngine.UI;
 
 // TODO:
 // 1. Client should disconnect and change back to main menu, when hosts disbands
-// 2. Make PlayerCards appear
 // 3. Cleanup code 
 
 
@@ -26,8 +25,6 @@ public class SessionManager : MonoBehaviour
     [SerializeField] Button hostGameButton;
     [SerializeField] Button joinWithCodeButton;
     [SerializeField] Button quitApplicationButton;
-    [SerializeField] Button leaveSessionButton;
-    [SerializeField] Button disbandSessionButton;
     [SerializeField] Button viewSessionsButton;
     [SerializeField] Button copyCodeButton;
 
@@ -224,9 +221,9 @@ public class SessionManager : MonoBehaviour
 
     private void ShowMainPanel()
     {
-        lobbyPanel?.SetActive(false);
-        sessionPanel?.SetActive(false);
-        mainPanel?.SetActive(true);
+        lobbyPanel.SetActive(false);
+        sessionPanel.SetActive(false);
+        mainPanel.SetActive(true);
     }
     private async Task QuitAsync()
     {
@@ -257,4 +254,25 @@ public class SessionManager : MonoBehaviour
 #endif
     }
 
+    void OnEnable()
+    {
+        if (NetworkManager.Singleton)
+            NetworkManager.Singleton.OnClientDisconnectCallback += OnClientDisconnected;
+    }
+
+    void OnDisable()
+    {
+        if (NetworkManager.Singleton)
+            NetworkManager.Singleton.OnClientDisconnectCallback -= OnClientDisconnected;
+    }
+
+    private void OnClientDisconnected(ulong clientId)
+    {
+        // Only react if this is the local client and not the host
+        if (NetworkManager.Singleton && !IsHost && clientId == NetworkManager.Singleton.LocalClientId)
+        {
+            Debug.Log("[SessionManager] Disconnected from host, returning to main menu.");
+            ShowMainPanel();
+        }
+    }
 }

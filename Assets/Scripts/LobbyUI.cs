@@ -36,6 +36,7 @@ public class LobbyUI : MonoBehaviour
 
     private void OnEnable()
     {
+        Debug.Log("LobbyUI enabled >> Running RefreshControls and RebuildAll");
         RefreshHostControls();
 
         if (!lobbySync) lobbySync = FindFirstObjectByType<LobbySync>();
@@ -59,9 +60,9 @@ public class LobbyUI : MonoBehaviour
     private void RefreshHostControls()
     {
         bool isHost = NetworkManager.Singleton && NetworkManager.Singleton.IsHost;
-        DisbandButton.enabled = isHost;
-        StartButton.enabled = isHost;
-        LeaveButton.enabled = !isHost;
+        DisbandButton.interactable = isHost;
+        StartButton.interactable = isHost;
+        LeaveButton.interactable = !isHost;
     }
 
     private IEnumerator WaitAndBind()
@@ -79,12 +80,14 @@ public class LobbyUI : MonoBehaviour
 
     private void OnPlayersChanged(NetworkListEvent<PlayerCardData> e)
     {
-        // For a small lobby, full rebuild is fine
+        Debug.Log($"Players changed: {lobbySync.Players.Count} entries. Reason={e.Type}");
         RebuildAll();
     }
 
+
     private void RebuildAll()
     {
+        Debug.Log($"[LobbyUI] RebuildAll called. Players: {lobbySync.Players.Count}, Slots: {slots.Length}, CardPrefab: {(cardPrefab ? cardPrefab.name : "null")}");
         foreach (var go in _cards.Values) Destroy(go);
         _cards.Clear();
 
@@ -97,15 +100,15 @@ public class LobbyUI : MonoBehaviour
             var go = Instantiate(cardPrefab, slot, false);
             _cards[p.ClientId] = go;
 
-            // Stretch to slot (optional)
             var rt = go.GetComponent<RectTransform>();
             rt.anchorMin = Vector2.zero; rt.anchorMax = Vector2.one;
             rt.offsetMin = Vector2.zero; rt.offsetMax = Vector2.zero;
 
-            // Bind fields (add null checks if needed)
             var nameTr = go.transform.Find("Name");
             var pingTr = go.transform.Find("Ping");
             var colorTr = go.transform.Find("Color");
+
+            Debug.Log($"[LobbyUI] Card instantiated for {p.Name}, NameTr: {nameTr}, PingTr: {pingTr}, ColorTr: {colorTr}");
 
             var nameText = nameTr ? nameTr.GetComponent<TMP_Text>() : null;
             var pingText = pingTr ? pingTr.GetComponent<TMP_Text>() : null;

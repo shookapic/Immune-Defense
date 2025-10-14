@@ -4,14 +4,10 @@ using UnityEngine;
 
 public class LobbySync : NetworkBehaviour
 {
-    public NetworkList<PlayerCardData> Players { get; private set; }
+    public NetworkList<PlayerCardData> Players { get; private set; } = 
+        new NetworkList<PlayerCardData>(writePerm: NetworkVariableWritePermission.Server);
 
     private UnityTransport _transport;
-
-    private void Awake()
-    {
-        Players = new NetworkList<PlayerCardData>(writePerm: NetworkVariableWritePermission.Server);
-    }
 
     public override void OnNetworkSpawn()
     {
@@ -23,18 +19,16 @@ public class LobbySync : NetworkBehaviour
             NetworkManager.OnClientDisconnectCallback += OnClientDisconnected;
 
             var hostId = NetworkManager.ServerClientId;
-            // Use the actual local display name for host too
             AddOrUpdatePlayer(hostId, GetLocalDisplayName(), ColorFromId(hostId));
 
             InvokeRepeating(nameof(UpdatePings), 0.5f, 1.0f);
         }
 
-        // Only non-host clients should call the RPC to set their name
+        // Queue name RPC from clients once spawned
         if (IsClient && !IsServer)
-        {
             SubmitNameRpc(GetLocalDisplayName());
-        }
     }
+
 
     public override void OnNetworkDespawn()
     {
@@ -76,17 +70,11 @@ public class LobbySync : NetworkBehaviour
     private void AddOrUpdatePlayer(ulong clientId, string name, int colorIndex)
     {
         var idx = IndexOfClient(clientId);
-        var data = new PlayerCardData
-        {
-            ClientId = clientId,
-            Name = name,
-            ColorIndex = colorIndex,
-            PingMs = 0
-        };
-
-        if (idx >= 0) Players[idx] = data;
-        else Players.Add(data);
+        var data = new PlayerCardData { ClientId = clientId, Name = name, ColorIndex = colorIndex, PingMs = 0 };
+        if (idx >= 0) { Players[idx] = data; Debug.Log($"[LobbySync] Updated {clientId} -> {name}"); }
+        else { Players.Add(data); Debug.Log($"[LobbySync] Added {clientId} -> {name}"); }
     }
+
 
     private int IndexOfClient(ulong clientId)
     {
