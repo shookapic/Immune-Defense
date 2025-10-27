@@ -10,12 +10,6 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
-
-// TODO:
-// 1. Client should disconnect and change back to main menu, when hosts disbands
-// 3. Cleanup code 
-
-
 public class SessionManager : MonoBehaviour
 {
     [SerializeField] GameObject mainPanel;
@@ -33,19 +27,26 @@ public class SessionManager : MonoBehaviour
 
     [SerializeField] LobbySync LobbySyncInstance;
 
+    // Session lifecycle events other systems can observe
+    public event Action<ISession> OnSessionStarted;
+    public event Action OnSessionEnded;
+
     private ISession _session;
     public bool IsHost => _session?.IsHost ?? (NetworkManager.Singleton && NetworkManager.Singleton.IsHost);
+
     void Awake()
     {
-        // Always set up listeners early
+        SetupButtonListeners();
+        ShowMainPanel();
+    }
+
+    private void SetupButtonListeners()
+    {
         hostGameButton.onClick.AddListener(() => _ = CreateSessionAsHost());
         joinWithCodeButton.onClick.AddListener(() => _ = JoinSessionByCode(inputCode.text));
         viewSessionsButton.onClick.AddListener(ShowSessions);
         quitApplicationButton.onClick.AddListener(() => _ = QuitAsync());
         copyCodeButton.onClick.AddListener(CopyCodeToClipboard);
-
-        ShowMainPanel();
-        
     }
 
     private async Task PreMultiplayer()
@@ -63,10 +64,9 @@ public class SessionManager : MonoBehaviour
         catch (Exception e)
         {
             Debug.LogError($"[SessionManager] Init failed: {e}");
-            throw; // propagate so caller knows init failed
+            throw;
         }
     }
-
 
     async Task CreateSessionAsHost()
     {
@@ -84,14 +84,15 @@ public class SessionManager : MonoBehaviour
                 IsPrivate = false,
                 Name = $"{displayName}'s Lobby"
             }
-            .WithRelayNetwork();    // pick Relay networking
+            .WithRelayNetwork();
 
             _session = await MultiplayerService.Instance.CreateSessionAsync(options);
 
-            string joinCode = _session.Code;
-            codeText.text = "Code: " + joinCode;
+            codeText.text = "Code: " + _session.Code;
 
             ShowLobby();
+
+            OnSessionStarted?.Invoke(_session);
         }
         catch (Exception e)
         {
@@ -105,14 +106,11 @@ public class SessionManager : MonoBehaviour
 
         try
         {
-            JoinSessionOptions options = new JoinSessionOptions
-            {
-
-            };
-
             _session = await MultiplayerService.Instance.JoinSessionByCodeAsync(code);
 
             ShowLobby();
+
+            OnSessionStarted?.Invoke(_session);
         }
         catch (Exception e)
         {
@@ -128,7 +126,7 @@ public class SessionManager : MonoBehaviour
 
             await _session.AsHost().DeleteAsync();
 
-            if (LobbySyncInstance) LobbySyncInstance.ClearLobbyRpc(); // BEFORE shutdown
+            if (LobbySyncInstance) LobbySyncInstance.ClearLobbyRpc();
 
             if (NetworkManager.Singleton && NetworkManager.Singleton.IsHost)
                 NetworkManager.Singleton.Shutdown();
@@ -136,6 +134,8 @@ public class SessionManager : MonoBehaviour
             _session = null;
 
             ShowMainPanel();
+
+            OnSessionEnded?.Invoke();
         }
         catch (Exception e)
         {
@@ -159,6 +159,8 @@ public class SessionManager : MonoBehaviour
             Debug.Log("Successfully did session.LeaveSync()");
 
             ShowMainPanel();
+
+            OnSessionEnded?.Invoke();
         }
         catch (Exception e)
         {
@@ -168,13 +170,9 @@ public class SessionManager : MonoBehaviour
 
     private void CopyCodeToClipboard()
     {
-        // Deselect the button so it doesn’t stay highlighted
         if (EventSystem.current) EventSystem.current.SetSelectedGameObject(null);
 
-        // Prefer the live session’s code
         string code = _session?.Code;
-
-        // Fallback: try to parse from the label if you formatted it as "Code: XYZ123"
         if (string.IsNullOrEmpty(code) && codeText != null && !string.IsNullOrEmpty(codeText.text))
         {
             var txt = codeText.text.Trim();
@@ -192,8 +190,6 @@ public class SessionManager : MonoBehaviour
         }
 
         GUIUtility.systemCopyBuffer = code;
-
-        // Optional: quick visual confirmation
         if (codeText) StartCoroutine(FlashCopied(code));
     }
 
@@ -205,26 +201,27 @@ public class SessionManager : MonoBehaviour
         codeText.text = $"Code: {code}";
     }
 
-    private void ShowLobby()
+    public void ShowLobby()
     {
         mainPanel.SetActive(false);
         lobbyPanel.SetActive(true);
         sessionPanel.SetActive(false);
     }
 
-    private void ShowSessions()
+    public void ShowSessions()
     {
         mainPanel.SetActive(false);
         lobbyPanel.SetActive(false);
         sessionPanel.SetActive(true);
     }
 
-    private void ShowMainPanel()
+    public void ShowMainPanel()
     {
-        lobbyPanel.SetActive(false);
-        sessionPanel.SetActive(false);
-        mainPanel.SetActive(true);
+        lobbyPanel?.SetActive(false);
+        sessionPanel?.SetActive(false);
+        mainPanel?.SetActive(true);
     }
+
     private async Task QuitAsync()
     {
 #if UNITY_EDITOR
@@ -268,11 +265,11 @@ public class SessionManager : MonoBehaviour
 
     private void OnClientDisconnected(ulong clientId)
     {
-        // Only react if this is the local client and not the host
         if (NetworkManager.Singleton && !IsHost && clientId == NetworkManager.Singleton.LocalClientId)
         {
             Debug.Log("[SessionManager] Disconnected from host, returning to main menu.");
             ShowMainPanel();
+            OnSessionEnded?.Invoke();
         }
     }
 }

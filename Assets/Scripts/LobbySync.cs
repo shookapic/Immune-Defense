@@ -1,16 +1,23 @@
+using System;
 using Unity.Netcode;
 using Unity.Netcode.Transports.UTP;
 using UnityEngine;
 
 public class LobbySync : NetworkBehaviour
 {
-    public NetworkList<PlayerCardData> Players { get; private set; } = 
+    // Forwarded event so UI and other systems can observe list changes without touching NetworkList directly.
+    public event Action<NetworkListEvent<PlayerCardData>> OnPlayersChanged;
+
+    public NetworkList<PlayerCardData> Players { get; private set; } =
         new NetworkList<PlayerCardData>(writePerm: NetworkVariableWritePermission.Server);
 
     private UnityTransport _transport;
 
     public override void OnNetworkSpawn()
     {
+        // forward NetworkList changes
+        Players.OnListChanged += HandlePlayersListChanged;
+
         _transport = NetworkManager.Singleton.GetComponent<UnityTransport>();
 
         if (IsServer)
@@ -32,12 +39,19 @@ public class LobbySync : NetworkBehaviour
 
     public override void OnNetworkDespawn()
     {
+        Players.OnListChanged -= HandlePlayersListChanged;
+
         if (IsServer)
         {
             NetworkManager.OnClientConnectedCallback -= OnClientConnected;
             NetworkManager.OnClientDisconnectCallback -= OnClientDisconnected;
             CancelInvoke(nameof(UpdatePings));
         }
+    }
+
+    private void HandlePlayersListChanged(NetworkListEvent<PlayerCardData> evt)
+    {
+        OnPlayersChanged?.Invoke(evt);
     }
 
     private void OnClientConnected(ulong clientId)
@@ -74,7 +88,6 @@ public class LobbySync : NetworkBehaviour
         if (idx >= 0) { Players[idx] = data; Debug.Log($"[LobbySync] Updated {clientId} -> {name}"); }
         else { Players.Add(data); Debug.Log($"[LobbySync] Added {clientId} -> {name}"); }
     }
-
 
     private int IndexOfClient(ulong clientId)
     {

@@ -28,7 +28,6 @@ public class LobbyUI : MonoBehaviour
             return;
         }
 
-        // These need to be PUBLIC methods on SessionManager (or use public wrappers)
         DisbandButton.onClick.AddListener(() => _ = _sessionManager.DisbandSession());
         LeaveButton.onClick.AddListener(() => _ = _sessionManager.LeaveSession());
         StartButton.onClick.AddListener(StartGame);
@@ -36,25 +35,30 @@ public class LobbyUI : MonoBehaviour
 
     private void OnEnable()
     {
-        Debug.Log("LobbyUI enabled >> Running RefreshControls and RebuildAll");
         RefreshHostControls();
 
         if (!lobbySync) lobbySync = FindFirstObjectByType<LobbySync>();
-        if (lobbySync && lobbySync.IsSpawned)
+        if (lobbySync)
         {
-            lobbySync.Players.OnListChanged += OnPlayersChanged;
-            RebuildAll();
+            lobbySync.OnPlayersChanged += HandlePlayersChanged;
+            // If spawned already, force a build from current list
+            if (lobbySync.IsSpawned)
+                RebuildAll();
+            else
+                StartCoroutine(WaitAndBind());
         }
-        else
-        {
-            StartCoroutine(WaitAndBind());
-        }
+
+        if (_sessionManager != null)
+            _sessionManager.OnSessionEnded += HandleSessionEnded;
     }
 
     private void OnDisable()
     {
         if (lobbySync)
-            lobbySync.Players.OnListChanged -= OnPlayersChanged;
+            lobbySync.OnPlayersChanged -= HandlePlayersChanged;
+
+        if (_sessionManager != null)
+            _sessionManager.OnSessionEnded -= HandleSessionEnded;
     }
 
     private void RefreshHostControls()
@@ -73,20 +77,20 @@ public class LobbyUI : MonoBehaviour
             yield return null;
         }
 
-        lobbySync.Players.OnListChanged += OnPlayersChanged;
+        lobbySync.OnPlayersChanged += HandlePlayersChanged;
         RebuildAll();
         RefreshHostControls();
     }
 
-    private void OnPlayersChanged(NetworkListEvent<PlayerCardData> e)
+    private void HandlePlayersChanged(NetworkListEvent<PlayerCardData> e)
     {
         Debug.Log($"Players changed: {lobbySync.Players.Count} entries. Reason={e.Type}");
         RebuildAll();
     }
 
-
     private void RebuildAll()
     {
+        if (lobbySync == null) return;
         Debug.Log($"[LobbyUI] RebuildAll called. Players: {lobbySync.Players.Count}, Slots: {slots.Length}, CardPrefab: {(cardPrefab ? cardPrefab.name : "null")}");
         foreach (var go in _cards.Values) Destroy(go);
         _cards.Clear();
@@ -108,8 +112,6 @@ public class LobbyUI : MonoBehaviour
             var pingTr = go.transform.Find("Ping");
             var colorTr = go.transform.Find("Color");
 
-            Debug.Log($"[LobbyUI] Card instantiated for {p.Name}, NameTr: {nameTr}, PingTr: {pingTr}, ColorTr: {colorTr}");
-
             var nameText = nameTr ? nameTr.GetComponent<TMP_Text>() : null;
             var pingText = pingTr ? pingTr.GetComponent<TMP_Text>() : null;
             var colorImg = colorTr ? colorTr.GetComponent<Image>() : null;
@@ -120,13 +122,19 @@ public class LobbyUI : MonoBehaviour
         }
     }
 
+    private void HandleSessionEnded()
+    {
+        // Ensure UI shows main menu if session ended elsewhere
+        Debug.Log("[LobbyUI] Session ended - returning to main menu");
+        // use SessionManager to handle panel switching
+        _sessionManager?.SendMessage(nameof(SessionManager.ShowMainPanel), SendMessageOptions.DontRequireReceiver);
+    }
+
     private void StartGame()
     {
-        // host-only action
         if (!(NetworkManager.Singleton && NetworkManager.Singleton.IsHost))
             return;
 
-        // TODO: trigger your game start here (e.g., load scene / signal ready).
         Debug.Log("[LobbyUI] StartGame clicked by host");
     }
 
