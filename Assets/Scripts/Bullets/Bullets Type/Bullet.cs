@@ -1,14 +1,17 @@
 using UnityEngine;
+using System;
 
 public abstract class Bullet : MonoBehaviour
 {
     public float travelingSpeed = 5f;
     protected GameObject target;
-    protected BulletEffect[] effects;
+    // protected BulletEffect[] effects;
+
+    public event Action<GameObject> OnHit;
 
     protected virtual void Start()
     {
-        effects = GetComponents<BulletEffect>();
+        // effects = GetComponents<BulletEffect>();
     }
 
     protected virtual void Update()
@@ -33,5 +36,10 @@ public abstract class Bullet : MonoBehaviour
         target = enemyTarget;
     }
 
-    protected abstract void OnHit(GameObject enemy);
+    protected void TriggerHit(GameObject enemy)
+    {
+        OnHit?.Invoke(enemy);
+    }
+
+    // protected abstract void OnHit(GameObject enemy);
 }
