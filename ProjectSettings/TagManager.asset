@@ -2,8 +2,10 @@
 %TAG !u! tag:unity3d.com,2011:
 --- !u!78 &1
 TagManager:
-  serializedVersion: 2
-  tags: []
+  serializedVersion: 3
+  tags:
+  - Enemy
+  - Bullet
   layers:
   - Default
   - TransparentFX
@@ -41,3 +43,17 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Blood
+    uniqueID: 1800821321
+    locked: 0
+  - name: Ground
+    uniqueID: 254845649
+    locked: 0
+  - name: Decor
+    uniqueID: 3538493233
+    locked: 0
+  - name: Enemy
+    uniqueID: 1882867299
+    locked: 0
+  m_RenderingLayers:
+  - Default
