@@ -8,23 +8,15 @@ public class AoEBullet : Bullet
     {
         if (collision.CompareTag("Enemy"))
         {
-            Collider2D[] enemies = Physics2D.OverlapCircleAll(transform.position, radius);
-            foreach (var e in enemies)
-            {
-                if (e.CompareTag("Enemy"))
-                {
-                    OnHit(e.gameObject);
-                }
-            }
-            Destroy(gameObject);
-        }
-    }
+            Collider2D[] hits = Physics2D.OverlapCircleAll(transform.position, radius);
 
-    protected override void OnHit(GameObject enemy)
-    {
-        foreach (var effect in effects)
-        {
-            effect.ApplyEffect(enemy);
+            foreach (var hit in hits)
+            {
+                if (hit.CompareTag("Enemy"))
+                    TriggerHit(hit.gameObject);
+            }
+
+            Destroy(gameObject);
         }
     }
 

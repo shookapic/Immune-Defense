@@ -6,16 +6,8 @@ public class SingleTargetBullet : Bullet
     {
         if (collision.CompareTag("Enemy"))
         {
-            OnHit(collision.gameObject);
+            TriggerHit(collision.gameObject);
             Destroy(gameObject);
-        }
-    }
-
-    protected override void OnHit(GameObject enemy)
-    {
-        foreach (var effect in effects)
-        {
-            effect.ApplyEffect(enemy);
         }
     }
 }
