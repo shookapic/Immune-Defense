@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 989244c8e4768ae499ad80dbcc078ccc
+timeCreated: 1483280627
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 79587
+  packageName: '[M] Tower Defense Turrets'
+  packageVersion: 1.1
+  assetPath: Assets/Tower Defence Turrets/Materials/Laser2.mat
+  uploadId: 288001

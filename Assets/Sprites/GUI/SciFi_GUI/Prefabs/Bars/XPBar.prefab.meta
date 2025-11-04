@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: fa065375f77c7ec41839f202c6588fd2
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 309738
+  packageName: SciFi UI Customizable + Icons
+  packageVersion: 1.0
+  assetPath: Assets/Kwaaktje/SciFi_GUI/Prefabs/Bars/XPBar.prefab
+  uploadId: 731929

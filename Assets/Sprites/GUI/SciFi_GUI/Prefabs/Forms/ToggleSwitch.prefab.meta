@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 51ab45a65eb8406409e0f097b5562037
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 309738
+  packageName: SciFi UI Customizable + Icons
+  packageVersion: 1.0
+  assetPath: Assets/Kwaaktje/SciFi_GUI/Prefabs/Forms/ToggleSwitch.prefab
+  uploadId: 731929

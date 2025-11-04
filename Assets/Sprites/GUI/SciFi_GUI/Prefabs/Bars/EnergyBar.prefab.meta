@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 12f185a92de96e5479b811d69c87e9eb
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 309738
+  packageName: SciFi UI Customizable + Icons
+  packageVersion: 1.0
+  assetPath: Assets/Kwaaktje/SciFi_GUI/Prefabs/Bars/EnergyBar.prefab
+  uploadId: 731929

@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: a7d16fcca886d2e44b68a4c46e67280a
+timeCreated: 1483283215
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 79587
+  packageName: '[M] Tower Defense Turrets'
+  packageVersion: 1.1
+  assetPath: Assets/Tower Defence Turrets/Animation/ShieldDown/B1_ShieldDown.anim
+  uploadId: 288001

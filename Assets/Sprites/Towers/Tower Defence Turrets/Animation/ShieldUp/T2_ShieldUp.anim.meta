@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: c1ebcfd640929664b9f42df7ea73c6b8
+timeCreated: 1483290312
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 79587
+  packageName: '[M] Tower Defense Turrets'
+  packageVersion: 1.1
+  assetPath: Assets/Tower Defence Turrets/Animation/ShieldUp/T2_ShieldUp.anim
+  uploadId: 288001

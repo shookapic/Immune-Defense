@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 37328e4a6a7d34141821f1ed6e88dd6a
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 309738
+  packageName: SciFi UI Customizable + Icons
+  packageVersion: 1.0
+  assetPath: Assets/Kwaaktje/SciFi_GUI/Prefabs/Panels/SkillsPanel.prefab
+  uploadId: 731929

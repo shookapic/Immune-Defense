@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: c8c6082ca3aa26243803858339304d0a
+timeCreated: 1514375941
+licenseType: Store
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 7400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 79587
+  packageName: '[M] Tower Defense Turrets'
+  packageVersion: 1.1
+  assetPath: Assets/Tower Defence Turrets/FBXs/TurretsAndAnimations/Basic_3/B3_Building.anim
+  uploadId: 288001
