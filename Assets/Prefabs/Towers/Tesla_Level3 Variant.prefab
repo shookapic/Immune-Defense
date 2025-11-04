@@ -20,6 +20,10 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: 1000011039027170, guid: 29289ebc7c465d14abb284bce7ffa060, type: 3}
+      propertyPath: m_TagString
+      value: Tower
+      objectReference: {fileID: 0}
     - target: {fileID: 1000011827693444, guid: 29289ebc7c465d14abb284bce7ffa060, type: 3}
       propertyPath: m_Layer
       value: 6
@@ -117,7 +121,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Tower
   bullet: {fileID: 7978926997213389568, guid: 9d6ff76965eafff469b13ffb88b2f353, type: 3}
-  attackSpeed: 30
+  attackSpeed: 1
   range: 30
 --- !u!135 &3156724993965851760
 SphereCollider:
