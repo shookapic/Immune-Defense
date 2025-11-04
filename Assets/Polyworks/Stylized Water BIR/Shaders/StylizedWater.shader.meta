@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: c8110ef7c96474f73b2ee5f90e026b10
+ShaderImporter:
+  externalObjects: {}
+  defaultTextures: []
+  nonModifiableTextures: []
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 58821
+  packageName: Low Poly Mega Pack - Polyworks
+  packageVersion: 6.0
+  assetPath: Assets/Off Axis Studios/Polyworks/Stylized Water BIR/Shaders/StylizedWater.shader
+  uploadId: 533731

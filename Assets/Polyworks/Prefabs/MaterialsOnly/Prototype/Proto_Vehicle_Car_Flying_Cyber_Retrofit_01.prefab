@@ -1,0 +1,488 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &4847983162489587778
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3433218683628206929}
+  m_Layer: 0
+  m_Name: Proto_Vehicle_Car_Flying_Cyber_Retrofit_01
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3433218683628206929
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4847983162489587778}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 6825468734165630233}
+  - {fileID: 8467241896104616430}
+  - {fileID: 5644013588227405874}
+  - {fileID: 123058859795661933}
+  - {fileID: 777100692203602633}
+  - {fileID: 8431696516477192089}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &298867172871799655
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 3433218683628206929}
+    m_Modifications:
+    - target: {fileID: 8188781866075185801, guid: 6813d24312510f149aea8e887183b9f5,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8188781866075185801, guid: 6813d24312510f149aea8e887183b9f5,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.11974
+      objectReference: {fileID: 0}
+    - target: {fileID: 8188781866075185801, guid: 6813d24312510f149aea8e887183b9f5,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.948
+      objectReference: {fileID: 0}
+    - target: {fileID: 8188781866075185801, guid: 6813d24312510f149aea8e887183b9f5,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.233
+      objectReference: {fileID: 0}
+    - target: {fileID: 8188781866075185801, guid: 6813d24312510f149aea8e887183b9f5,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8188781866075185801, guid: 6813d24312510f149aea8e887183b9f5,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8188781866075185801, guid: 6813d24312510f149aea8e887183b9f5,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8188781866075185801, guid: 6813d24312510f149aea8e887183b9f5,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8188781866075185801, guid: 6813d24312510f149aea8e887183b9f5,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8188781866075185801, guid: 6813d24312510f149aea8e887183b9f5,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8188781866075185801, guid: 6813d24312510f149aea8e887183b9f5,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8858498089634379827, guid: 6813d24312510f149aea8e887183b9f5,
+        type: 3}
+      propertyPath: m_Name
+      value: Proto_Vehicle_Car_Flying_Cyber_Retrofit_Power_System_01
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 6813d24312510f149aea8e887183b9f5, type: 3}
+--- !u!4 &8467241896104616430 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8188781866075185801, guid: 6813d24312510f149aea8e887183b9f5,
+    type: 3}
+  m_PrefabInstance: {fileID: 298867172871799655}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &677392770127120618
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 3433218683628206929}
+    m_Modifications:
+    - target: {fileID: 265226209013123619, guid: e6bf2d42986ad1d48bcb326c57ad2a60,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 265226209013123619, guid: e6bf2d42986ad1d48bcb326c57ad2a60,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.6954
+      objectReference: {fileID: 0}
+    - target: {fileID: 265226209013123619, guid: e6bf2d42986ad1d48bcb326c57ad2a60,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.057000004
+      objectReference: {fileID: 0}
+    - target: {fileID: 265226209013123619, guid: e6bf2d42986ad1d48bcb326c57ad2a60,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 1.233
+      objectReference: {fileID: 0}
+    - target: {fileID: 265226209013123619, guid: e6bf2d42986ad1d48bcb326c57ad2a60,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 265226209013123619, guid: e6bf2d42986ad1d48bcb326c57ad2a60,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 265226209013123619, guid: e6bf2d42986ad1d48bcb326c57ad2a60,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 265226209013123619, guid: e6bf2d42986ad1d48bcb326c57ad2a60,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 265226209013123619, guid: e6bf2d42986ad1d48bcb326c57ad2a60,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 265226209013123619, guid: e6bf2d42986ad1d48bcb326c57ad2a60,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 265226209013123619, guid: e6bf2d42986ad1d48bcb326c57ad2a60,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 641082866476355737, guid: e6bf2d42986ad1d48bcb326c57ad2a60,
+        type: 3}
+      propertyPath: m_Name
+      value: Proto_Vehicle_Car_Flying_Hover_Plate_Front_L_01
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: e6bf2d42986ad1d48bcb326c57ad2a60, type: 3}
+--- !u!4 &777100692203602633 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 265226209013123619, guid: e6bf2d42986ad1d48bcb326c57ad2a60,
+    type: 3}
+  m_PrefabInstance: {fileID: 677392770127120618}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &3258468774435016627
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 3433218683628206929}
+    m_Modifications:
+    - target: {fileID: 7164092734639404929, guid: dc8b1f2a6291ab645aa4c1c0ebb3f167,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7164092734639404929, guid: dc8b1f2a6291ab645aa4c1c0ebb3f167,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.6954
+      objectReference: {fileID: 0}
+    - target: {fileID: 7164092734639404929, guid: dc8b1f2a6291ab645aa4c1c0ebb3f167,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.057000004
+      objectReference: {fileID: 0}
+    - target: {fileID: 7164092734639404929, guid: dc8b1f2a6291ab645aa4c1c0ebb3f167,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -1.292
+      objectReference: {fileID: 0}
+    - target: {fileID: 7164092734639404929, guid: dc8b1f2a6291ab645aa4c1c0ebb3f167,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7164092734639404929, guid: dc8b1f2a6291ab645aa4c1c0ebb3f167,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7164092734639404929, guid: dc8b1f2a6291ab645aa4c1c0ebb3f167,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7164092734639404929, guid: dc8b1f2a6291ab645aa4c1c0ebb3f167,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7164092734639404929, guid: dc8b1f2a6291ab645aa4c1c0ebb3f167,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7164092734639404929, guid: dc8b1f2a6291ab645aa4c1c0ebb3f167,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7164092734639404929, guid: dc8b1f2a6291ab645aa4c1c0ebb3f167,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7503041844437265723, guid: dc8b1f2a6291ab645aa4c1c0ebb3f167,
+        type: 3}
+      propertyPath: m_Name
+      value: Proto_Vehicle_Car_Flying_Hover_Plate_Back_L_01
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: dc8b1f2a6291ab645aa4c1c0ebb3f167, type: 3}
+--- !u!4 &5644013588227405874 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7164092734639404929, guid: dc8b1f2a6291ab645aa4c1c0ebb3f167,
+    type: 3}
+  m_PrefabInstance: {fileID: 3258468774435016627}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &4159517330741672210
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 3433218683628206929}
+    m_Modifications:
+    - target: {fileID: 3695048688433211333, guid: 2908ea5c8cc2ca644836454bc97c00c8,
+        type: 3}
+      propertyPath: m_Name
+      value: Proto_Vehicle_Car_Flying_Hover_Plate_Back_R_01
+      objectReference: {fileID: 0}
+    - target: {fileID: 4038782843091287423, guid: 2908ea5c8cc2ca644836454bc97c00c8,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4038782843091287423, guid: 2908ea5c8cc2ca644836454bc97c00c8,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.692
+      objectReference: {fileID: 0}
+    - target: {fileID: 4038782843091287423, guid: 2908ea5c8cc2ca644836454bc97c00c8,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.057
+      objectReference: {fileID: 0}
+    - target: {fileID: 4038782843091287423, guid: 2908ea5c8cc2ca644836454bc97c00c8,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -1.292
+      objectReference: {fileID: 0}
+    - target: {fileID: 4038782843091287423, guid: 2908ea5c8cc2ca644836454bc97c00c8,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4038782843091287423, guid: 2908ea5c8cc2ca644836454bc97c00c8,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4038782843091287423, guid: 2908ea5c8cc2ca644836454bc97c00c8,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4038782843091287423, guid: 2908ea5c8cc2ca644836454bc97c00c8,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4038782843091287423, guid: 2908ea5c8cc2ca644836454bc97c00c8,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4038782843091287423, guid: 2908ea5c8cc2ca644836454bc97c00c8,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4038782843091287423, guid: 2908ea5c8cc2ca644836454bc97c00c8,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 2908ea5c8cc2ca644836454bc97c00c8, type: 3}
+--- !u!4 &123058859795661933 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4038782843091287423, guid: 2908ea5c8cc2ca644836454bc97c00c8,
+    type: 3}
+  m_PrefabInstance: {fileID: 4159517330741672210}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &6414016279444566857
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 3433218683628206929}
+    m_Modifications:
+    - target: {fileID: 2831530724625509994, guid: 6df0b21a640e8c748a62d98749642744,
+        type: 3}
+      propertyPath: m_Name
+      value: Proto_Vehicle_Car_Flying_Hover_Plate_Front_R_01
+      objectReference: {fileID: 0}
+    - target: {fileID: 3170620576995226832, guid: 6df0b21a640e8c748a62d98749642744,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3170620576995226832, guid: 6df0b21a640e8c748a62d98749642744,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.692
+      objectReference: {fileID: 0}
+    - target: {fileID: 3170620576995226832, guid: 6df0b21a640e8c748a62d98749642744,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.057000004
+      objectReference: {fileID: 0}
+    - target: {fileID: 3170620576995226832, guid: 6df0b21a640e8c748a62d98749642744,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 1.233
+      objectReference: {fileID: 0}
+    - target: {fileID: 3170620576995226832, guid: 6df0b21a640e8c748a62d98749642744,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3170620576995226832, guid: 6df0b21a640e8c748a62d98749642744,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3170620576995226832, guid: 6df0b21a640e8c748a62d98749642744,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3170620576995226832, guid: 6df0b21a640e8c748a62d98749642744,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3170620576995226832, guid: 6df0b21a640e8c748a62d98749642744,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3170620576995226832, guid: 6df0b21a640e8c748a62d98749642744,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3170620576995226832, guid: 6df0b21a640e8c748a62d98749642744,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 6df0b21a640e8c748a62d98749642744, type: 3}
+--- !u!4 &8431696516477192089 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3170620576995226832, guid: 6df0b21a640e8c748a62d98749642744,
+    type: 3}
+  m_PrefabInstance: {fileID: 6414016279444566857}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &8546767764100104768
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 3433218683628206929}
+    m_Modifications:
+    - target: {fileID: 2553269364974953955, guid: 104c1bbc18baf3e43ba3517132896377,
+        type: 3}
+      propertyPath: m_Name
+      value: Proto_Vehicle_Car_Flying_Cyber_Retrofit_Body_01
+      objectReference: {fileID: 0}
+    - target: {fileID: 2892674738273419097, guid: 104c1bbc18baf3e43ba3517132896377,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2892674738273419097, guid: 104c1bbc18baf3e43ba3517132896377,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2892674738273419097, guid: 104c1bbc18baf3e43ba3517132896377,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2892674738273419097, guid: 104c1bbc18baf3e43ba3517132896377,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2892674738273419097, guid: 104c1bbc18baf3e43ba3517132896377,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2892674738273419097, guid: 104c1bbc18baf3e43ba3517132896377,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2892674738273419097, guid: 104c1bbc18baf3e43ba3517132896377,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2892674738273419097, guid: 104c1bbc18baf3e43ba3517132896377,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2892674738273419097, guid: 104c1bbc18baf3e43ba3517132896377,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2892674738273419097, guid: 104c1bbc18baf3e43ba3517132896377,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2892674738273419097, guid: 104c1bbc18baf3e43ba3517132896377,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 104c1bbc18baf3e43ba3517132896377, type: 3}
+--- !u!4 &6825468734165630233 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2892674738273419097, guid: 104c1bbc18baf3e43ba3517132896377,
+    type: 3}
+  m_PrefabInstance: {fileID: 8546767764100104768}
+  m_PrefabAsset: {fileID: 0}

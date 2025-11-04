@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 2fb338ed857db8e4f96dcbd87a306005
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 58821
+  packageName: Low Poly Mega Pack - Polyworks
+  packageVersion: 6.0
+  assetPath: Assets/Off Axis Studios/Polyworks/Prefabs/MaterialsOnly/Prototype/Blocks
+    - Green/Proto_Block_Triangle_Peak_Corner_01.prefab
+  uploadId: 533731

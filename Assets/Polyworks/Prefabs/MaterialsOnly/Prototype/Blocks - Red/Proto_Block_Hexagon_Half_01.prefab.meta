@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: b47d23c302fa34e44b8273b3bf16c141
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 58821
+  packageName: Low Poly Mega Pack - Polyworks
+  packageVersion: 6.0
+  assetPath: Assets/Off Axis Studios/Polyworks/Prefabs/MaterialsOnly/Prototype/Blocks
+    - Red/Proto_Block_Hexagon_Half_01.prefab
+  uploadId: 533731

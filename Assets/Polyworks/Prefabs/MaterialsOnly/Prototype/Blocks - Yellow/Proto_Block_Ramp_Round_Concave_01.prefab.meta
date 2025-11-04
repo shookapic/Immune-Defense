@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 804982d2e5b0a254b81a546f29d9da8b
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 58821
+  packageName: Low Poly Mega Pack - Polyworks
+  packageVersion: 6.0
+  assetPath: Assets/Off Axis Studios/Polyworks/Prefabs/MaterialsOnly/Prototype/Blocks
+    - Yellow/Proto_Block_Ramp_Round_Concave_01.prefab
+  uploadId: 533731

@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 17242b8061c69014aa7e9c2bf05c428d
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 58821
+  packageName: Low Poly Mega Pack - Polyworks
+  packageVersion: 6.0
+  assetPath: Assets/Off Axis Studios/Polyworks/Prefabs/MaterialsOnly/Prototype/Blocks
+    - Yellow/Proto_Block_Triangle_Peak_End_01.prefab
+  uploadId: 533731

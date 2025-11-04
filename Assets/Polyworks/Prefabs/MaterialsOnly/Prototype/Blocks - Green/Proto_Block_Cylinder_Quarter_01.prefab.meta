@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 94c7d1e53322b2448abf970b91579436
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 58821
+  packageName: Low Poly Mega Pack - Polyworks
+  packageVersion: 6.0
+  assetPath: Assets/Off Axis Studios/Polyworks/Prefabs/MaterialsOnly/Prototype/Blocks
+    - Green/Proto_Block_Cylinder_Quarter_01.prefab
+  uploadId: 533731

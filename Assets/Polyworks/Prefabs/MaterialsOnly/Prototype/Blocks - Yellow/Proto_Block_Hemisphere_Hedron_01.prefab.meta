@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 386dbe8ce5ecf834080a6d45bbe92d92
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 58821
+  packageName: Low Poly Mega Pack - Polyworks
+  packageVersion: 6.0
+  assetPath: Assets/Off Axis Studios/Polyworks/Prefabs/MaterialsOnly/Prototype/Blocks
+    - Yellow/Proto_Block_Hemisphere_Hedron_01.prefab
+  uploadId: 533731

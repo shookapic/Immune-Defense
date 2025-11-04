@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 35790e0a39f2bc44597cbf0d3f7bd0e9
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 58821
+  packageName: Low Poly Mega Pack - Polyworks
+  packageVersion: 6.0
+  assetPath: Assets/Off Axis Studios/Polyworks/Prefabs/MaterialsOnly/Prototype/Blocks
+    - Blue/Proto_Block_Hexagon_Quarter_01.prefab
+  uploadId: 533731

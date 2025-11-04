@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 3f968debe12e21d40b539a1ae4ce490b
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 58821
+  packageName: Low Poly Mega Pack - Polyworks
+  packageVersion: 6.0
+  assetPath: Assets/Off Axis Studios/Polyworks/Prefabs/MaterialsOnly/Prototype/Blocks
+    - Blue/Proto_Block_Top_Point_Square_Half_01.prefab
+  uploadId: 533731

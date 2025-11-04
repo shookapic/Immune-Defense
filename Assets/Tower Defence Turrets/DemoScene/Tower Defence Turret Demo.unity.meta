@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 5f87772d28227e74f8011ecdf52db5a5
+timeCreated: 1483281623
+licenseType: Store
+DefaultImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 79587
+  packageName: '[M] Tower Defense Turrets'
+  packageVersion: 1.1
+  assetPath: Assets/Tower Defence Turrets/DemoScene/Tower Defence Turret Demo.unity
+  uploadId: 288001

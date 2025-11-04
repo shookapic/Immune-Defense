@@ -1,0 +1,229 @@
+fileFormatVersion: 2
+guid: f678ee98937d54b418b5be82ef5401b3
+ModelImporter:
+  serializedVersion: 19301
+  internalIDToNameTable: []
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Scene_Brown40
+    second: {fileID: 2100000, guid: f342e2c0306637d4dacebec7d4f165b4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Scene_Cave_Lair_Aqua_01
+    second: {fileID: 2100000, guid: a91556e3733acff45b16ddbd9ea4b4bd, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Scene_Cave_Lair_Brown_01
+    second: {fileID: 2100000, guid: 201556ff5b28d3b469dbc5bbd19762db, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Scene_Cave_Lair_Brown_02
+    second: {fileID: 2100000, guid: 71f6da10c7dbbf4469bc4b289c7016de, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Scene_Cave_Lair_Brown_03
+    second: {fileID: 2100000, guid: 739c9e93cf01bbb40874a8cd26826630, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Scene_Cave_Lair_Brown_04
+    second: {fileID: 2100000, guid: 65ddb931082a58b4688a322928b2aaa0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Scene_Cave_Lair_Brown_05
+    second: {fileID: 2100000, guid: 03afa2cbcfbad2547b46c8830e3d58e7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Scene_Cave_Lair_Cream_01
+    second: {fileID: 2100000, guid: fb606a5660840c442bf8b6c2458d704b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Scene_Cave_Lair_Gray_01
+    second: {fileID: 2100000, guid: 2abdc9321243a5142860293d4bdd1e38, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Scene_Cave_Lair_Gray_02
+    second: {fileID: 2100000, guid: 33a5f119db0624242beb5ef4eaff79af, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Scene_Cave_Lair_Gray_03
+    second: {fileID: 2100000, guid: e90ed6a26fe48e34b909fba86b3ae136, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Scene_Cave_Lair_Gray_04
+    second: {fileID: 2100000, guid: 979e5884365b8b246ba33bb413ae564a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Scene_Cave_Lair_Gray_05
+    second: {fileID: 2100000, guid: 1213141090669094a9e044a9a46638ec, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Scene_Cave_Lair_Purple_01
+    second: {fileID: 2100000, guid: 2b823ba7af1dab54db4cee0ca6031eb5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Scene_Cave_Lair_Red_01
+    second: {fileID: 2100000, guid: 8efa2921adb2da2449e84b58102b299d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Scene_Cave_Lair_Red_02
+    second: {fileID: 2100000, guid: 73afbab7d25d95b499d6927d4d634843, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Scene_Cream05
+    second: {fileID: 2100000, guid: 7759a2234644d0a408afaa82228decf9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Scene_Dark_Fantasy_Gray_01
+    second: {fileID: 2100000, guid: 2e8cfcfcdc268b641b968f2731e74f24, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Scene_Dark_Fantasy_Gray_07
+    second: {fileID: 2100000, guid: b730028487957d6459c5cb1e25af58f5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Scene_Fantasy_Brown_09
+    second: {fileID: 2100000, guid: a3f401b1fec229c4e8680794f3b02bf2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Scene_Fire_withWaterShader
+    second: {fileID: 2100000, guid: e6fe3a5d392e04e43adb15c5ab579370, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Scene_Stylised Water Advanced 5
+    second: {fileID: 2100000, guid: aa9eb3a0a511cc442bfa70317f2d386a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Scene_Tribal_Brown_06
+    second: {fileID: 2100000, guid: 0d04c7c65bc38234fa9316ffa4aec709, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Scene_Tribal_Brown_07
+    second: {fileID: 2100000, guid: 0e3da63f682b0ba4aadf8a24dc2986c0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Scene_Tribal_Brown_08
+    second: {fileID: 2100000, guid: d0ab6d741e81da744b2928f1cf7ecc3b, type: 2}
+  materials:
+    materialImportMode: 1
+    materialName: 1
+    materialSearch: 1
+    materialLocation: 0
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    fileIdsGeneration: 2
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    meshOptimizationFlags: -1
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 1
+  humanDescription:
+    serializedVersion: 3
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 1
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
+  animationType: 2
+  humanoidOversampling: 1
+  avatarSetup: 0
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 58821
+  packageName: Low Poly Mega Pack - Polyworks
+  packageVersion: 6.0
+  assetPath: Assets/Off Axis Studios/Polyworks/Demos/DemoMeshes/GoblinLairMergedFBX/Goblin_Lair.fbx
+  uploadId: 533731

@@ -1,0 +1,324 @@
+fileFormatVersion: 2
+guid: 31e63d09084fc484d9afa101d087aecf
+ModelImporter:
+  serializedVersion: 19301
+  internalIDToNameTable: []
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Scene_Asian_Blue_01
+    second: {fileID: 2100000, guid: 20663ca779cb848488d946bf7e3e47eb, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Scene_Asian_Blue_03
+    second: {fileID: 2100000, guid: bfcef755d43f3b94d8b0c6f00c5c438a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Scene_Asian_Brown_01
+    second: {fileID: 2100000, guid: 051e97be13e59ae4a9ee3409fdf2d1ab, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Scene_Asian_Brown_02
+    second: {fileID: 2100000, guid: 1a160f36be2e0ea46bb39c8c1bf34b17, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Scene_Asian_Brown_03
+    second: {fileID: 2100000, guid: 05ccfe805f326ab4bb47d895492ea41a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Scene_Asian_Brown_04
+    second: {fileID: 2100000, guid: 0ac0bdabbdd08764b901625dc271fd0c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Scene_Asian_Brown_05
+    second: {fileID: 2100000, guid: 6036ae3be63970e4291b3a47f0bd32df, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Scene_Asian_Brown_06
+    second: {fileID: 2100000, guid: 007af675a2942bf49aa9db458e32a898, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Scene_Asian_Brown_07
+    second: {fileID: 2100000, guid: a00eae075750bf645be14d878bc952fd, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Scene_Asian_Cream_02
+    second: {fileID: 2100000, guid: b825c86f4bff11e40944bf7d927a5220, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Scene_Asian_Cream_03
+    second: {fileID: 2100000, guid: 8dcd36a186a1ccc439d21de8d825b1bf, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Scene_Asian_Cream_04
+    second: {fileID: 2100000, guid: 60cc601b5b9d24043906ef39c6faced0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Scene_Asian_Cream_05
+    second: {fileID: 2100000, guid: fcef95ddb7fa2ea4b9065e1100a036bd, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Scene_Asian_Cream_06
+    second: {fileID: 2100000, guid: 2f0bba3445d158b4db383ae6aa41dd5b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Scene_Asian_Green_02
+    second: {fileID: 2100000, guid: cab3675bcbfb2d54699aa0f20e6bcf0a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Scene_Asian_Grey_01
+    second: {fileID: 2100000, guid: 314fdea5a9af2e64fa9cf179c4be7934, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Scene_Asian_Grey_02
+    second: {fileID: 2100000, guid: 3e73a2b3e2047ba4ba4858fc5882d639, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Scene_Asian_Grey_03
+    second: {fileID: 2100000, guid: 28d10c06a96f4cf43b376b255cb83a10, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Scene_Asian_Grey_04
+    second: {fileID: 2100000, guid: 9d49d3e8692ac7c45aa361093a75586a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Scene_Asian_Grey_05
+    second: {fileID: 2100000, guid: 1a03479ed88c2a4449f6a16266dd24d7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Scene_Asian_Grey_06
+    second: {fileID: 2100000, guid: 85fc7e07dac5d4c43acb633e2273e3c4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Scene_Asian_Grey_07
+    second: {fileID: 2100000, guid: 7088eb294702d7945b6efac2231526e7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Scene_Asian_Grey_08
+    second: {fileID: 2100000, guid: 5ce44465a6529364aa7391290020d582, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Scene_Asian_Grey_09
+    second: {fileID: 2100000, guid: de8ad768875b99a41b696640f1625cab, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Scene_Asian_Grey_10
+    second: {fileID: 2100000, guid: 7e46cd389e21b584d870c60dd9153bb4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Scene_Asian_Grey_11
+    second: {fileID: 2100000, guid: a4540656b36bb704d82224e337972f32, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Scene_Asian_Red_01
+    second: {fileID: 2100000, guid: e59c1177104c04c44aa55a6b919ec38f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Scene_Asian_Red_02
+    second: {fileID: 2100000, guid: ebb058200299cfe4aa0da46fe0fa12cd, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Scene_Asian_Red_03
+    second: {fileID: 2100000, guid: c0adc97713b802e4a963bf0a9ee98023, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Scene_Asian_Yellow_01
+    second: {fileID: 2100000, guid: f023d49193992054cbf36639773b3004, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Scene_Asian_Yellow_02
+    second: {fileID: 2100000, guid: d6c819a415a2b9a43b1d9d6438a0c843, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Scene_Brown02
+    second: {fileID: 2100000, guid: e5a55695d8f2c0f4b8447f8d231afaef, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Scene_Brown25
+    second: {fileID: 2100000, guid: a48a91318e0dda84aa14ee1d830f8d67, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Scene_FrontColor
+    second: {fileID: 2100000, guid: 4de42d8a18418c74796ac491459ee593, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Scene_Green02
+    second: {fileID: 2100000, guid: 1ca6132f7f2b5ea4d8d43887a060655c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Scene_Green15
+    second: {fileID: 2100000, guid: 8c172edc21f88884d9170928e62cfb46, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Scene_Green30
+    second: {fileID: 2100000, guid: 3c9744fc6b933414c8137390675b157c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Scene_Grey02
+    second: {fileID: 2100000, guid: 35623e7bdabcacd4d858d958c06c71f6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Scene_Grey31
+    second: {fileID: 2100000, guid: 82d3c3060d235b24f9a545d60b8b6603, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Scene_Grey46
+    second: {fileID: 2100000, guid: 4a913eb83445df148a072100f944a6d3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Scene_Lit
+    second: {fileID: 2100000, guid: e65718471ea5d39469e7f919b25824bf, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Scene_RPG_Gray_03
+    second: {fileID: 2100000, guid: 7cbbc94f9bd1a264fb30dbb58fb5c898, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Scene_Stylised Water Advanced 1
+    second: {fileID: 2100000, guid: 9d6e7259802352e4aaf6f55078606362, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Scene__AsianBuildingDemo
+    second: {fileID: 2100000, guid: 8bea514decaad654eb1623772ebeaa02, type: 2}
+  materials:
+    materialImportMode: 1
+    materialName: 1
+    materialSearch: 1
+    materialLocation: 0
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    fileIdsGeneration: 2
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    meshOptimizationFlags: -1
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 1
+  humanDescription:
+    serializedVersion: 3
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 1
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
+  animationType: 2
+  humanoidOversampling: 1
+  avatarSetup: 0
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 58821
+  packageName: Low Poly Mega Pack - Polyworks
+  packageVersion: 6.0
+  assetPath: Assets/Off Axis Studios/Polyworks/Demos/DemoMeshes/AsianBuildingMergedFBX/Asian_Building.fbx
+  uploadId: 533731

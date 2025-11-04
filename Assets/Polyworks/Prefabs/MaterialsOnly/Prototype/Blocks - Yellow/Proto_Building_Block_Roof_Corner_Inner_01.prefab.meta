@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: b771ecaec7f11b6408e5dbb030e2348a
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 58821
+  packageName: Low Poly Mega Pack - Polyworks
+  packageVersion: 6.0
+  assetPath: Assets/Off Axis Studios/Polyworks/Prefabs/MaterialsOnly/Prototype/Blocks
+    - Yellow/Proto_Building_Block_Roof_Corner_Inner_01.prefab
+  uploadId: 533731

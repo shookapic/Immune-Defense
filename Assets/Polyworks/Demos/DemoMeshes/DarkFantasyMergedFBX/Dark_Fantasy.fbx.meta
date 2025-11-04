@@ -1,0 +1,259 @@
+fileFormatVersion: 2
+guid: fc137afb5cfcf594baed4af6e07ba890
+ModelImporter:
+  serializedVersion: 19301
+  internalIDToNameTable: []
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Scene_Brown54
+    second: {fileID: 2100000, guid: 4d843fb0801265e4c9258b6aa8fc3273, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Scene_Cream05
+    second: {fileID: 2100000, guid: d1fa5e5cc68e7a24f915af8ebe2a2574, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Scene_Dark_Fantasy_Blue_01
+    second: {fileID: 2100000, guid: 7b52533155befe647a0a2cdc45cbb68b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Scene_Dark_Fantasy_Blue_02
+    second: {fileID: 2100000, guid: 0f9228ce5f7d49e4881481e5e25c59e7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Scene_Dark_Fantasy_Brown_01
+    second: {fileID: 2100000, guid: 1cf83c3acdda4e24fb5c3ab49b7cfa64, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Scene_Dark_Fantasy_Brown_02
+    second: {fileID: 2100000, guid: f4cc3520357797b4d81ea8b67f9fe158, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Scene_Dark_Fantasy_Brown_03
+    second: {fileID: 2100000, guid: 13a175664c4a48a4ab948376360b7786, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Scene_Dark_Fantasy_Brown_04
+    second: {fileID: 2100000, guid: 2fce6aea81acdee4c8d2a55baf03870b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Scene_Dark_Fantasy_Brown_05
+    second: {fileID: 2100000, guid: 12a6e71199e75ed449f1c0a1a9c5f484, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Scene_Dark_Fantasy_Brown_06
+    second: {fileID: 2100000, guid: 44546f9870c15a84593271d19044750b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Scene_Dark_Fantasy_Brown_07
+    second: {fileID: 2100000, guid: d0eceaddd717b514694e21585fde888e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Scene_Dark_Fantasy_Cream_01
+    second: {fileID: 2100000, guid: 1165ce8a3b5e2ae41a6d188eafa666cc, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Scene_Dark_Fantasy_Cream_03
+    second: {fileID: 2100000, guid: 7e379ffd0e900224a8bb5f08ad53c621, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Scene_Dark_Fantasy_Gray_01
+    second: {fileID: 2100000, guid: 30eed7b7691176749b2c4f02642b3706, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Scene_Dark_Fantasy_Gray_02
+    second: {fileID: 2100000, guid: 3498615534b701c498490777397aef5e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Scene_Dark_Fantasy_Gray_03
+    second: {fileID: 2100000, guid: 26cb5212da313e740903dd74ded68fd0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Scene_Dark_Fantasy_Gray_04
+    second: {fileID: 2100000, guid: 7a37d82046111704e82ec1bb09b86f26, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Scene_Dark_Fantasy_Gray_06
+    second: {fileID: 2100000, guid: 984bd85429bd6464ea80167276347cdc, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Scene_Dark_Fantasy_Gray_07
+    second: {fileID: 2100000, guid: ca8dc5ad0e5c0d44283464ab0c6464bd, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Scene_Dark_Fantasy_Red_01
+    second: {fileID: 2100000, guid: 1f6bd48d3353a3f449208d741df88078, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Scene_Dark_Fantasy_Red_02
+    second: {fileID: 2100000, guid: 7cc45dead0debc24a87af37458f7cd5f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Scene_Dark_Fantasy_Red_03
+    second: {fileID: 2100000, guid: bafa22e15440e99469fbb3086a7451b7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Scene_Fantasy_Black_01
+    second: {fileID: 2100000, guid: 5c084e06c50ed82479a5756077d11162, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Scene_Fantasy_Brown_04
+    second: {fileID: 2100000, guid: 7319798331ea88c43aacf74d1b7c2a40, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Scene_Fantasy_Brown_05
+    second: {fileID: 2100000, guid: 6b68bc6d6612c834c8f0e3aa9da5b7b1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Scene_Fantasy_Brown_07
+    second: {fileID: 2100000, guid: 6b3ccaaea6354a94583cd79a560f18e1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Scene_Fantasy_Brown_09
+    second: {fileID: 2100000, guid: 177fbd9b9694f6645a03f07b5cca1032, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Scene_Fantasy_Cream_02
+    second: {fileID: 2100000, guid: ffdc6fdd0f10893478f2ee574f86d03f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Scene_Fantasy_Cream_03
+    second: {fileID: 2100000, guid: ec62ba8a8512e8743a86b6d621cd5d38, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Scene_Fantasy_Gray_01
+    second: {fileID: 2100000, guid: 71138ae0faa21e748ad838fde0dd54af, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Scene_Fantasy_Gray_02
+    second: {fileID: 2100000, guid: 51262ccb79254e44fb6b61cf4b54bda1, type: 2}
+  materials:
+    materialImportMode: 1
+    materialName: 1
+    materialSearch: 1
+    materialLocation: 0
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    fileIdsGeneration: 2
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    meshOptimizationFlags: -1
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 1
+  humanDescription:
+    serializedVersion: 3
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 1
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
+  animationType: 2
+  humanoidOversampling: 1
+  avatarSetup: 0
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 58821
+  packageName: Low Poly Mega Pack - Polyworks
+  packageVersion: 6.0
+  assetPath: Assets/Off Axis Studios/Polyworks/Demos/DemoMeshes/DarkFantasyMergedFBX/Dark_Fantasy.fbx
+  uploadId: 533731

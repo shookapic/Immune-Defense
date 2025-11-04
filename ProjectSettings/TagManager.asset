@@ -6,14 +6,15 @@ TagManager:
   tags:
   - Enemy
   - Bullet
+  - Path
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Path
   - Water
   - UI
-  - 
+  - Tower
   - 
   - 
   - 

@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 9f7b3318cb622934ea3be21176c8d2da
+timeCreated: 1483283216
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 79587
+  packageName: '[M] Tower Defense Turrets'
+  packageVersion: 1.1
+  assetPath: Assets/Tower Defence Turrets/Animation/Building/B1_Building.anim
+  uploadId: 288001
