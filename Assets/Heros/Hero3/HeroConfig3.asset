@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4765749e015d2e94a948b7ef01b673cc, type: 3}
+  m_Name: HeroConfig3
+  m_EditorClassIdentifier: 
+  heroId: Hero3
+  displayName: Hero3
+  icon: {fileID: 0}
+  modifiers:
+  - {fileID: 11400000, guid: 3f538c2c286f2e6499db93e7e2497636, type: 2}
+  - {fileID: 11400000, guid: 54cb1aa2583778a438523c2d1a7981d1, type: 2}

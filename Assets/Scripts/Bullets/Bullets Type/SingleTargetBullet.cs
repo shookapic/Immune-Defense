@@ -2,12 +2,15 @@ using UnityEngine;
 
 public class SingleTargetBullet : Bullet
 {
-    private void OnTriggerEnter2D(Collider2D collision)
+    private void OnTriggerEnter(Collider collision)
     {
-        if (collision.CompareTag("Enemy"))
+        Debug.Log("OnTrigger");
+        if (collision.gameObject.CompareTag("Enemy"))
         {
             TriggerHit(collision.gameObject);
             Destroy(gameObject);
+            
         }
     }
+
 }

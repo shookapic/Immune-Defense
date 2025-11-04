@@ -43,5 +43,17 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Blood
+    uniqueID: 1800821321
+    locked: 0
+  - name: Ground
+    uniqueID: 254845649
+    locked: 0
+  - name: Decor
+    uniqueID: 3538493233
+    locked: 0
+  - name: Enemy
+    uniqueID: 1882867299
+    locked: 0
   m_RenderingLayers:
   - Default
