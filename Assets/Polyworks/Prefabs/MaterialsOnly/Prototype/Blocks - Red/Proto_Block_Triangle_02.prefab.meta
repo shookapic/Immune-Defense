@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 3a2c1d94a023af741ba5b219e72825c4
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 58821
+  packageName: Low Poly Mega Pack - Polyworks
+  packageVersion: 6.0
+  assetPath: Assets/Off Axis Studios/Polyworks/Prefabs/MaterialsOnly/Prototype/Blocks
+    - Red/Proto_Block_Triangle_02.prefab
+  uploadId: 533731

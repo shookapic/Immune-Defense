@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 117b3e6cb6fc1b946b5adb027b3b17c0
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 58821
+  packageName: Low Poly Mega Pack - Polyworks
+  packageVersion: 6.0
+  assetPath: Assets/Off Axis Studios/Polyworks/Prefabs/MaterialsOnly/Prototype/Blocks
+    - Red/Proto_Block_Platform_Hexagon_02.prefab
+  uploadId: 533731

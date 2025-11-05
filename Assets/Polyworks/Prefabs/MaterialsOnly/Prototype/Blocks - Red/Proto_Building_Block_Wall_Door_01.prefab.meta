@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 85713a6b936a8ce468d1e2e49f9c8bec
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 58821
+  packageName: Low Poly Mega Pack - Polyworks
+  packageVersion: 6.0
+  assetPath: Assets/Off Axis Studios/Polyworks/Prefabs/MaterialsOnly/Prototype/Blocks
+    - Red/Proto_Building_Block_Wall_Door_01.prefab
+  uploadId: 533731

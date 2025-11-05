@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: f4c0800ec5afa6d4db8a82fa37cb439f
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 58821
+  packageName: Low Poly Mega Pack - Polyworks
+  packageVersion: 6.0
+  assetPath: Assets/Off Axis Studios/Polyworks/Prefabs/MaterialsOnly/Prototype/Blocks
+    - Green/Proto_Block_Octagon_Quarter_01.prefab
+  uploadId: 533731

@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: c54310f76ba85ef42a575645db9a3493
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 58821
+  packageName: Low Poly Mega Pack - Polyworks
+  packageVersion: 6.0
+  assetPath: Assets/Off Axis Studios/Polyworks/Prefabs/MaterialsOnly/Prototype/Blocks
+    - Yellow/Proto_Block_Tube_Square_01.prefab
+  uploadId: 533731

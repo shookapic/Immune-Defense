@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 14dbc2dac89b25a4093bd9eaec6c2c64
+timeCreated: 1483281391
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 79587
+  packageName: '[M] Tower Defense Turrets'
+  packageVersion: 1.1
+  assetPath: Assets/Tower Defence Turrets/Prefabs/Laser_Level3.prefab
+  uploadId: 288001

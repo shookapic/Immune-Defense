@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 29289ebc7c465d14abb284bce7ffa060
+timeCreated: 1483280877
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 79587
+  packageName: '[M] Tower Defense Turrets'
+  packageVersion: 1.1
+  assetPath: Assets/Tower Defence Turrets/Prefabs/Tesla_Level3.prefab
+  uploadId: 288001

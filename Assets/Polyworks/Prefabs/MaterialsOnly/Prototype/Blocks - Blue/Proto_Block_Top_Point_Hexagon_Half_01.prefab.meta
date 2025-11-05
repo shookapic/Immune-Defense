@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: ff0e33a5cb0d92c449d3ac66fc71b329
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 58821
+  packageName: Low Poly Mega Pack - Polyworks
+  packageVersion: 6.0
+  assetPath: Assets/Off Axis Studios/Polyworks/Prefabs/MaterialsOnly/Prototype/Blocks
+    - Blue/Proto_Block_Top_Point_Hexagon_Half_01.prefab
+  uploadId: 533731

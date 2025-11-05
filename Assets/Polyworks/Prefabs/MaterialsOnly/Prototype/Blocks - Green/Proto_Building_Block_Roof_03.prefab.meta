@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 70d220e50b3b9814986d3cbf1d9d72f1
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 58821
+  packageName: Low Poly Mega Pack - Polyworks
+  packageVersion: 6.0
+  assetPath: Assets/Off Axis Studios/Polyworks/Prefabs/MaterialsOnly/Prototype/Blocks
+    - Green/Proto_Building_Block_Roof_03.prefab
+  uploadId: 533731

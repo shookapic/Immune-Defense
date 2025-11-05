@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 634aad97e2a2e4a5e8029fd69ac1e937
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 58821
+  packageName: Low Poly Mega Pack - Polyworks
+  packageVersion: 6.0
+  assetPath: Assets/Off Axis Studios/Polyworks/Stylized Water BIR/Scripts/DepthTextureEnable.cs
+  uploadId: 533731

@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 532a79b06fc7db843bbc2d724bae7ec7
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 58821
+  packageName: Low Poly Mega Pack - Polyworks
+  packageVersion: 6.0
+  assetPath: Assets/Off Axis Studios/Polyworks/Prefabs/MaterialsOnly/Prototype/Blocks
+    - Red/Proto_Block_Stairs_01.prefab
+  uploadId: 533731

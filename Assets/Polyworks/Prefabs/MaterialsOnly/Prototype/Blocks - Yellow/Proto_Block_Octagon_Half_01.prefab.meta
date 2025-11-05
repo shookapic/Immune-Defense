@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: bfa6ece5c9a199e42944d224a997aee1
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 58821
+  packageName: Low Poly Mega Pack - Polyworks
+  packageVersion: 6.0
+  assetPath: Assets/Off Axis Studios/Polyworks/Prefabs/MaterialsOnly/Prototype/Blocks
+    - Yellow/Proto_Block_Octagon_Half_01.prefab
+  uploadId: 533731

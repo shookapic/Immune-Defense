@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: c47c36a5c8e7d56498da5cff439ab020
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 58821
+  packageName: Low Poly Mega Pack - Polyworks
+  packageVersion: 6.0
+  assetPath: Assets/Off Axis Studios/Polyworks/Prefabs/MaterialsOnly/Prototype/Blocks
+    - Blue/Proto_Building_Block_Window_Pane_01.prefab
+  uploadId: 533731

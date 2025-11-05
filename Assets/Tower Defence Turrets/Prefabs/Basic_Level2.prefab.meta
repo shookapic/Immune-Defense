@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 0ecde4bedcde3aa40a358e899d7cd0db
+timeCreated: 1483281383
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 79587
+  packageName: '[M] Tower Defense Turrets'
+  packageVersion: 1.1
+  assetPath: Assets/Tower Defence Turrets/Prefabs/Basic_Level2.prefab
+  uploadId: 288001

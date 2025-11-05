@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 967cae7eb8d1723458909cf2b06fcadc
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 58821
+  packageName: Low Poly Mega Pack - Polyworks
+  packageVersion: 6.0
+  assetPath: Assets/Off Axis Studios/Polyworks/Prefabs/MaterialsOnly/Prototype/Blocks
+    - Green/Proto_Block_Tube_Round_02.prefab
+  uploadId: 533731

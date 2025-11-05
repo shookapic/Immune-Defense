@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 9b2d0d1a58ddacd4e9960002ba7cb1b3
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 58821
+  packageName: Low Poly Mega Pack - Polyworks
+  packageVersion: 6.0
+  assetPath: Assets/Off Axis Studios/Polyworks/Prefabs/MaterialsOnly/Prototype/Blocks
+    - Blue/Proto_Block_Top_Point_Square_Cropped_01.prefab
+  uploadId: 533731

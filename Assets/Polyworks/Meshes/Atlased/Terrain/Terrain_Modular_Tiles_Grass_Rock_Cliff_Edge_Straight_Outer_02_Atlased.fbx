@@ -1,0 +1,334 @@
+; FBX 7.3.0 project file
+; Copyright (C) 1997-2010 Autodesk Inc. and/or its licensors.
+; All rights reserved.
+; ----------------------------------------------------
+
+FBXHeaderExtension:  {
+	FBXHeaderVersion: 1003
+	FBXVersion: 7300
+	CreationTimeStamp:  {
+		Version: 1000
+		Year: 2022
+		Month: 8
+		Day: 4
+		Hour: 13
+		Minute: 57
+		Second: 34
+		Millisecond: 21
+	}
+	Creator: "Unity Export"
+	SceneInfo: "SceneInfo::GlobalInfo", "UserData" {
+		Type: "UserData"
+		Version: 100
+		MetaData:  {
+			Version: 100
+			Title: ""
+			Subject: ""
+			Author: ""
+			Keywords: ""
+			Revision: ""
+			Comment: ""
+		}
+		Properties70:  {
+			P: "DocumentUrl", "KString", "Url", "", "R:/Unity Projects/Polyworks/_BIRP/Complete Collection/AssetsR:/Unity Projects/Polyworks/_BIRP/Complete Collection/Assets/Resources/Terrain/Terrain_Modular_Tiles_Grass_Rock_Cliff_Edge_Straight_Outer_02_Atlased.fbx.fbx"
+			P: "SrcDocumentUrl", "KString", "Url", "", "R:/Unity Projects/Polyworks/_BIRP/Complete Collection/AssetsR:/Unity Projects/Polyworks/_BIRP/Complete Collection/Assets/Resources/Terrain/Terrain_Modular_Tiles_Grass_Rock_Cliff_Edge_Straight_Outer_02_Atlased.fbx.fbx"
+			P: "Original", "Compound", "", ""
+			P: "Original|ApplicationVendor", "KString", "", "", ""
+			P: "Original|ApplicationName", "KString", "", "", ""
+			P: "Original|ApplicationVersion", "KString", "", "", ""
+			P: "Original|DateTime_GMT", "DateTime", "", "", ""
+			P: "Original|FileName", "KString", "", "", ""
+			P: "LastSaved", "Compound", "", ""
+			P: "LastSaved|ApplicationVendor", "KString", "", "", ""
+			P: "LastSaved|ApplicationName", "KString", "", "", ""
+			P: "LastSaved|ApplicationVersion", "KString", "", "", ""
+			P: "LastSaved|DateTime_GMT", "DateTime", "", "", ""
+		}
+	}
+}
+GlobalSettings:  {
+	Version: 1000
+	Properties70:  {
+		P: "UpAxis", "int", "Integer", "",1
+		P: "UpAxisSign", "int", "Integer", "",1
+		P: "FrontAxis", "int", "Integer", "",2
+		P: "FrontAxisSign", "int", "Integer", "",1
+		P: "CoordAxis", "int", "Integer", "",0
+		P: "CoordAxisSign", "int", "Integer", "",1
+		P: "OriginalUpAxis", "int", "Integer", "",-1
+		P: "OriginalUpAxisSign", "int", "Integer", "",1
+		P: "UnitScaleFactor", "double", "Number", "",100
+		P: "OriginalUnitScaleFactor", "double", "Number", "",100
+		P: "AmbientColor", "ColorRGB", "Color", "",0,0,0
+		P: "DefaultCamera", "KString", "", "", "Producer Perspective"
+		P: "TimeMode", "enum", "", "",11
+		P: "TimeSpanStart", "KTime", "Time", "",0
+		P: "TimeSpanStop", "KTime", "Time", "",479181389250
+		P: "CustomFrameRate", "double", "Number", "",-1
+	}
+}
+; Object definitions
+;------------------------------------------------------------------
+
+Definitions:  {
+	Version: 100
+	Count: 4
+	ObjectType: "GlobalSettings" {
+		Count: 1
+	}
+	ObjectType: "Model" {
+		Count: 1
+		PropertyTemplate: "FbxNode" {
+			Properties70:  {
+				P: "QuaternionInterpolate", "enum", "", "",0
+				P: "RotationOffset", "Vector3D", "Vector", "",0,0,0
+				P: "RotationPivot", "Vector3D", "Vector", "",0,0,0
+				P: "ScalingOffset", "Vector3D", "Vector", "",0,0,0
+				P: "ScalingPivot", "Vector3D", "Vector", "",0,0,0
+				P: "TranslationActive", "bool", "", "",0
+				P: "TranslationMin", "Vector3D", "Vector", "",0,0,0
+				P: "TranslationMax", "Vector3D", "Vector", "",0,0,0
+				P: "TranslationMinX", "bool", "", "",0
+				P: "TranslationMinY", "bool", "", "",0
+				P: "TranslationMinZ", "bool", "", "",0
+				P: "TranslationMaxX", "bool", "", "",0
+				P: "TranslationMaxY", "bool", "", "",0
+				P: "TranslationMaxZ", "bool", "", "",0
+				P: "RotationOrder", "enum", "", "",0
+				P: "RotationSpaceForLimitOnly", "bool", "", "",0
+				P: "RotationStiffnessX", "double", "Number", "",0
+				P: "RotationStiffnessY", "double", "Number", "",0
+				P: "RotationStiffnessZ", "double", "Number", "",0
+				P: "AxisLen", "double", "Number", "",10
+				P: "PreRotation", "Vector3D", "Vector", "",0,0,0
+				P: "PostRotation", "Vector3D", "Vector", "",0,0,0
+				P: "RotationActive", "bool", "", "",0
+				P: "RotationMin", "Vector3D", "Vector", "",0,0,0
+				P: "RotationMax", "Vector3D", "Vector", "",0,0,0
+				P: "RotationMinX", "bool", "", "",0
+				P: "RotationMinY", "bool", "", "",0
+				P: "RotationMinZ", "bool", "", "",0
+				P: "RotationMaxX", "bool", "", "",0
+				P: "RotationMaxY", "bool", "", "",0
+				P: "RotationMaxZ", "bool", "", "",0
+				P: "InheritType", "enum", "", "",0
+				P: "ScalingActive", "bool", "", "",0
+				P: "ScalingMin", "Vector3D", "Vector", "",0,0,0
+				P: "ScalingMax", "Vector3D", "Vector", "",1,1,1
+				P: "ScalingMinX", "bool", "", "",0
+				P: "ScalingMinY", "bool", "", "",0
+				P: "ScalingMinZ", "bool", "", "",0
+				P: "ScalingMaxX", "bool", "", "",0
+				P: "ScalingMaxY", "bool", "", "",0
+				P: "ScalingMaxZ", "bool", "", "",0
+				P: "GeometricTranslation", "Vector3D", "Vector", "",0,0,0
+				P: "GeometricRotation", "Vector3D", "Vector", "",0,0,0
+				P: "GeometricScaling", "Vector3D", "Vector", "",1,1,1
+				P: "MinDampRangeX", "double", "Number", "",0
+				P: "MinDampRangeY", "double", "Number", "",0
+				P: "MinDampRangeZ", "double", "Number", "",0
+				P: "MaxDampRangeX", "double", "Number", "",0
+				P: "MaxDampRangeY", "double", "Number", "",0
+				P: "MaxDampRangeZ", "double", "Number", "",0
+				P: "MinDampStrengthX", "double", "Number", "",0
+				P: "MinDampStrengthY", "double", "Number", "",0
+				P: "MinDampStrengthZ", "double", "Number", "",0
+				P: "MaxDampStrengthX", "double", "Number", "",0
+				P: "MaxDampStrengthY", "double", "Number", "",0
+				P: "MaxDampStrengthZ", "double", "Number", "",0
+				P: "PreferedAngleX", "double", "Number", "",0
+				P: "PreferedAngleY", "double", "Number", "",0
+				P: "PreferedAngleZ", "double", "Number", "",0
+				P: "LookAtProperty", "object", "", ""
+				P: "UpVectorProperty", "object", "", ""
+				P: "Show", "bool", "", "",1
+				P: "NegativePercentShapeSupport", "bool", "", "",1
+				P: "DefaultAttributeIndex", "int", "Integer", "",-1
+				P: "Freeze", "bool", "", "",0
+				P: "LODBox", "bool", "", "",0
+				P: "Lcl Translation", "Lcl Translation", "", "A",0,0,0
+				P: "Lcl Rotation", "Lcl Rotation", "", "A",0,0,0
+				P: "Lcl Scaling", "Lcl Scaling", "", "A",1,1,1
+				P: "Visibility", "Visibility", "", "A",1
+				P: "Visibility Inheritance", "Visibility Inheritance", "", "",1
+			}
+		}
+	}
+	ObjectType: "Geometry" {
+		Count: 1
+		PropertyTemplate: "FbxMesh" {
+			Properties70:  {
+				P: "Color", "ColorRGB", "Color", "",0.8,0.8,0.8
+				P: "BBoxMin", "Vector3D", "Vector", "",0,0,0
+				P: "BBoxMax", "Vector3D", "Vector", "",0,0,0
+				P: "Primary Visibility", "bool", "", "",1
+				P: "Casts Shadows", "bool", "", "",1
+				P: "Receive Shadows", "bool", "", "",1
+			}
+		}
+	}
+	ObjectType: "Material" {
+		Count: 1
+		PropertyTemplate: "FbxSurfacePhong" {
+			Properties70:  {
+				P: "ShadingModel", "KString", "", "", "Phong"
+				P: "MultiLayer", "bool", "", "",0
+				P: "EmissiveColor", "Color", "", "A",0,0,0
+				P: "EmissiveFactor", "Number", "", "A",1
+				P: "AmbientColor", "Color", "", "A",0.2,0.2,0.2
+				P: "AmbientFactor", "Number", "", "A",1
+				P: "DiffuseColor", "Color", "", "A",0.8,0.8,0.8
+				P: "DiffuseFactor", "Number", "", "A",1
+				P: "Bump", "Vector3D", "Vector", "",0,0,0
+				P: "NormalMap", "Vector3D", "Vector", "",0,0,0
+				P: "BumpFactor", "double", "Number", "",1
+				P: "TransparentColor", "Color", "", "A",0,0,0
+				P: "TransparencyFactor", "Number", "", "A",0
+				P: "DisplacementColor", "ColorRGB", "Color", "",0,0,0
+				P: "DisplacementFactor", "double", "Number", "",1
+				P: "VectorDisplacementColor", "ColorRGB", "Color", "",0,0,0
+				P: "VectorDisplacementFactor", "double", "Number", "",1
+				P: "SpecularColor", "Color", "", "A",0.2,0.2,0.2
+				P: "SpecularFactor", "Number", "", "A",1
+				P: "ShininessExponent", "Number", "", "A",20
+				P: "ReflectionColor", "Color", "", "A",0,0,0
+				P: "ReflectionFactor", "Number", "", "A",1
+			}
+		}
+	}
+	ObjectType: "Texture" {
+		Count: 2
+		PropertyTemplate: "FbxFileTexture" {
+			Properties70:  {
+				P: "TextureTypeUse", "enum", "", "",0
+				P: "Texture alpha", "Number", "", "A",1
+				P: "CurrentMappingType", "enum", "", "",0
+				P: "WrapModeU", "enum", "", "",0
+				P: "WrapModeV", "enum", "", "",0
+				P: "UVSwap", "bool", "", "",0
+				P: "PremultiplyAlpha", "bool", "", "",1
+				P: "Translation", "Vector", "", "A",0,0,0
+				P: "Rotation", "Vector", "", "A",0,0,0
+				P: "Scaling", "Vector", "", "A",1,1,1
+				P: "TextureRotationPivot", "Vector3D", "Vector", "",0,0,0
+				P: "TextureScalingPivot", "Vector3D", "Vector", "",0,0,0
+				P: "CurrentTextureBlendMode", "enum", "", "",1
+				P: "UVSet", "KString", "", "", "default"
+				P: "UseMaterial", "bool", "", "",0
+				P: "UseMipMap", "bool", "", "",0
+			}
+		}
+	}
+}
+
+; Object properties
+;------------------------------------------------------------------
+
+Objects:  {
+	Model: 4846019620053634709, "Model::Terrain_Modular_Tiles_Grass_Rock_Cliff_Edge_Straight_Outer_02_Atlased", "Mesh" {
+		Version: 232
+		Properties70:  {
+			P: "RotationOrder", "enum", "", "",4
+			P: "RotationActive", "bool", "", "",1
+			P: "InheritType", "enum", "", "",1
+			P: "ScalingMax", "Vector3D", "Vector", "",0,0,0
+			P: "DefaultAttributeIndex", "int", "Integer", "",0
+			P: "Lcl Translation", "Lcl Translation", "", "A+",0,0,0
+			P: "Lcl Rotation", "Lcl Rotation", "", "A+",2.504478E-06,0,0
+			P: "Lcl Scaling", "Lcl Scaling", "", "A",1,1,1
+			P: "currentUVSet", "KString", "", "U", "map1"
+		}
+		Shading: T
+		Culling: "CullingOff"
+	}
+	Geometry: 5428890573573683452, "Geometry::", "Mesh" {
+		Vertices: *270 {
+			a: -0.8819019,-2.831131E-06,0.09056079,-1.220576,-2.89558E-06,-0.0919224,-0.8819014,0.2999971,0.4170909,-0.3376502,-2.577734E-06,-0.005441736,-0.6294562,-2.592772E-06,-0.2945776,-0.3376501,0.2999974,0.2730873,-0.6294563,0.2999974,-0.1606164,-0.3376501,0.2999974,0.2730873,-0.6294562,-2.592772E-06,-0.2945776,-1.5,0.2999968,0.5625014,-1.220576,0.2999971,0.1433659,-1.5,-3.102204E-06,0.1875014,-1.220576,0.2999971,0.1433659,-0.8819014,0.2999971,0.4170909,-1.220576,-2.89558E-06,-0.0919224,0.2529106,0.2999976,-0.04134436,0.2529105,-2.271553E-06,-0.2150631,-0.02803443,0.2999974,0.48017,-0.02803462,-2.50189E-06,0.1326133,-0.3376502,-2.577734E-06,-0.005441736,-0.02803443,0.2999974,0.48017,0.2529105,-2.271553E-06,-0.2150631,0.2529106,0.2999976,-0.04134436,0.751091,-2.20893E-06,0.1874993,-1.220576,-2.89558E-06,-0.0919224,-1.5,-3.102204E-06,0.1875014,-1.220576,0.2999971,0.1433659,1.5,0.2999979,0.5624987,1.5,-1.911749E-06,0.1874987,1.162608,0.299998,0.1542105,0.7510912,0.2999977,0.5624993,1.162608,0.299998,0.1542105,0.751091,-2.20893E-06,0.1874993,0.7510912,0.2999977,0.5624993,0.751091,-2.20893E-06,0.1874993,0.2529106,0.2999976,-0.04134436,-0.6294563,0.2999974,-0.1606164,-0.6294562,-2.592772E-06,-0.2945776,-0.8819014,0.2999971,0.4170909,1.162608,-1.95362E-06,-0.0846934,0.751091,-2.20893E-06,0.1874993,1.162608,0.299998,0.1542105,-0.8819019,-2.831131E-06,0.09056079,-0.8819014,0.2999971,0.4170909,-0.6294562,-2.592772E-06,-0.2945776,-0.3376501,0.2999974,0.2730873,-0.02803443,0.2999974,0.48017,-0.3376502,-2.577734E-06,-0.005441736,-0.02803462,-2.50189E-06,0.1326133,-0.02803443,0.2999974,0.48017,0.2529105,-2.271553E-06,-0.2150631,1.162608,-1.95362E-06,-0.0846934,1.162608,0.299998,0.1542105,1.5,-1.911749E-06,0.1874987,-1.5,0.2999968,0.5625014,-1.500001,-2.848411E-06,-0.5624986,-1.500001,0.2999972,-0.5624986,-1.5,-3.102204E-06,0.1875014,-1.500001,-2.848411E-06,-0.5624986,1.499999,0.2999983,-0.5625013,-1.500001,0.2999972,-0.5624986,1.499999,-1.657957E-06,-0.5625013,1.162608,-1.95362E-06,-0.0846934,0.2529105,-2.271553E-06,-0.2150631,0.751091,-2.20893E-06,0.1874993,-1.500001,-2.848411E-06,-0.5624986,1.499999,-1.657957E-06,-0.5625013,1.5,-1.911749E-06,0.1874987,-0.6294562,-2.592772E-06,-0.2945776,-0.3376502,-2.577734E-06,-0.005441736,-0.02803462,-2.50189E-06,0.1326133,-1.220576,-2.89558E-06,-0.0919224,-0.8819019,-2.831131E-06,0.09056079,-1.5,-3.102204E-06,0.1875014,1.5,-1.911749E-06,0.1874987,1.499999,0.2999983,-0.5625013,1.499999,-1.657957E-06,-0.5625013,1.5,0.2999979,0.5624987,1.162608,0.299998,0.1542105,1.499999,0.2999983,-0.5625013,1.5,0.2999979,0.5624987,0.2529106,0.2999976,-0.04134436,0.7510912,0.2999977,0.5624993,-1.500001,0.2999972,-0.5624986,-0.6294563,0.2999974,-0.1606164,-0.02803443,0.2999974,0.48017,-0.3376501,0.2999974,0.2730873,-1.220576,0.2999971,0.1433659,-1.5,0.2999968,0.5625014,-0.8819014,0.2999971,0.4170909
+		} 
+		PolygonVertexIndex: *132 {
+			a: 0,2,-2,3,5,-5,6,8,-8,9,11,-11,12,14,-14,15,17,-17,18,20,-20,21,23,-23,24,26,-26,27,29,-29,30,32,-32,33,35,-35,36,38,-38,39,41,-41,42,44,-44,45,47,-47,48,50,-50,51,53,-53,54,56,-56,55,57,-55,58,60,-60,59,61,-59,62,64,-64,62,63,-66,62,65,-67,62,66,-68,63,68,-66,63,69,-69,63,70,-70,68,71,-66,68,72,-72,71,73,-66,74,76,-76,75,77,-75,78,80,-80,78,79,-82,82,78,-82,79,83,-82,83,84,-82,84,85,-82,84,86,-86,83,87,-85,83,88,-88,87,89,-85
+		} 
+		GeometryVersion: 124
+		LayerElementNormal: 0 {
+			Version: 101
+			Name: ""
+			MappingInformationType: "ByPolygonVertex"
+			ReferenceInformationType: "Direct"
+			Normals: *396 {
+				a: -0.342423,-0.691855,0.6356753,-0.3425835,-0.6917736,0.6356773,-0.3426351,-0.6917981,0.635623,-0.5875401,-0.5505728,0.5930146,-0.5875375,-0.5506513,0.5929443,-0.5876792,-0.5504778,0.5929649,-0.8050452,-0.241874,0.5416633,-0.805075,-0.2418233,0.5416418,-0.8050452,-0.241874,0.5416633,0.683548,-0.569984,0.4559391,0.683827,-0.5697567,0.4558046,0.683548,-0.569984,0.4559391,-0.5367833,-0.5206847,0.663891,-0.5367553,-0.520681,0.6639163,-0.5367833,-0.5206847,0.663891,0.8489538,-0.2648024,0.4573369,0.8489729,-0.2648131,0.4572952,0.848926,-0.2648139,0.457382,-0.2797337,-0.7267971,0.6273077,-0.2797347,-0.726795,0.6273097,-0.279706,-0.7267838,0.6273355,-0.5730996,-0.4106591,0.7091656,-0.5732365,-0.4105852,0.7090979,-0.5730526,-0.4106707,0.709197,0.6181613,-0.4850849,0.6185218,0.6182063,-0.4850467,0.6185067,0.6184812,-0.4849587,0.618301,-0.6030687,-0.6228907,0.4983125,-0.6027628,-0.6230712,0.498457,-0.6031088,-0.6228733,0.4982857,0.5267404,-0.6637121,0.5310658,0.526748,-0.6637479,0.5310134,0.5271043,-0.6635652,0.5308883,-0.6037798,-0.6224002,0.4980643,-0.6036924,-0.6224958,0.4980507,-0.6037961,-0.6224697,0.4979576,0.9020228,-0.1761275,0.3941244,0.9019778,-0.1759986,0.3942849,0.9019769,-0.1760378,0.3942694,0.4598404,-0.5531729,0.6946558,0.4598487,-0.5531879,0.6946383,0.459471,-0.5533066,0.6947936,0.7183427,-0.512296,0.4706767,0.7182366,-0.5123917,0.4707345,0.7182242,-0.5124166,0.4707264,-0.4401058,-0.6109576,0.658056,-0.4401071,-0.6109586,0.6580543,-0.4401648,-0.6109979,0.6579792,0.6287819,-0.5886499,0.5080598,0.6287444,-0.5886431,0.5081139,0.6287777,-0.5886104,0.5081105,-0.5335163,-0.5268729,0.6616383,-0.5338919,-0.5267692,0.6614179,-0.533551,-0.5268215,0.6616512,-1,0,0,-1,0,0,-1,0,0,-1,0,0,-1,-6.464812E-07,0,-1,0,0,0,2.053081E-07,-1,0,0,-1,0,0,-1,0,0,-1,0,4.353631E-08,-1,0,2.053081E-07,-1,0,-1,0,0,-1,0,0,-1,0,0,-1,0,0,-1,0,0,-1,0,0,-1,0,0,-1,0,0,-1,0,0,-1,0,0,-1,0,0,-1,0,0,-1,0,0,-1,0,0,-1,0,0,-1,0,0,-1,0,0,-1,0,0,-1,0,0,-1,0,0,-1,0,0,-1,0,0,-1,0,0,-1,0,0,-1,0,0,-1,0,0,-1,0,0,-1,0,0,-1,0,0,-1,0,1,0,0,1,0,0,1,0,0,1,0,0,1,0,0,1,0,0,0,1,0,0,1,0,0,1,0,0,1,0,0,1,0,0,1,0,0,1,0,0,1,0,0,1,0,0,1,0,0,1,0,0,1,0,0,1,0,0,1,0,0,1,0,0,1,0,0,1,0,0,1,0,0,1,0,0,1,0,0,1,0,0,1,0,0,1,0,0,1,0,0,1,0,0,1,0,0,1,0,0,1,0,0,1,0,0,1,0
+			}
+		}
+		LayerElementUV: 0 {
+			Version: 101
+			Name: "map1"
+			MappingInformationType: "ByPolygonVertex"
+			ReferenceInformationType: "IndexToDirect"
+			UV: *180 {
+				a: 0.4570313,0.6796875,0.4570313,0.6796875,0.4570313,0.6796875,0.4570313,0.6796875,0.4570313,0.6796875,0.4570313,0.6796875,0.4570313,0.6796875,0.4570313,0.6796875,0.4570313,0.6796875,0.4570313,0.6796875,0.4570313,0.6796875,0.4570313,0.6796875,0.4570313,0.6796875,0.4570313,0.6796875,0.4570313,0.6796875,0.4570313,0.6796875,0.4570313,0.6796875,0.4570313,0.6796875,0.4570313,0.6796875,0.4570313,0.6796875,0.4570313,0.6796875,0.4570313,0.6796875,0.4570313,0.6796875,0.4570313,0.6796875,0.4570313,0.6796875,0.4570313,0.6796875,0.4570313,0.6796875,0.4570313,0.6796875,0.4570313,0.6796875,0.4570313,0.6796875,0.4570313,0.6796875,0.4570313,0.6796875,0.4570313,0.6796875,0.4570313,0.6796875,0.4570313,0.6796875,0.4570313,0.6796875,0.4570313,0.6796875,0.4570313,0.6796875,0.4570313,0.6796875,0.4570313,0.6796875,0.4570313,0.6796875,0.4570313,0.6796875,0.4570313,0.6796875,0.4570313,0.6796875,0.4570313,0.6796875,0.4570313,0.6796875,0.4570313,0.6796875,0.4570313,0.6796875,0.4570313,0.6796875,0.4570313,0.6796875,0.4570313,0.6796875,0.4570313,0.6796875,0.4570313,0.6796875,0.4570313,0.6796875,0.4570313,0.6796875,0.4570313,0.6796875,0.4570313,0.6796875,0.4570313,0.6796875,0.4570313,0.6796875,0.4570313,0.6796875,0.4570313,0.6796875,0.4570313,0.6796875,0.4570313,0.6796875,0.4570313,0.6796875,0.4570313,0.6796875,0.4570313,0.6796875,0.4570313,0.6796875,0.4570313,0.6796875,0.4570313,0.6796875,0.4570313,0.6796875,0.4570313,0.6796875,0.4570313,0.6796875,0.4570313,0.6796875,0.4570313,0.6796875,0.4570313,0.6796875,0.4570313,0.6796875,0.4570313,0.6796875,0.4570313,0.6796875,0.4648438,0.6796875,0.4648438,0.6796875,0.4648438,0.6796875,0.4648438,0.6796875,0.4648438,0.6796875,0.4648438,0.6796875,0.4648438,0.6796875,0.4648438,0.6796875,0.4648438,0.6796875,0.4648438,0.6796875,0.4648438,0.6796875,0.4648438,0.6796875
+				}
+			UVIndex: *132 {
+				a: 0,2,1,3,5,4,6,8,7,9,11,10,12,14,13,15,17,16,18,20,19,21,23,22,24,26,25,27,29,28,30,32,31,33,35,34,36,38,37,39,41,40,42,44,43,45,47,46,48,50,49,51,53,52,54,56,55,55,57,54,58,60,59,59,61,58,62,64,63,62,63,65,62,65,66,62,66,67,63,68,65,63,69,68,63,70,69,68,71,65,68,72,71,71,73,65,74,76,75,75,77,74,78,80,79,78,79,81,82,78,81,79,83,81,83,84,81,84,85,81,84,86,85,83,87,84,83,88,87,87,89,84
+			}
+		}
+		LayerElementMaterial: 0 {
+			Version: 101
+			Name: ""
+			MappingInformationType: "ByPolygon"
+			ReferenceInformationType: "IndexToDirect"
+			Materials: *44 {
+				a: 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+			} 
+		}
+		Layer: 0 {
+			Version: 100
+			LayerElement:  {
+				Type: "LayerElementNormal"
+				TypedIndex: 0
+			}
+			LayerElement:  {
+				Type: "LayerElementMaterial"
+				TypedIndex: 0
+			}
+			LayerElement:  {
+				Type: "LayerElementTexture"
+				TypedIndex: 0
+			}
+			LayerElement:  {
+				Type: "LayerElementUV"
+				TypedIndex: 0
+			}
+		}
+	}
+
+	Material: 128694, "Material::atlasCombiMat", "" {
+		Version: 102
+		ShadingModel: "phong"
+		MultiLayer: 0
+		Properties70:  {
+			P: "Diffuse", "Vector3D", "Vector", "",1,1,1
+			P: "DiffuseColor", "Color", "", "A",1,1,1
+			P: "Emissive", "Vector3D", "Vector", "",0,0,0
+			P: "EmissiveFactor", "Number", "", "A",0
+		}
+	}
+
+}
+; Object connections
+;------------------------------------------------------------------
+
+Connections:  {
+	
+	;Model::Terrain_Modular_Tiles_Grass_Rock_Cliff_Edge_Straight_Outer_02_Atlased_mesh, Model::RootNode
+	C: "OO",4846019620053634709,0
+
+	;Geometry::, Model::Terrain_Modular_Tiles_Grass_Rock_Cliff_Edge_Straight_Outer_02_Atlased_mesh
+	C: "OO",5428890573573683452,4846019620053634709
+
+	;Material::atlasCombiMat, Model::Terrain_Modular_Tiles_Grass_Rock_Cliff_Edge_Straight_Outer_02_Atlased_mesh
+	C: "OO",128694,4846019620053634709
+
+	;Texture::atlasCombiTex, Material::atlasCombiMat"
+	C: "OP",5019309367964435678,128694, "DiffuseColor"
+
+
+}

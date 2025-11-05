@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: 591a8ab080fa03b4c9fa67f907e77105
+timeCreated: 1514375977
+licenseType: Store
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 7400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 79587
+  packageName: '[M] Tower Defense Turrets'
+  packageVersion: 1.1
+  assetPath: Assets/Tower Defence Turrets/FBXs/TurretsAndAnimations/Rocket_2/R2_Shooting.anim
+  uploadId: 288001

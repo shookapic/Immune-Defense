@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: bd0c46add3f4ad342b6470d4c3fdbb8a
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 58821
+  packageName: Low Poly Mega Pack - Polyworks
+  packageVersion: 6.0
+  assetPath: Assets/Off Axis Studios/Polyworks/Prefabs/MaterialsOnly/Prototype/Blocks
+    - Blue/Proto_Block_Sphere_Hedron_01.prefab
+  uploadId: 533731

@@ -1,0 +1,309 @@
+fileFormatVersion: 2
+guid: 03dd95a962b8c8644866fad2fba346ca
+ModelImporter:
+  serializedVersion: 19301
+  internalIDToNameTable: []
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Scene_Blue03
+    second: {fileID: 2100000, guid: aa94e6ddac75cd349b8adde005d42c82, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Scene_Blue22
+    second: {fileID: 2100000, guid: e7829692dd64f5746897b45d8e4b3e00, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Scene_Brown05
+    second: {fileID: 2100000, guid: 54c5bcd8e87c01140b701beec8a889bb, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Scene_Brown15
+    second: {fileID: 2100000, guid: d5de2e9a2bfc8a842a0b3993f28a1563, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Scene_Brown21
+    second: {fileID: 2100000, guid: b661fbdb0f131ba44949937e51af4bb6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Scene_Brown45
+    second: {fileID: 2100000, guid: 5c26a86aff947e04283afa1fea40164b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Scene_Brown49
+    second: {fileID: 2100000, guid: aba1911d830bdf144bd3fba544fba6f9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Scene_Druid_Blue_01
+    second: {fileID: 2100000, guid: b4d5a197ad6535f48afdf41c09d95465, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Scene_Druid_Brown_02
+    second: {fileID: 2100000, guid: 9b9765b972a93484cba4e49b505a8292, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Scene_Druid_Brown_03
+    second: {fileID: 2100000, guid: 5807b3e1b2e3bb94d904aecea7b225b1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Scene_Druid_Brown_04
+    second: {fileID: 2100000, guid: 53f94da14ae5562498ee147f31b0a785, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Scene_Druid_Cream_01
+    second: {fileID: 2100000, guid: 1b4f7777bb6c9334db4894f85a2be18d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Scene_Druid_Cream_02
+    second: {fileID: 2100000, guid: be1f2b56d5bd838469e27e87560542db, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Scene_Druid_Gray_01
+    second: {fileID: 2100000, guid: 2340a3acbe4628346b13759dc39c3403, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Scene_Druid_Gray_02
+    second: {fileID: 2100000, guid: 7c39953ba1af28d4bac579a77be27d12, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Scene_Druid_Green_01
+    second: {fileID: 2100000, guid: e5b9d7967ffdead4abb89f8f58c66510, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Scene_Druid_Green_02
+    second: {fileID: 2100000, guid: 183bb6b01785c3c4d93034a51c1f041c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Scene_Druid_Green_05
+    second: {fileID: 2100000, guid: 23cc4b45bde18a34b8a8100c5c2effd5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Scene_Druid_Green_06
+    second: {fileID: 2100000, guid: 24823faff8020e64ea9593c8f0f242fc, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Scene_Druid_Green_07
+    second: {fileID: 2100000, guid: 38fffd78a29b30141b724531e31c9dd7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Scene_Druid_Green_08
+    second: {fileID: 2100000, guid: fe97119ecc596b34d9d66b10b40c2fc3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Scene_Druid_Green_09
+    second: {fileID: 2100000, guid: 457f03941bcec7c49a8cb6106fe5a98f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Scene_Druid_Orange_01
+    second: {fileID: 2100000, guid: b8e8e8a5609b52c48b411c785b686aec, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Scene_Druid_Orange_02
+    second: {fileID: 2100000, guid: 8264b215b20a1444792ffa052036140f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Scene_Druid_Pink_01
+    second: {fileID: 2100000, guid: 149425862e783df44a3e8ec2329d8c24, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Scene_Druid_Pink_02
+    second: {fileID: 2100000, guid: 8c7a1efc7d348c6488b1adff7ea66c1e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Scene_Druid_Pink_03
+    second: {fileID: 2100000, guid: bd95eadc24ab4e443964acea4f76e56f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Scene_Druid_Pink_04
+    second: {fileID: 2100000, guid: 673425e9fc9e7bb4689e406d257d7683, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Scene_Druid_Red_01
+    second: {fileID: 2100000, guid: 5f94bffa8fa4c914781efca674b7f6e8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Scene_Druid_Red_02
+    second: {fileID: 2100000, guid: 843dd83f3c4ee1b4fa14e5bdcb185b16, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Scene_Green16
+    second: {fileID: 2100000, guid: e18b8e48743350941a70bcc8bbf5baaa, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Scene_Grey13
+    second: {fileID: 2100000, guid: ee68e897065dcf444ab429227e873173, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Scene_Grey16
+    second: {fileID: 2100000, guid: cea3140b16fad5245aba60d2271c1257, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Scene_Grey31
+    second: {fileID: 2100000, guid: ea91119ed95a46b44b6b05271d4ec784, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Scene_Grey46
+    second: {fileID: 2100000, guid: 58bc801697e32d54b8ac6fc7f7bd40fd, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Scene_Purple05
+    second: {fileID: 2100000, guid: 0bb1b2ef1df8f434f9bd582a2007b1a7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Scene_Purple07
+    second: {fileID: 2100000, guid: d44635324e581f24dad638ad81de1cfc, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Scene_Red04
+    second: {fileID: 2100000, guid: ebbf7953dd799ff4fb82c1e275a1fae9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Scene_Red14
+    second: {fileID: 2100000, guid: 542533e895468794fbcedfe7e8e290d3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Scene_Stylised Water Advanced 1
+    second: {fileID: 2100000, guid: d089b8da9451ee24b9837d015a5bd329, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Scene_Yellow06
+    second: {fileID: 2100000, guid: a9e373f06cb6dcd4fa59f4ff74bcdc4a, type: 2}
+  materials:
+    materialImportMode: 1
+    materialName: 1
+    materialSearch: 1
+    materialLocation: 0
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    fileIdsGeneration: 2
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    meshOptimizationFlags: -1
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 1
+  humanDescription:
+    serializedVersion: 3
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 1
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
+  animationType: 2
+  humanoidOversampling: 1
+  avatarSetup: 0
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 58821
+  packageName: Low Poly Mega Pack - Polyworks
+  packageVersion: 6.0
+  assetPath: Assets/Off Axis Studios/Polyworks/Demos/DemoMeshes/DruidHomeMergedFBX/Druid_Home.fbx
+  uploadId: 533731

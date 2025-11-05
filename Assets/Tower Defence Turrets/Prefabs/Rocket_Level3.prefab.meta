@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: b5da5e91d3d933a479bd0627d7cc7298
+timeCreated: 1483281399
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 79587
+  packageName: '[M] Tower Defense Turrets'
+  packageVersion: 1.1
+  assetPath: Assets/Tower Defence Turrets/Prefabs/Rocket_Level3.prefab
+  uploadId: 288001

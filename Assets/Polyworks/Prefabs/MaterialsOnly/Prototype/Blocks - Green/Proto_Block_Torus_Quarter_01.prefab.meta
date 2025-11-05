@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 77e17dbc60f85b3449fd2961ad3d5ca2
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 58821
+  packageName: Low Poly Mega Pack - Polyworks
+  packageVersion: 6.0
+  assetPath: Assets/Off Axis Studios/Polyworks/Prefabs/MaterialsOnly/Prototype/Blocks
+    - Green/Proto_Block_Torus_Quarter_01.prefab
+  uploadId: 533731

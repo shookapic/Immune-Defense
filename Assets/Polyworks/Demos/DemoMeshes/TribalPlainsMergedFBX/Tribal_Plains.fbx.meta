@@ -1,0 +1,339 @@
+fileFormatVersion: 2
+guid: 063ad36e4489cd442b3d06193e20ec19
+ModelImporter:
+  serializedVersion: 19301
+  internalIDToNameTable: []
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Scene_Blue22
+    second: {fileID: 2100000, guid: 12c37a7ecdfc76244a296c9e015adeee, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Scene_Brown05
+    second: {fileID: 2100000, guid: 5b60ded0b316676428fb62e6b4d3a072, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Scene_Brown06
+    second: {fileID: 2100000, guid: b5f94bd1f3b026941a656bb223eb59ce, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Scene_Brown14
+    second: {fileID: 2100000, guid: 7cf84a98b31fae640a9f22aeb8e73170, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Scene_Brown23
+    second: {fileID: 2100000, guid: 274c1b3e6ef3d554db79ad868cb55315, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Scene_Brown40
+    second: {fileID: 2100000, guid: d4076e1b728c0ea4687f2484024d64ca, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Scene_Brown49
+    second: {fileID: 2100000, guid: 2b1a8bcc60892f04d81365266d0eabb7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Scene_Brown56
+    second: {fileID: 2100000, guid: 03e188cd27a98d34e9754f12b0fe90a9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Scene_Brown57
+    second: {fileID: 2100000, guid: 49fed84180b914c43ac9fdda376b59d1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Scene_Cave_Lair_Brown_01
+    second: {fileID: 2100000, guid: 34b90d01253c11b4cbc13ec9ad4b8389, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Scene_Cave_Lair_Brown_02
+    second: {fileID: 2100000, guid: 76ece1a436449764eb68dea00c72f393, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Scene_Cave_Lair_Brown_03
+    second: {fileID: 2100000, guid: 1fe50773d86cf31439db0928f9d0192c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Scene_Cave_Lair_Gray_04
+    second: {fileID: 2100000, guid: 7c61cb15f5a77c842a97a8d31b38c560, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Scene_Druid_Brown_02
+    second: {fileID: 2100000, guid: 5e3427c0d124f3a4ab039e1a9a04e76c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Scene_Druid_Cream_01
+    second: {fileID: 2100000, guid: 5962c3339fffa4b4d9b2de7d3c7176b0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Scene_Druid_Cream_02
+    second: {fileID: 2100000, guid: 6fcbb63119625634587290a57f927ac3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Scene_Druid_Green_07
+    second: {fileID: 2100000, guid: c07addbad0957984e8abca52a40e9cda, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Scene_Druid_Red_02
+    second: {fileID: 2100000, guid: c7e321ea51daea24c8b31e287f8163d4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Scene_Fire_withWaterShader
+    second: {fileID: 2100000, guid: 4478ea91dce32d545a5c9ddaa3b6e028, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Scene_FrontColor
+    second: {fileID: 2100000, guid: 1201c1c6ebdee54478f92affb875b68b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Scene_Green08
+    second: {fileID: 2100000, guid: 6b4022798eeac5543b77b8e4748c046b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Scene_Green12
+    second: {fileID: 2100000, guid: 4c916601bd4db6f4b80435a1c19fa3ca, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Scene_TribalPlains_DemoBrown_01
+    second: {fileID: 2100000, guid: 77304b5adebf90e4eb4d803969576b81, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Scene_TribalPlains_DemoBrown_02
+    second: {fileID: 2100000, guid: ec846087046cbdd47a4323510f7d13ec, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Scene_TribalPlains_DemoBrown_03
+    second: {fileID: 2100000, guid: e5eb8422b440b844f94d54fa247d5de4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Scene_TribalPlains_DemoGreen_01
+    second: {fileID: 2100000, guid: fc4ef6b6ed9473f4588aa7187bbab6f9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Scene_TribalPlains_DemoGreen_02
+    second: {fileID: 2100000, guid: 36fdc5dcf610f014dab1d9679519c72b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Scene_TribalPlains_DemoGreen_03
+    second: {fileID: 2100000, guid: 9bf64142ac8f3a44fa18d0a31ebbe605, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Scene_TribalPlains_DemoGreen_04
+    second: {fileID: 2100000, guid: 0e7b0896f10fb294593a8197492f9350, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Scene_TribalPlains_Stylised Water Advanced
+    second: {fileID: 2100000, guid: 88ba5f352bb478c48ba10acd5eb32c3d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Scene_Tribal_Aqua_01
+    second: {fileID: 2100000, guid: 4c3f1885517aefc4fa400d0ebf0a9e19, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Scene_Tribal_Brown_01
+    second: {fileID: 2100000, guid: 3feceb193374291438596abd2a8f3e3b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Scene_Tribal_Brown_02
+    second: {fileID: 2100000, guid: 532f7ccd54b56394892d4f00e9526d15, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Scene_Tribal_Brown_03
+    second: {fileID: 2100000, guid: f0071a819ca46b544b73e26b0c31c1d7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Scene_Tribal_Brown_05
+    second: {fileID: 2100000, guid: d90ddcfadfd33ab4f8fd2df11ab5b0d2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Scene_Tribal_Brown_06
+    second: {fileID: 2100000, guid: a8a03202c62e48c4ca988fa1506c49e6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Scene_Tribal_Brown_07
+    second: {fileID: 2100000, guid: a1e8bc0dd76402c4d9f9b49778f2a7da, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Scene_Tribal_Brown_08
+    second: {fileID: 2100000, guid: cd083c64a69c09f42af20dbe26410196, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Scene_Tribal_Gray_01
+    second: {fileID: 2100000, guid: bb6e58110e5bad64ba66ee0c94cbbc34, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Scene_Tribal_Gray_02
+    second: {fileID: 2100000, guid: c9f02599b78788b4eacc23d29d890c86, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Scene_Tribal_Gray_03
+    second: {fileID: 2100000, guid: 1637503a39cd4c24e9c648295b49c5bf, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Scene_Tribal_Orange_02
+    second: {fileID: 2100000, guid: 5e8673f11ce8acb4093a82b3ccdf1d68, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Scene_Tribal_Red_02
+    second: {fileID: 2100000, guid: 79ba1a9df332e2a4b9cd420505c6abaf, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Scene_Tribal_White_01
+    second: {fileID: 2100000, guid: 4b66be4820ac71148a729b7f4092a5d2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Scene_Vegetation_Green_01
+    second: {fileID: 2100000, guid: a380e7c3de5659c4893847938d73df92, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Scene_Yellow01
+    second: {fileID: 2100000, guid: 6d33751a097eb674abc31510de753067, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Scene_Yellow07
+    second: {fileID: 2100000, guid: 17fc49bcb79ca924083c2c5686b7c9f4, type: 2}
+  materials:
+    materialImportMode: 1
+    materialName: 1
+    materialSearch: 1
+    materialLocation: 0
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    fileIdsGeneration: 2
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    meshOptimizationFlags: -1
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 1
+  humanDescription:
+    serializedVersion: 3
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 1
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
+  animationType: 2
+  humanoidOversampling: 1
+  avatarSetup: 0
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 58821
+  packageName: Low Poly Mega Pack - Polyworks
+  packageVersion: 6.0
+  assetPath: Assets/Off Axis Studios/Polyworks/Demos/DemoMeshes/TribalPlainsMergedFBX/Tribal_Plains.fbx
+  uploadId: 533731

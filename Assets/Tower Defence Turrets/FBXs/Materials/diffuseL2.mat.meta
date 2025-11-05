@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 5d13e0fe0485360479a68f667a19cf71
+timeCreated: 1483289972
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 79587
+  packageName: '[M] Tower Defense Turrets'
+  packageVersion: 1.1
+  assetPath: Assets/Tower Defence Turrets/FBXs/Materials/diffuseL2.mat
+  uploadId: 288001

@@ -1,0 +1,244 @@
+fileFormatVersion: 2
+guid: 3aaff2a8954459044b1d10bf0ca08984
+ModelImporter:
+  serializedVersion: 19301
+  internalIDToNameTable: []
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Scene_Brown25
+    second: {fileID: 2100000, guid: b52a0d3c8708de542ba8c32fc62215f9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Scene_Brown26
+    second: {fileID: 2100000, guid: dcb720cd703a23b44b5255f684daa566, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Scene_Cream04
+    second: {fileID: 2100000, guid: 5ce9d6b1ef7851b48a84edcbb265ab44, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Scene_Fantasy_Blue_01
+    second: {fileID: 2100000, guid: 019fe75f40c3d974cb852d4c759003b0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Scene_Fantasy_Brown_05
+    second: {fileID: 2100000, guid: d814975062d05274abbd91a4681a360e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Scene_Fantasy_Brown_08
+    second: {fileID: 2100000, guid: b54e5493440dc254f914cd12780353b8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Scene_Fantasy_Cream_01
+    second: {fileID: 2100000, guid: c267d21619dd14f4ba8c7c5b26edaa9d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Scene_Fantasy_Cream_02
+    second: {fileID: 2100000, guid: f19bcf6d353eaf64f8f30987f68d64f9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Scene_Fantasy_Cream_03
+    second: {fileID: 2100000, guid: c0286f959ac9b1c478b35eec58933ce7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Scene_Fantasy_Gray_02
+    second: {fileID: 2100000, guid: f6627faf140258242847f064fcc3adf9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Scene_Fantasy_Gray_03
+    second: {fileID: 2100000, guid: d9dcd10f5940bc04c905e3844a27ad11, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Scene_Fantasy_Gray_05
+    second: {fileID: 2100000, guid: 18076cab793928844ad5d0810457ab59, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Scene_Fantasy_Gray_07
+    second: {fileID: 2100000, guid: 0429d0dabaf2cf0428142265d83c5681, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Scene_Fantasy_Green_01
+    second: {fileID: 2100000, guid: c18de625a46d2874d90ddccb423f6a08, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Scene_Fantasy_Green_04
+    second: {fileID: 2100000, guid: f94e82cd96434b4449e9856367a8814c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Scene_Fantasy_Red_02
+    second: {fileID: 2100000, guid: 20869b73531cabc47bd93f6c76fb94e6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Scene_Fantasy_Red_03
+    second: {fileID: 2100000, guid: a2e48e756b99f0749be6f11c2d49dfcc, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Scene_Fantasy_Red_04
+    second: {fileID: 2100000, guid: 1d45e1e25de61b34484ddc6f52b8fa03, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Scene_Green20
+    second: {fileID: 2100000, guid: 3a368fdcc000d3a4bad15ea1854ab108, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Scene_Grey14
+    second: {fileID: 2100000, guid: 581a87af1a6a1bb44baeff56134c64e5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Scene_Grey45
+    second: {fileID: 2100000, guid: 5c593f12402ab7d42834770202c47d92, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Scene_Grey46
+    second: {fileID: 2100000, guid: 76ab3ff0ce80a0c4cbcb37f71848c31a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Scene_Grey47
+    second: {fileID: 2100000, guid: 3da1c5883d98057418ed813023038468, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Scene_Stylised Water Advanced 1
+    second: {fileID: 2100000, guid: 32e14d61bae8c544aa08b41413bfc66a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Scene_Stylised Water Advanced 2
+    second: {fileID: 2100000, guid: 4619a8dc4652ac84f8f9fb086bccd554, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Scene_Vegetation_Green_01
+    second: {fileID: 2100000, guid: 23a6645e00f4d974abfdbe3d543e2e4c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Scene_Vegetation_Green_03
+    second: {fileID: 2100000, guid: f690baff12551b8439c237c5149ac11e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Scene__GothicPalaceDemo
+    second: {fileID: 2100000, guid: 17df3e8eb22d70c4db5bdc3861953744, type: 2}
+  materials:
+    materialImportMode: 1
+    materialName: 1
+    materialSearch: 1
+    materialLocation: 0
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    fileIdsGeneration: 2
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    meshOptimizationFlags: -1
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 1
+  humanDescription:
+    serializedVersion: 3
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 1
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
+  animationType: 2
+  humanoidOversampling: 1
+  avatarSetup: 0
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 58821
+  packageName: Low Poly Mega Pack - Polyworks
+  packageVersion: 6.0
+  assetPath: Assets/Off Axis Studios/Polyworks/Demos/DemoMeshes/GothicPalaceMargedFBX/Gothic_Palace.fbx
+  uploadId: 533731

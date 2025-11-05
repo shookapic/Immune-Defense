@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: e7dea6220a9fdca478737016fb1e46ce
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 58821
+  packageName: Low Poly Mega Pack - Polyworks
+  packageVersion: 6.0
+  assetPath: Assets/Off Axis Studios/Polyworks/Prefabs/MaterialsOnly/Prototype/Blocks
+    - Yellow/Proto_Block_Cylinder_01.prefab
+  uploadId: 533731

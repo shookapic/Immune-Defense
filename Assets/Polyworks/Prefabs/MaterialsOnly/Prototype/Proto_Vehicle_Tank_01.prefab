@@ -1,0 +1,260 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &332864132393352829
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8671625663473586401}
+  m_Layer: 0
+  m_Name: Proto_Vehicle_Tank_01
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8671625663473586401
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 332864132393352829}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 2517701501107395404}
+  - {fileID: 3127729534692668474}
+  - {fileID: 811190455835242136}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &4127742203186481392
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 8671625663473586401}
+    m_Modifications:
+    - target: {fileID: 1310339523838426314, guid: 06c8c70822ac0fc4ea54d0db22f86f94,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1310339523838426314, guid: 06c8c70822ac0fc4ea54d0db22f86f94,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1310339523838426314, guid: 06c8c70822ac0fc4ea54d0db22f86f94,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.508
+      objectReference: {fileID: 0}
+    - target: {fileID: 1310339523838426314, guid: 06c8c70822ac0fc4ea54d0db22f86f94,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.197
+      objectReference: {fileID: 0}
+    - target: {fileID: 1310339523838426314, guid: 06c8c70822ac0fc4ea54d0db22f86f94,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1310339523838426314, guid: 06c8c70822ac0fc4ea54d0db22f86f94,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1310339523838426314, guid: 06c8c70822ac0fc4ea54d0db22f86f94,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1310339523838426314, guid: 06c8c70822ac0fc4ea54d0db22f86f94,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1310339523838426314, guid: 06c8c70822ac0fc4ea54d0db22f86f94,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1310339523838426314, guid: 06c8c70822ac0fc4ea54d0db22f86f94,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1310339523838426314, guid: 06c8c70822ac0fc4ea54d0db22f86f94,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1829748384781264496, guid: 06c8c70822ac0fc4ea54d0db22f86f94,
+        type: 3}
+      propertyPath: m_Name
+      value: Proto_Vehicle_Tank_Turret_Base_01
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 06c8c70822ac0fc4ea54d0db22f86f94, type: 3}
+--- !u!4 &3127729534692668474 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1310339523838426314, guid: 06c8c70822ac0fc4ea54d0db22f86f94,
+    type: 3}
+  m_PrefabInstance: {fileID: 4127742203186481392}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &5907652383666686490
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 8671625663473586401}
+    m_Modifications:
+    - target: {fileID: 5905924787271515704, guid: ca10eeb02b76284499f2a89f2fce1569,
+        type: 3}
+      propertyPath: m_Name
+      value: Proto_Vehicle_Tank_Turret_Gun_01
+      objectReference: {fileID: 0}
+    - target: {fileID: 6538628391704093826, guid: ca10eeb02b76284499f2a89f2fce1569,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6538628391704093826, guid: ca10eeb02b76284499f2a89f2fce1569,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6538628391704093826, guid: ca10eeb02b76284499f2a89f2fce1569,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.721
+      objectReference: {fileID: 0}
+    - target: {fileID: 6538628391704093826, guid: ca10eeb02b76284499f2a89f2fce1569,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.947
+      objectReference: {fileID: 0}
+    - target: {fileID: 6538628391704093826, guid: ca10eeb02b76284499f2a89f2fce1569,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6538628391704093826, guid: ca10eeb02b76284499f2a89f2fce1569,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6538628391704093826, guid: ca10eeb02b76284499f2a89f2fce1569,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6538628391704093826, guid: ca10eeb02b76284499f2a89f2fce1569,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6538628391704093826, guid: ca10eeb02b76284499f2a89f2fce1569,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6538628391704093826, guid: ca10eeb02b76284499f2a89f2fce1569,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6538628391704093826, guid: ca10eeb02b76284499f2a89f2fce1569,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: ca10eeb02b76284499f2a89f2fce1569, type: 3}
+--- !u!4 &811190455835242136 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6538628391704093826, guid: ca10eeb02b76284499f2a89f2fce1569,
+    type: 3}
+  m_PrefabInstance: {fileID: 5907652383666686490}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &6593691618938916585
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 8671625663473586401}
+    m_Modifications:
+    - target: {fileID: 8230894662737071903, guid: 49803135c50e3404fb2736456f4ee9b5,
+        type: 3}
+      propertyPath: m_Name
+      value: Proto_Vehicle_Tank_Body_01
+      objectReference: {fileID: 0}
+    - target: {fileID: 8751008349839578533, guid: 49803135c50e3404fb2736456f4ee9b5,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8751008349839578533, guid: 49803135c50e3404fb2736456f4ee9b5,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8751008349839578533, guid: 49803135c50e3404fb2736456f4ee9b5,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8751008349839578533, guid: 49803135c50e3404fb2736456f4ee9b5,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8751008349839578533, guid: 49803135c50e3404fb2736456f4ee9b5,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8751008349839578533, guid: 49803135c50e3404fb2736456f4ee9b5,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8751008349839578533, guid: 49803135c50e3404fb2736456f4ee9b5,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8751008349839578533, guid: 49803135c50e3404fb2736456f4ee9b5,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8751008349839578533, guid: 49803135c50e3404fb2736456f4ee9b5,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8751008349839578533, guid: 49803135c50e3404fb2736456f4ee9b5,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8751008349839578533, guid: 49803135c50e3404fb2736456f4ee9b5,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 49803135c50e3404fb2736456f4ee9b5, type: 3}
+--- !u!4 &2517701501107395404 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8751008349839578533, guid: 49803135c50e3404fb2736456f4ee9b5,
+    type: 3}
+  m_PrefabInstance: {fileID: 6593691618938916585}
+  m_PrefabAsset: {fileID: 0}
