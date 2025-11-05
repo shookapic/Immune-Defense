@@ -1,9 +1,9 @@
 using UnityEngine;
-
+using UnityEngine.EventSystems;
 public class TowerPlacementPreview : MonoBehaviour
 {
     [Header("References")]
-    public GameObject towerPrefab;
+    // The preview will use the currently selected prefab from TowerPlacementController.
     public Material validMat;
     public Material invalidMat;
 
@@ -15,26 +15,60 @@ public class TowerPlacementPreview : MonoBehaviour
     private GameObject previewInstance;
     private Renderer[] previewRenderers;
     private bool canPlace = false;
+    private GameObject lastSelectedPrefab;
 
     void Start()
     {
         cam = Camera.main;
-        CreatePreview();
+        // create preview only if a prefab is selected
+        if (TowerPlacementController.Instance != null)
+        {
+            TowerPlacementController.Instance.OnSelectionChanged += OnSelectionChanged;
+            lastSelectedPrefab = TowerPlacementController.Instance.SelectedTowerPrefab;
+            if (lastSelectedPrefab != null)
+                CreatePreview(lastSelectedPrefab);
+        }
     }
 
     void Update()
     {
+        // Ensure preview follows current selection
+        var selected = TowerPlacementController.Instance != null ? TowerPlacementController.Instance.SelectedTowerPrefab : null;
+        if (selected != lastSelectedPrefab)
+        {
+            // recreate or destroy preview depending on selection
+            if (previewInstance != null)
+            {
+                Destroy(previewInstance);
+                previewInstance = null;
+                previewRenderers = null;
+            }
+
+            lastSelectedPrefab = selected;
+            if (lastSelectedPrefab != null)
+                CreatePreview(lastSelectedPrefab);
+        }
+
         UpdatePreviewPosition();
 
-        if (Input.GetMouseButtonDown(0) && canPlace)
+        if (Input.GetMouseButtonDown(0) && canPlace && lastSelectedPrefab != null)
         {
+            // If the pointer is over UI (for example a selection button), do not place a tower.
+            if (EventSystem.current != null && EventSystem.current.IsPointerOverGameObject())
+                return;
+
             PlaceTower();
         }
     }
 
-    void CreatePreview()
+    void OnSelectionChanged(GameObject prefab)
     {
-        previewInstance = Instantiate(towerPrefab);
+        // Handled in Update loop to safely create/destroy preview at runtime
+    }
+
+    void CreatePreview(GameObject prefab)
+    {
+        previewInstance = Instantiate(prefab);
         previewRenderers = previewInstance.GetComponentsInChildren<Renderer>();
 
         // Use transparent material for preview
@@ -46,10 +80,22 @@ public class TowerPlacementPreview : MonoBehaviour
         // Disable any gameplay scripts/colliders inside the preview
         foreach (var col in previewInstance.GetComponentsInChildren<Collider>())
             col.enabled = false;
+
+        // Disable any runtime behaviours (MonoBehaviours, Animator, AudioSource, NavMeshAgent, etc.)
+        // so the preview doesn't run AI/attack logic.
+        foreach (var b in previewInstance.GetComponentsInChildren<Behaviour>())
+        {
+            b.enabled = false;
+        }
     }
 
     void UpdatePreviewPosition()
     {
+        if (previewInstance == null)
+        {
+            canPlace = false;
+            return;
+        }
         Ray ray = cam.ScreenPointToRay(Input.mousePosition);
         if (Physics.Raycast(ray, out RaycastHit hit))
         {
@@ -73,10 +119,18 @@ public class TowerPlacementPreview : MonoBehaviour
             foreach (var r in previewRenderers)
                 r.material = canPlace ? validMat : invalidMat;
         }
+        else
+        {
+            canPlace = false;
+        }
     }
 
     void PlaceTower()
     {
-        Instantiate(towerPrefab, previewInstance.transform.position, Quaternion.identity);
+        var prefab = TowerPlacementController.Instance != null ? TowerPlacementController.Instance.SelectedTowerPrefab : null;
+        if (prefab == null)
+            return;
+
+        Instantiate(prefab, previewInstance.transform.position, Quaternion.identity);
     }
 }
