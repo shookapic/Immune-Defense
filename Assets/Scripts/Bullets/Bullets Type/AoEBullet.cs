@@ -2,29 +2,24 @@ using UnityEngine;
 
 public class AoEBullet : Bullet
 {
+    [Header("AoE Settings")]
     public float radius = 2f;
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    private void OnTriggerEnter(Collider other)
     {
-        if (collision.CompareTag("Enemy"))
+        if (other.CompareTag("Enemy"))
         {
-            Collider2D[] enemies = Physics2D.OverlapCircleAll(transform.position, radius);
-            foreach (var e in enemies)
+            Collider[] hits = Physics.OverlapSphere(transform.position, radius);
+
+            foreach (var hit in hits)
             {
-                if (e.CompareTag("Enemy"))
+                if (hit.CompareTag("Enemy"))
                 {
-                    OnHit(e.gameObject);
+                    TriggerHit(hit.gameObject);
                 }
             }
-            Destroy(gameObject);
-        }
-    }
 
-    protected override void OnHit(GameObject enemy)
-    {
-        foreach (var effect in effects)
-        {
-            effect.ApplyEffect(enemy);
+            Destroy(gameObject);
         }
     }
 

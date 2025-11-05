@@ -3,11 +3,13 @@ using UnityEngine;
 public class Tower : MonoBehaviour
 {
     [Header("References")]
-    public GameObject bullet = null;
+    public GameObject bulletPrefab;
 
     [Header("Tower Settings")]
-    public float attackSpeed = 1.0f; // shot/seconds
+    public float attackSpeed = 1.0f; // shots per second
     public float range = 5f;         // detection range
+    public Transform shootPoint;     // point from which bullets are fired
+    public Transform rotatingPart;
 
     private float attackCooldown = 0f;
 
@@ -17,11 +19,15 @@ public class Tower : MonoBehaviour
 
         GameObject target = FindNearestEnemy();
 
-        // Si on a une cible et que le cooldown est fini → tirer
-        if (target != null && attackCooldown <= 0f)
+        if (target != null)
         {
-            Shoot(target);
-            attackCooldown = 1f / attackSpeed; // reset cooldown
+            // RotateTowards(target.transform.position);
+
+            if (attackCooldown <= 0f)
+            {
+                Shoot(target);
+                attackCooldown = 1f / attackSpeed;
+            }
         }
     }
 
@@ -57,15 +63,22 @@ public class Tower : MonoBehaviour
 
     void Shoot(GameObject target)
     {
-        if (bullet == null)
-        {
-            return;
-        }
+        if (bulletPrefab == null) return;
+        Transform spawn = shootPoint != null ? shootPoint : transform;
+        GameObject newBullet = Instantiate(bulletPrefab, spawn.position, spawn.rotation);
 
-        GameObject newBullet = Instantiate(bullet, transform.position, Quaternion.identity);
         Bullet bulletScript = newBullet.GetComponent<Bullet>();
-
         if (bulletScript != null)
             bulletScript.SetTarget(target);
+    }
+
+    void RotateTowards(Vector3 targetPosition)
+    {
+        if (rotatingPart == null) return;
+
+        Vector3 direction = (targetPosition - rotatingPart.position).normalized;
+        direction.y = 0f;
+        Quaternion lookRotation = Quaternion.LookRotation(direction);
+        rotatingPart.rotation = Quaternion.Lerp(rotatingPart.rotation, lookRotation, Time.deltaTime * 5f);
     }
 }

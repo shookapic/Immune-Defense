@@ -18,7 +18,7 @@ public class EnemyHealth : MonoBehaviour
         }
     }
     
-    public void OnHit(float damage_receive)
+    public void TakeDamage(float damage_receive)
     {
         health -= damage_receive;
     }

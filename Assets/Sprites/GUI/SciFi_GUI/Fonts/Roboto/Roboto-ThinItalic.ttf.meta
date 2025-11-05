@@ -1,0 +1,28 @@
+fileFormatVersion: 2
+guid: a454f866c7b10264e85a7e637b996216
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontNames:
+  - Roboto
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 309738
+  packageName: SciFi UI Customizable + Icons
+  packageVersion: 1.0
+  assetPath: Assets/Kwaaktje/SciFi_GUI/Fonts/Roboto/Roboto-ThinItalic.ttf
+  uploadId: 731929

@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 5811cd93b3fc12742992cf1e11e8c36a
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 309738
+  packageName: SciFi UI Customizable + Icons
+  packageVersion: 1.0
+  assetPath: Assets/Kwaaktje/SciFi_GUI/Prefabs/Buttons/SmallDoubleCircleButtonWithIconWhite.prefab
+  uploadId: 731929

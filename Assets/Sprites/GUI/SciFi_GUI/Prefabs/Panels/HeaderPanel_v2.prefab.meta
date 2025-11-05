@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: cbda86f9879268943b8c5ca762f8691d
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 309738
+  packageName: SciFi UI Customizable + Icons
+  packageVersion: 1.0
+  assetPath: Assets/Kwaaktje/SciFi_GUI/Prefabs/Panels/HeaderPanel_v2.prefab
+  uploadId: 731929

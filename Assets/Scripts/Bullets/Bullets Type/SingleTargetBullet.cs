@@ -2,20 +2,15 @@ using UnityEngine;
 
 public class SingleTargetBullet : Bullet
 {
-    private void OnTriggerEnter2D(Collider2D collision)
+    private void OnTriggerEnter(Collider collision)
     {
-        if (collision.CompareTag("Enemy"))
+        Debug.Log("OnTrigger");
+        if (collision.gameObject.CompareTag("Enemy"))
         {
-            OnHit(collision.gameObject);
+            TriggerHit(collision.gameObject);
             Destroy(gameObject);
+            
         }
     }
 
-    protected override void OnHit(GameObject enemy)
-    {
-        foreach (var effect in effects)
-        {
-            effect.ApplyEffect(enemy);
-        }
-    }
 }

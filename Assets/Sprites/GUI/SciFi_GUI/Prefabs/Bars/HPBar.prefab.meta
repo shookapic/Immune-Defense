@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: f49ea471cb8c4a043a579e7da7fdf3ef
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 309738
+  packageName: SciFi UI Customizable + Icons
+  packageVersion: 1.0
+  assetPath: Assets/Kwaaktje/SciFi_GUI/Prefabs/Bars/HPBar.prefab
+  uploadId: 731929
