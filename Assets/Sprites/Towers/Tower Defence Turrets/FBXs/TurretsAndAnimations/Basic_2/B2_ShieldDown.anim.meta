@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: 15b0d6534db74144c95f440ba1cffdf4
+timeCreated: 1514375932
+licenseType: Store
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 7400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 79587
+  packageName: '[M] Tower Defense Turrets'
+  packageVersion: 1.1
+  assetPath: Assets/Tower Defence Turrets/FBXs/TurretsAndAnimations/Basic_2/B2_ShieldDown.anim
+  uploadId: 288001

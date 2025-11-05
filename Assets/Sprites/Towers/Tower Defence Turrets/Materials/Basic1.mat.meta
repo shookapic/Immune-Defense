@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 3717d9f6c5d2626429a28721f41fe09b
+timeCreated: 1483280626
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 79587
+  packageName: '[M] Tower Defense Turrets'
+  packageVersion: 1.1
+  assetPath: Assets/Tower Defence Turrets/Materials/Basic1.mat
+  uploadId: 288001

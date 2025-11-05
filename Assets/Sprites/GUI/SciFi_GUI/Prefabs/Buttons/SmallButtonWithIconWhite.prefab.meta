@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 028b1ba8e2ddf9142ac1b7eb4ee93f72
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 309738
+  packageName: SciFi UI Customizable + Icons
+  packageVersion: 1.0
+  assetPath: Assets/Kwaaktje/SciFi_GUI/Prefabs/Buttons/SmallButtonWithIconWhite.prefab
+  uploadId: 731929

@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: 4b193730cab2deb4fa1a0c3d526abcfd
+timeCreated: 1514375984
+licenseType: Store
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 7400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 79587
+  packageName: '[M] Tower Defense Turrets'
+  packageVersion: 1.1
+  assetPath: Assets/Tower Defence Turrets/FBXs/TurretsAndAnimations/Rocket_3/R3_ShieldDown.anim
+  uploadId: 288001

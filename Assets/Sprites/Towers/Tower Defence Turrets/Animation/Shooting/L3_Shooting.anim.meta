@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: b2090b25821e65d49b80894a3e0124d5
+timeCreated: 1483290699
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 79587
+  packageName: '[M] Tower Defense Turrets'
+  packageVersion: 1.1
+  assetPath: Assets/Tower Defence Turrets/Animation/Shooting/L3_Shooting.anim
+  uploadId: 288001

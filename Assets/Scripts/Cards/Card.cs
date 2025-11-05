@@ -13,35 +13,23 @@ public class Card : MonoBehaviour
     public TextMeshPro nameText;
     public TextMeshPro costText;
 
-    private SpriteRenderer spriteRenderer;
+    private CardManager cardManager;
 
-    void Awake()
+    void Start()
     {
-        spriteRenderer = GetComponent<SpriteRenderer>();
+        cardManager = FindFirstObjectByType<CardManager>();
         UpdateCardVisuals();
     }
 
     void UpdateCardVisuals()
     {
-        // Fond de carte rectangulaire
-        spriteRenderer.color = new Color(0.95f, 0.9f, 0.8f); // beige clair
-
-        // Texte
         if (nameText) nameText.text = towerName;
         if (costText) costText.text = cost.ToString();
-
-        // Sprite de la tour
-        if (towerPrefab != null)
-        {
-            // SpriteRenderer towerSprite = towerPrefab.GetComponentInChildren<SpriteRenderer>();
-            // if (towerSprite != null)
-            //     spriteRenderer.sprite = towerSprite.sprite;
-        }
     }
 
     void OnMouseDown()
     {
-        Debug.Log($"Carte sélectionnée : {towerName} (coût {cost})");
-        // Plus tard → ajout au deck via CardManager
+        if (cardManager != null)
+            cardManager.OnCardSelected(this);
     }
 }

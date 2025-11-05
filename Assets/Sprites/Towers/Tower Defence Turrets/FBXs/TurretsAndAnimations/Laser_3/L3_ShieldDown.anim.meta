@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: 39b839473c93fca44bb1efa458a8009f
+timeCreated: 1514375963
+licenseType: Store
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 7400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 79587
+  packageName: '[M] Tower Defense Turrets'
+  packageVersion: 1.1
+  assetPath: Assets/Tower Defence Turrets/FBXs/TurretsAndAnimations/Laser_3/L3_ShieldDown.anim
+  uploadId: 288001

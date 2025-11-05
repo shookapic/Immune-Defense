@@ -1,0 +1,107 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &8563665073198690671
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4061820629660003920, guid: 158ea23c46703bf47afc98e01b7ea99c, type: 3}
+      propertyPath: m_Pivot.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4061820629660003920, guid: 158ea23c46703bf47afc98e01b7ea99c, type: 3}
+      propertyPath: m_Pivot.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4061820629660003920, guid: 158ea23c46703bf47afc98e01b7ea99c, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4061820629660003920, guid: 158ea23c46703bf47afc98e01b7ea99c, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4061820629660003920, guid: 158ea23c46703bf47afc98e01b7ea99c, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4061820629660003920, guid: 158ea23c46703bf47afc98e01b7ea99c, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4061820629660003920, guid: 158ea23c46703bf47afc98e01b7ea99c, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 500
+      objectReference: {fileID: 0}
+    - target: {fileID: 4061820629660003920, guid: 158ea23c46703bf47afc98e01b7ea99c, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 250
+      objectReference: {fileID: 0}
+    - target: {fileID: 4061820629660003920, guid: 158ea23c46703bf47afc98e01b7ea99c, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4061820629660003920, guid: 158ea23c46703bf47afc98e01b7ea99c, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4061820629660003920, guid: 158ea23c46703bf47afc98e01b7ea99c, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4061820629660003920, guid: 158ea23c46703bf47afc98e01b7ea99c, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4061820629660003920, guid: 158ea23c46703bf47afc98e01b7ea99c, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4061820629660003920, guid: 158ea23c46703bf47afc98e01b7ea99c, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4061820629660003920, guid: 158ea23c46703bf47afc98e01b7ea99c, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4061820629660003920, guid: 158ea23c46703bf47afc98e01b7ea99c, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 2022.8998
+      objectReference: {fileID: 0}
+    - target: {fileID: 4061820629660003920, guid: 158ea23c46703bf47afc98e01b7ea99c, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -565
+      objectReference: {fileID: 0}
+    - target: {fileID: 4061820629660003920, guid: 158ea23c46703bf47afc98e01b7ea99c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4061820629660003920, guid: 158ea23c46703bf47afc98e01b7ea99c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4061820629660003920, guid: 158ea23c46703bf47afc98e01b7ea99c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5915312873597571963, guid: 158ea23c46703bf47afc98e01b7ea99c, type: 3}
+      propertyPath: m_Name
+      value: HorizontalPanel_v6 Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 6805851045368170795, guid: 158ea23c46703bf47afc98e01b7ea99c, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 7e5b4dfe7c5a6364dacbe8795955d010, type: 3}
+    - target: {fileID: 8493127933803631009, guid: 158ea23c46703bf47afc98e01b7ea99c, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 197d80e983e53334586473b64ae570c2, type: 3}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 158ea23c46703bf47afc98e01b7ea99c, type: 3}

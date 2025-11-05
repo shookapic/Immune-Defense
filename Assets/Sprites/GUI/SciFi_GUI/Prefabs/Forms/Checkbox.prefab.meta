@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 86569a326a2fdf14f821c3159bcf5b28
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 309738
+  packageName: SciFi UI Customizable + Icons
+  packageVersion: 1.0
+  assetPath: Assets/Kwaaktje/SciFi_GUI/Prefabs/Forms/Checkbox.prefab
+  uploadId: 731929
