@@ -4,7 +4,10 @@ using TMPro;
 [RequireComponent(typeof(SpriteRenderer), typeof(BoxCollider2D))]
 public class Card : MonoBehaviour
 {
-    [Header("Tower Data")]
+    [Header("Card Data (shared across scenes)")]
+    public CardData data;
+
+    [Header("Legacy (used if data is null)")]
     public GameObject towerPrefab;
     public string towerName = "Basic Tower";
     public int cost = 50;
@@ -17,14 +20,17 @@ public class Card : MonoBehaviour
 
     void Start()
     {
-        cardManager = FindFirstObjectByType<CardManager>();
+        cardManager = CardManager.Instance != null ? CardManager.Instance : FindFirstObjectByType<CardManager>();
         UpdateCardVisuals();
     }
 
     void UpdateCardVisuals()
     {
-        if (nameText) nameText.text = towerName;
-        if (costText) costText.text = cost.ToString();
+        string displayName = data != null ? data.towerName : towerName;
+        int displayCost = data != null ? data.cost : cost;
+
+        if (nameText) nameText.text = displayName;
+        if (costText) costText.text = displayCost.ToString();
     }
 
     void OnMouseDown()
