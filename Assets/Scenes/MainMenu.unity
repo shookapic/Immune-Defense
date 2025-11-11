@@ -289,6 +289,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DeckRepository
   storedDeck: []
+  fallbackCard: {fileID: 11400000, guid: 9b65764bfa1c49644a16b1ac19da563f, type: 2}
 --- !u!4 &1137166194
 Transform:
   m_ObjectHideFlags: 0
