@@ -108,7 +108,7 @@ public class TowerPlacementPreview : MonoBehaviour
             foreach (var col in overlaps)
             {
                 Debug.Log($"Overlapping: {col.name} (Tag: {col.tag})");
-                if (col.CompareTag("Path") || col.CompareTag("Tower"))
+                if (col.CompareTag("Path") || col.CompareTag("Tower") || col.CompareTag("Enemy"))
                 {
                     blocked = true;
                     break;

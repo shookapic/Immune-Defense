@@ -4043,6 +4043,28 @@ MonoBehaviour:
   - {x: 45.97415, y: 50, z: 193.76958}
   - {x: 87.259384, y: 50, z: 166.81584}
   speed: 12
+--- !u!64 &810800191
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 810800189}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 2381238399993666857, guid: ba197811aa07dd446ae2c854bcfb6a69, type: 3}
 --- !u!224 &817909917 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 286607863250120301, guid: 29512c098f6fe3d43915d8d62a1eb48e, type: 3}
@@ -4125,7 +4147,7 @@ MonoBehaviour:
   placeableRadius: 1.5
   blockedLayers:
     serializedVersion: 2
-    m_Bits: 72
+    m_Bits: 200
 --- !u!114 &857420442
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4143,7 +4165,7 @@ MonoBehaviour:
   placeableRadius: 1.5
   blockedLayers:
     serializedVersion: 2
-    m_Bits: 72
+    m_Bits: 200
 --- !u!114 &857420443
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5420,6 +5442,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 3436881866164312668, guid: 325ca5398f85973469242256c14afed8, type: 3}
       insertIndex: -1
       addedObject: {fileID: 810800190}
+    - targetCorrespondingSourceObject: {fileID: 3436881866164312668, guid: 325ca5398f85973469242256c14afed8, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 810800191}
   m_SourcePrefab: {fileID: 100100000, guid: 325ca5398f85973469242256c14afed8, type: 3}
 --- !u!4 &1418717187 stripped
 Transform:

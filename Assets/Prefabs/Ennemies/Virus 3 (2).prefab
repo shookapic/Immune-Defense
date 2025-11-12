@@ -196,8 +196,8 @@ GameObject:
   m_Component:
   - component: {fileID: 6288434018511432018}
   - component: {fileID: 6288434018511432021}
-  - component: {fileID: -3597258045624720137}
-  m_Layer: 0
+  - component: {fileID: -9060571895205765076}
+  m_Layer: 7
   m_Name: Virus 3 (2)
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -243,8 +243,8 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!135 &-3597258045624720137
-SphereCollider:
+--- !u!64 &-9060571895205765076
+MeshCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -261,9 +261,10 @@ SphereCollider:
   m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 3
-  m_Radius: 0.5
-  m_Center: {x: 0, y: 0, z: 0}
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -8602005571383381151, guid: ab9767f5879e85c47a19162e811d6462, type: 3}
 --- !u!1 &6288434018583776847
 GameObject:
   m_ObjectHideFlags: 0
