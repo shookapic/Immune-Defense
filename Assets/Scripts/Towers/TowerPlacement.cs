@@ -54,6 +54,25 @@ public class TowerPlacement : MonoBehaviour
             // ✅ Place tower
             GameObject newTower = Instantiate(prefab, placePos, Quaternion.identity);
             newTower.tag = "Tower";
+
+            // Attach TowerInfo with cost/name if available from repository deck
+            if (DeckRepository.Instance != null && DeckRepository.Instance.StoredDeck != null)
+            {
+                // Find matching CardData by prefab reference
+                foreach (var data in DeckRepository.Instance.StoredDeck)
+                {
+                    if (data != null && data.towerPrefab == prefab)
+                    {
+                        var info = newTower.GetComponent<TowerInfo>();
+                        if (info == null) info = newTower.AddComponent<TowerInfo>();
+                        info.towerName = data.towerName;
+                        info.cost = data.cost;
+                        info.sourceData = data;
+                        break;
+                    }
+                }
+            }
+
             Debug.Log("✅ Tower placed!");
         }
     }
