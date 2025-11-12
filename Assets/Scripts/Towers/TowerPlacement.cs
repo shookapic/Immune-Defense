@@ -44,7 +44,7 @@ public class TowerPlacement : MonoBehaviour
             Collider[] colliders = Physics.OverlapSphere(placePos, placeableRadius, blockedLayers);
             foreach (var col in colliders)
             {
-                if (col.CompareTag("Path") || col.CompareTag("Tower"))
+                if (col.CompareTag("Path") || col.CompareTag("Tower") || col.CompareTag("Enemy"))
                 {
                     Debug.Log("❌ Cannot place here — path or another tower!");
                     return;
