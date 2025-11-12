@@ -682,6 +682,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CardManager
   deck: []
+  persistentDeck: []
   deckSlots:
   - {fileID: 1328461399}
   - {fileID: 143555396}
@@ -7763,6 +7764,52 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1733266689}
   m_CullTransparentMesh: 1
+--- !u!1 &1758729801
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1758729803}
+  - component: {fileID: 1758729802}
+  m_Layer: 0
+  m_Name: DeckRepository
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1758729802
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1758729801}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a3f36d0e00086bd4dae07eb3cfc46aa6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DeckRepository
+  storedDeck: []
+  fallbackCard: {fileID: 11400000, guid: 9b65764bfa1c49644a16b1ac19da563f, type: 2}
+--- !u!4 &1758729803
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1758729801}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 9.48938, y: 0, z: 9.96006}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1760909457
 GameObject:
   m_ObjectHideFlags: 0
@@ -9817,3 +9864,4 @@ SceneRoots:
   - {fileID: 726029066}
   - {fileID: 637087842}
   - {fileID: 855993119}
+  - {fileID: 1758729803}

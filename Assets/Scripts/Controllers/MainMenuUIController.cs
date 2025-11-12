@@ -23,7 +23,9 @@ public class MainMenuUIController : MonoBehaviour
 
     public void OnBuildDeckClicked()
     {
-        _deckBuilderPanel.SetActive(true);
+        // _deckBuilderPanel.SetActive(true);
+        
+        GameController.Instance.OpenDeckBuilder();
     }
     
     public void OnQuitClicked()

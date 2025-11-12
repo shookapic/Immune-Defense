@@ -52,4 +52,9 @@ public class GameController : MonoBehaviour
         Time.timeScale = 1f;
         SceneManager.LoadScene(sceneName);
     }
+
+    public void OpenDeckBuilder()
+    {
+        LoadScene("DeckCreator");
+    }
 }
