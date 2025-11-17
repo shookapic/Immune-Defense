@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.EventSystems;
+using GameSystems;
 public class TowerPlacementPreview : MonoBehaviour
 {
     [Header("References")]
@@ -51,11 +52,14 @@ public class TowerPlacementPreview : MonoBehaviour
 
         UpdatePreviewPosition();
 
-        if (Input.GetMouseButtonDown(0) && canPlace && lastSelectedPrefab != null)
+        if (Input.GetMouseButtonUp(0) && canPlace && lastSelectedPrefab != null)
         {
             // If the pointer is over UI (for example a selection button), do not place a tower.
             if (EventSystem.current != null && EventSystem.current.IsPointerOverGameObject())
                 return;
+
+            // Prevent very rapid multiple placements
+            if (!TowerPlacement.CanPlaceNow()) return;
 
             PlaceTower();
         }
@@ -131,6 +135,63 @@ public class TowerPlacementPreview : MonoBehaviour
         if (prefab == null)
             return;
 
-        Instantiate(prefab, previewInstance.transform.position, Quaternion.identity);
+        // Determine cost for this prefab (prefer CardData in repository, fallback to prefab's TowerInfo)
+        int cost = 0;
+        if (DeckRepository.Instance != null && DeckRepository.Instance.StoredDeck != null)
+        {
+            foreach (var data in DeckRepository.Instance.StoredDeck)
+            {
+                if (data != null && data.towerPrefab == prefab)
+                {
+                    cost = data.cost;
+                    break;
+                }
+            }
+        }
+
+        if (cost == 0)
+        {
+            var prefabInfo = prefab.GetComponent<TowerInfo>();
+            if (prefabInfo != null) cost = prefabInfo.cost;
+        }
+
+        if (ResourceManager.Instance == null)
+        {
+            Debug.LogWarning("ResourceManager not found in scene. Add a ResourceManager to enable spending.");
+            return;
+        }
+
+        if (cost <= 0)
+        {
+            Debug.LogWarning($"Cannot place tower '{prefab.name}': cost not configured (cost={cost}).");
+            return;
+        }
+
+        if (!ResourceManager.Instance.TrySpend(cost))
+        {
+            Debug.Log($"Not enough resources to place tower (cost {cost}, balance {ResourceManager.Instance.Balance}).");
+            return;
+        }
+
+        var newTower = Instantiate(prefab, previewInstance.transform.position, Quaternion.identity);
+
+        // Attach TowerInfo with cost/name if available from repository deck
+        if (DeckRepository.Instance != null && DeckRepository.Instance.StoredDeck != null)
+        {
+            foreach (var data in DeckRepository.Instance.StoredDeck)
+            {
+                if (data != null && data.towerPrefab == prefab)
+                {
+                    var info = newTower.GetComponent<TowerInfo>();
+                    if (info == null) info = newTower.AddComponent<TowerInfo>();
+                    info.towerName = data.towerName;
+                    info.cost = data.cost;
+                    info.sourceData = data;
+                    break;
+                }
+            }
+        // record placement time to prevent immediate duplicate placements
+        TowerPlacement.RecordPlacement();
+        }
     }
 }
