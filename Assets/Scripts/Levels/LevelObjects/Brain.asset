@@ -1,0 +1,40 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b6c2c16eddee2d45b6dd31a0559408e, type: 3}
+  m_Name: Brain
+  m_EditorClassIdentifier: Assembly-CSharp::LevelData
+  levelName: Brain
+  sceneName: SkinLvlWithTowerPlacement
+  levelDisplayName: Level 4:\nThe Brain
+  description: "The Brain is the most protected biome, with delicate neural pathways
+    pulsing with electricity and thought. The terrain is narrower but packed with
+    high-value nodes that can empower your towers\u2014or destabilize them if corrupted.
+    Waves here are slower but smarter: enemies adapt, rerouting based on your defenses,
+    and certain pathogens can disable towers temporarily through \"neural interference.\"
+    This level demands careful planning and rewards strategic tower synergy. Failure
+    means catastrophic damage, making every placement feel critical."
+  completed: 0
+  mapChallenges:
+  - Tower debuf zones
+  - Lethal electric impulses
+  easy:
+    startingLives: 30
+    startingResources: 150
+    enemySpawnInterval: 2.5
+  normal:
+    startingLives: 20
+    startingResources: 100
+    enemySpawnInterval: 2
+  hard:
+    startingLives: 10
+    startingResources: 75
+    enemySpawnInterval: 1.5
