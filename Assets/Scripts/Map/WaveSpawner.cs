@@ -29,8 +29,10 @@ public class WaveSpawner : MonoBehaviour
     {
         public string waveName = "Wave";
         public List<WaveEntry> entries = new List<WaveEntry>();
+        [Tooltip("Countdown time before this wave starts")]
+        [Min(0)] public float countdownTime = 5f;
         [Tooltip("Delay after this wave finishes before next wave starts")]
-        public float delayAfterWave = 2f;
+        [Min(0)] public float delayAfterWave = 2f;
     }
 
     [Header("Waves")]
@@ -40,7 +42,27 @@ public class WaveSpawner : MonoBehaviour
     public bool loopWaves = false;
     public float delayBeforeFirstWave = 1f;
 
+    [Header("UI")]
+    [Tooltip("Leave empty to auto-create UI at runtime")]
+    public WaveCountdownUI countdownUI;
+    [Tooltip("Leave empty to auto-create UI at runtime")]
+    public WaveProgressUI progressUI;
+
     private Coroutine runRoutine;
+    private int currentWaveEnemyCount;
+
+    void Awake()
+    {
+        // Auto-create countdown UI if not assigned
+        if (countdownUI == null)
+        {
+            GameObject uiObj = new GameObject("WaveCountdownUI");
+            countdownUI = uiObj.AddComponent<WaveCountdownUI>();
+            DontDestroyOnLoad(uiObj);
+        }
+
+        // Don't create progress UI - removed per user request
+    }
 
     void OnEnable()
     {
@@ -73,6 +95,23 @@ public class WaveSpawner : MonoBehaviour
 
         foreach (var wave in waves)
         {
+            // Show countdown UI before wave starts
+            if (countdownUI != null && wave.countdownTime > 0f)
+            {
+                Debug.Log($"[WaveSpawner] Starting countdown for '{wave.waveName}' ({wave.countdownTime}s)");
+                countdownUI.StartCountdown(wave.waveName, wave.countdownTime);
+                yield return new WaitForSeconds(wave.countdownTime);
+            }
+
+            Debug.Log($"[WaveSpawner] Starting wave: {wave.waveName}");
+
+            // Calculate total enemy count for this wave
+            currentWaveEnemyCount = 0;
+            foreach (var entry in wave.entries)
+            {
+                currentWaveEnemyCount += entry.count;
+            }
+
             foreach (var entry in wave.entries)
             {
                 // ✅ Restore prefab reference in case Unity lost it
@@ -134,6 +173,13 @@ public class WaveSpawner : MonoBehaviour
                 }
             }
 
+            Debug.Log($"[WaveSpawner] Completed spawning wave: {wave.waveName}");
+            
+            // Wait for all enemies to be destroyed before continuing
+            yield return StartCoroutine(WaitForAllEnemiesDestroyed());
+            
+            Debug.Log($"[WaveSpawner] All enemies destroyed for wave: {wave.waveName}");
+
             if (wave.delayAfterWave > 0f)
                 yield return new WaitForSeconds(wave.delayAfterWave);
         }
@@ -147,5 +193,25 @@ public class WaveSpawner : MonoBehaviour
     } while (loopWaves);
 }
 
+    IEnumerator WaitForAllEnemiesDestroyed()
+    {
+        // Wait a frame to ensure all spawned enemies are registered
+        yield return null;
+        
+        while (true)
+        {
+            // Find all enemies in the scene
+            EnemyPath[] enemies = FindObjectsByType<EnemyPath>(FindObjectsSortMode.None);
+            
+            if (enemies.Length == 0)
+            {
+                Debug.Log("[WaveSpawner] No more enemies in scene.");
+                break;
+            }
+            
+            Debug.Log($"[WaveSpawner] Waiting for {enemies.Length} enemies to be destroyed...");
+            yield return new WaitForSeconds(0.5f); // Check every 0.5 seconds
+        }
+    }
 
 }
