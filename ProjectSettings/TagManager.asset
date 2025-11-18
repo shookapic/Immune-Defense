@@ -8,6 +8,7 @@ TagManager:
   - Bullet
   - Path
   - Tower
+  - Map
   layers:
   - Default
   - TransparentFX
