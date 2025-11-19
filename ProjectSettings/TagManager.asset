@@ -8,6 +8,7 @@ TagManager:
   - Bullet
   - Path
   - Tower
+  - Map
   layers:
   - Default
   - TransparentFX
@@ -16,7 +17,7 @@ TagManager:
   - Water
   - UI
   - Tower
-  - 
+  - Enemy
   - 
   - 
   - 
