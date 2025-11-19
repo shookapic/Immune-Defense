@@ -1,3 +1,4 @@
+using GameSystems;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -21,9 +22,26 @@ public class GameController : MonoBehaviour
 
     public void StartGame()
     {
-        LoadScene("SkinLvlWithTowerPlacement");
-    }
+        if (LevelManager.Instance == null || LevelManager.Instance.CurrentLevel == null)
+        {
+            Debug.LogError("Cannot start game: No current level set in LevelManager.");
+            return;
+        }
 
+        string sceneName = LevelManager.Instance.CurrentLevel.sceneName;
+
+        if (string.IsNullOrEmpty(sceneName))
+        {
+            Debug.LogError("Cannot start game: Current level has no associated scene name.");
+            return;
+        }
+        
+        LoadScene(sceneName);
+
+        Debug.Log("Starting Lives: " + LevelManager.Instance.CurrentLevel.GetStartingLives(LevelManager.Instance.CurrentDifficulty));
+        ResourceManager.Instance.SetHealthPoints(LevelManager.Instance.CurrentLevel.GetStartingLives(LevelManager.Instance.CurrentDifficulty));
+        ResourceManager.Instance.SetBalance(LevelManager.Instance.CurrentLevel.GetStartingResources(LevelManager.Instance.CurrentDifficulty));
+    }
     public void PauseGame()
     {
         if (IsPaused) return;

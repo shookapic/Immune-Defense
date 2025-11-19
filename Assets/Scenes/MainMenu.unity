@@ -4284,6 +4284,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::GameSystems.ResourceManager
   startingBalance: 200
   maxBalance: 9999
+  startingHealthPoints: 100
+  maxHealthPoints: 200
 --- !u!4 &1403702389
 Transform:
   m_ObjectHideFlags: 0
