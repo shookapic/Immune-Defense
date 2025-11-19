@@ -4297,8 +4297,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa04b6f214925ac44b368915fc580049, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::UIManager
-  settingsPanel: {fileID: 4793384597055609255, guid: 959c5abb0a528e3458ea338c48c9bb52, type: 3}
-  pauseMenuPanel: {fileID: 5192769372384834536, guid: f2ff6ab2e127bb640a69553dd286766b, type: 3}
+  settingsPanelPrefab: {fileID: 4793384597055609255, guid: 959c5abb0a528e3458ea338c48c9bb52, type: 3}
+  pauseMenuPanelPrefab: {fileID: 5192769372384834536, guid: f2ff6ab2e127bb640a69553dd286766b, type: 3}
 --- !u!1 &1425175562
 GameObject:
   m_ObjectHideFlags: 0

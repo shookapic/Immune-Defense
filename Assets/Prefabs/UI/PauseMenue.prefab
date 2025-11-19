@@ -92,11 +92,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2253596091397356538, guid: eb95e648ef70efb4e87b55230d811e21, type: 3}
       propertyPath: m_Name
-      value: LongButton
+      value: LongButton_Continue
       objectReference: {fileID: 0}
     - target: {fileID: 2935872391920727274, guid: eb95e648ef70efb4e87b55230d811e21, type: 3}
       propertyPath: m_text
       value: Continue
+      objectReference: {fileID: 0}
+    - target: {fileID: 2935872391920727274, guid: eb95e648ef70efb4e87b55230d811e21, type: 3}
+      propertyPath: m_ActiveFontFeatures.Array.size
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6679201002431425230, guid: eb95e648ef70efb4e87b55230d811e21, type: 3}
       propertyPath: m_Pivot.x
@@ -206,6 +210,10 @@ PrefabInstance:
 
 '
       objectReference: {fileID: 0}
+    - target: {fileID: 2935872391920727274, guid: eb95e648ef70efb4e87b55230d811e21, type: 3}
+      propertyPath: m_ActiveFontFeatures.Array.size
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6679201002431425230, guid: eb95e648ef70efb4e87b55230d811e21, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -311,6 +319,10 @@ PrefabInstance:
     - target: {fileID: 2935872391920727274, guid: eb95e648ef70efb4e87b55230d811e21, type: 3}
       propertyPath: m_text
       value: Load
+      objectReference: {fileID: 0}
+    - target: {fileID: 2935872391920727274, guid: eb95e648ef70efb4e87b55230d811e21, type: 3}
+      propertyPath: m_ActiveFontFeatures.Array.size
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6679201002431425230, guid: eb95e648ef70efb4e87b55230d811e21, type: 3}
       propertyPath: m_Pivot.x
@@ -421,6 +433,10 @@ PrefabInstance:
     - target: {fileID: 2935872391920727274, guid: eb95e648ef70efb4e87b55230d811e21, type: 3}
       propertyPath: m_text
       value: Exit
+      objectReference: {fileID: 0}
+    - target: {fileID: 2935872391920727274, guid: eb95e648ef70efb4e87b55230d811e21, type: 3}
+      propertyPath: m_ActiveFontFeatures.Array.size
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6679201002431425230, guid: eb95e648ef70efb4e87b55230d811e21, type: 3}
       propertyPath: m_Pivot.x
@@ -622,6 +638,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 4159185946268231772}
     m_Modifications:
+    - target: {fileID: 4982077811700443386, guid: cbda86f9879268943b8c5ca762f8691d, type: 3}
+      propertyPath: m_ActiveFontFeatures.Array.size
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7319768541955173780, guid: cbda86f9879268943b8c5ca762f8691d, type: 3}
       propertyPath: m_Name
       value: HeaderPanel_v2

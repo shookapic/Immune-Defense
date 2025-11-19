@@ -1,7 +1,8 @@
 using System.Collections;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
-public class BuildMenuController : MonoBehaviour
+public class BuildMenuController : MonoBehaviour, IPointerExitHandler
 {
     [Header("References")]
     [SerializeField] private RectTransform inventoryPanel; // your panel to slide
@@ -11,6 +12,9 @@ public class BuildMenuController : MonoBehaviour
     [SerializeField] private Vector2 shownAnchoredPos = Vector2.zero; 
     // This is where the panel should be when it's visible (often 0,0)
 
+    [Header("Auto-Close Settings")]
+    [SerializeField] private bool autoCloseOnExit = true;
+
     private Vector2 hiddenAnchoredPos;
     private bool isShown = false;
     private bool isAnimating = false;
@@ -19,6 +23,15 @@ public class BuildMenuController : MonoBehaviour
     {
         // Cache the starting (hidden) position from the current layout
         hiddenAnchoredPos = inventoryPanel.anchoredPosition;
+    }
+
+    public void OnPointerExit(PointerEventData eventData)
+    {
+        if (autoCloseOnExit && isShown && !isAnimating)
+        {
+            StartCoroutine(Slide(inventoryPanel, shownAnchoredPos, hiddenAnchoredPos));
+            isShown = false;
+        }
     }
 
     // Hook this up to your Button's OnClick
