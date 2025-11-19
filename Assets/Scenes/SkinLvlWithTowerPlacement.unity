@@ -5575,7 +5575,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8840844955024126473, guid: f6ebd946a0199174eb67d785d5720ad9, type: 3}
       propertyPath: m_TagString
-      value: Path
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 8875204723183864187, guid: f6ebd946a0199174eb67d785d5720ad9, type: 3}
       propertyPath: m_Mesh
@@ -9697,19 +9697,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a4c108bad1c812540a161c35f975535a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnemyPath
-  pathPoints:
-  - {x: -67.69967, y: 50, z: 161.92484}
-  - {x: -67.69967, y: 50, z: 161.92484}
-  - {x: -44.571693, y: 50, z: 161.92484}
-  - {x: -12.835417, y: 50, z: 178.2408}
-  - {x: -5.5234146, y: 50, z: 167.33302}
-  - {x: 1.7313385, y: 50, z: 146.82394}
-  - {x: 11.393013, y: 50, z: 146.56824}
-  - {x: 20.304157, y: 50, z: 154.1913}
-  - {x: 23.729012, y: 50, z: 165.90208}
-  - {x: 18.75745, y: 50, z: 178.38623}
-  - {x: 45.97415, y: 50, z: 193.76958}
-  - {x: 87.259384, y: 50, z: 166.81584}
+  pathTag: Path
+  hoverHeight: 0.6
+  useRaycastToSurface: 1
   speed: 12
 --- !u!224 &817909917 stripped
 RectTransform:
