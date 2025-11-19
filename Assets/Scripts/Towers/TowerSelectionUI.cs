@@ -1,8 +1,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-using System.Reflection;
 using System.Linq;
+using TMPro;
 
 
 /// <summary>
@@ -21,6 +21,8 @@ public class TowerSelectionUI : MonoBehaviour
     [Header("UI")]
     public Button buttonPrefab; // assign a UI Button prefab
     public Transform buttonParent; // container under Canvas where buttons will be instantiated
+    [Tooltip("If true, will use existing children of buttonParent as slots instead of instantiating new buttons.")]
+    public bool useExistingCells = true;
 
     // Optional: tint for selected/unselected state
     public Color selectedColor = Color.green;
@@ -52,7 +54,15 @@ public class TowerSelectionUI : MonoBehaviour
             return;
         }
 
-        CreateButtons();
+        // Decide whether to use existing cells or instantiate
+        if (useExistingCells && buttonParent.childCount > 0)
+        {
+            CreateButtonsFromExistingCells();
+        }
+        else
+        {
+            CreateButtons();
+        }
 
         // Subscribe to selection changes so we can update visuals
         if (TowerPlacementController.Instance != null)
@@ -116,6 +126,103 @@ public class TowerSelectionUI : MonoBehaviour
             btn.onClick.AddListener(() => OnButtonClicked(prefab));
 
             spawnedButtons.Add(btn);
+        }
+
+        UpdateButtonVisuals();
+    }
+
+    void CreateButtonsFromExistingCells()
+    {
+        spawnedButtons.Clear();
+
+        int cellCount = buttonParent.childCount;
+        if (availableTowers.Count > cellCount)
+        {
+            Debug.LogWarning($"TowerSelectionUI: Not enough cells ({cellCount}) for towers ({availableTowers.Count}). Extra towers will be ignored.");
+        }
+        if (cellCount > availableTowers.Count)
+        {
+            // Optional info about unused cells
+            Debug.Log($"TowerSelectionUI: {cellCount - availableTowers.Count} unused cells (no tower assigned).");
+        }
+
+        int assignCount = Mathf.Min(availableTowers.Count, cellCount);
+        for (int i = 0; i < assignCount; i++)
+        {
+            var prefab = availableTowers[i];
+            Transform cell = buttonParent.GetChild(i);
+            
+            // Ensure cell is active/visible
+            cell.gameObject.SetActive(true);
+            
+            Button btn = cell.GetComponent<Button>();
+            if (btn == null)
+            {
+                btn = cell.gameObject.AddComponent<Button>();
+                // Copy selectable colors from prefab if available
+                if (buttonPrefab != null)
+                {
+                    btn.transition = buttonPrefab.transition;
+                    btn.colors = buttonPrefab.colors;
+                    btn.navigation = buttonPrefab.navigation;
+                }
+            }
+
+            btn.onClick.RemoveAllListeners();
+            btn.onClick.AddListener(() => OnButtonClicked(prefab));
+            btn.name = "Cell_Tower_" + prefab.name;
+
+            // Try to set text (supports legacy Text or TMP if present)
+            var legacyText = btn.GetComponentInChildren<Text>();
+            if (legacyText != null)
+            {
+                if (i < availableCardData.Count && availableCardData[i] != null)
+                {
+                    var data = availableCardData[i];
+                    legacyText.text = $"{data.towerName} ({data.cost})";
+                }
+                else
+                {
+                    legacyText.text = prefab.name;
+                }
+            }
+            
+            var nameText = btn.transform.Find("NameText")?.GetComponent<TextMeshProUGUI>();
+            var costText = btn.transform.Find("CostText")?.GetComponent<TextMeshProUGUI>();
+
+            if (nameText != null)
+            {
+                Debug.Log("Setting NameText TMP");
+                if (i < availableCardData.Count && availableCardData[i] != null)
+                {
+                    var data = availableCardData[i];
+                    nameText.text = data.towerName.ToString().Replace("Tower", "");
+                }
+                else
+                {
+                    nameText.text = prefab.name;
+                }
+            }
+            if (costText != null)
+            {
+                if (i < availableCardData.Count && availableCardData[i] != null)
+                {
+                    var data = availableCardData[i];
+                    costText.text = $"{data.cost}";
+                }
+                else
+                {
+                    costText.text = prefab.name;
+                }
+            }
+            spawnedButtons.Add(btn);
+        }
+
+        // Hide unused cells
+        for (int i = assignCount; i < cellCount; i++)
+        {
+            Transform cell = buttonParent.GetChild(i);
+            cell.gameObject.SetActive(false);
         }
 
         UpdateButtonVisuals();
