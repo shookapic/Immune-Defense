@@ -1,0 +1,41 @@
+fileFormatVersion: 2
+guid: 29ab67bad2ef01f40b55557d5fff870d
+labels:
+- usfx
+- imphenzia
+- vehicle
+- car
+- engine
+- mono
+- rpm
+- loop
+- motor
+- petrol
+- gas
+AudioImporter:
+  externalObjects: {}
+  serializedVersion: 6
+  defaultSettings:
+    loadType: 0
+    sampleRateSetting: 0
+    sampleRateOverride: 0
+    compressionFormat: 0
+    quality: 0
+    conversionMode: 0
+  platformSettingOverrides: {}
+  forceToMono: 0
+  normalize: 1
+  preloadAudioData: 1
+  loadInBackground: 0
+  ambisonic: 0
+  3D: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 17256
+  packageName: Universal Sound FX
+  packageVersion: 1.6
+  assetPath: Assets/Universal Sound FX/VEHICLES/Land/Cars/Engine_Loops/CAR_ENGINE_i6_3L_3000_RPM_loop_mono.wav
+  uploadId: 736765

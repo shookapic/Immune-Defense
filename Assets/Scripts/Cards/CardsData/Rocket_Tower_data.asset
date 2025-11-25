@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 987c5dfdb5869aa46b15665beeaa8dbb, type: 3}
+  m_Name: Rocket_Tower_data
+  m_EditorClassIdentifier: Assembly-CSharp::CardData
+  towerName: Rocket Tower
+  towerPrefab: {fileID: 1000010238097244, guid: 4c078804355f84a45b82a301848f4cca, type: 3}
+  cost: 100
+  upgradeTiers:
+  - tierName: Level2
+    additionalCost: 10
+    rangeBonus: 10
+    attackSpeedMultiplier: 1.5
+    damageBonus: 1.5
+    overrideBulletPrefab: {fileID: 0}
+    overrideTowerPrefab: {fileID: 1000012995287934, guid: 57c9097a5c7101d4a81f9dff1b8cf721, type: 3}
+    overrideVisualPrefab: {fileID: 0}
+  - tierName: Level3
+    additionalCost: 10
+    rangeBonus: 10
+    attackSpeedMultiplier: 1.5
+    damageBonus: 1.5
+    overrideBulletPrefab: {fileID: 0}
+    overrideTowerPrefab: {fileID: 1000013876083712, guid: 9411ec93a4b5ca647955e56ff4acdfcd, type: 3}
+    overrideVisualPrefab: {fileID: 0}

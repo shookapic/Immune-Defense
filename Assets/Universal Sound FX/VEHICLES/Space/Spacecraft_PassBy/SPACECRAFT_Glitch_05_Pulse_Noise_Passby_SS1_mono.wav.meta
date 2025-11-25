@@ -1,0 +1,41 @@
+fileFormatVersion: 2
+guid: aa64e19f132906d4a8fc74a739f0bc0d
+labels:
+- imphenzia
+- usfx
+- mono
+- spacecraft
+- engine
+- spaceship
+- scifi
+- passby
+- whoosh
+- swisch
+- flyby
+AudioImporter:
+  externalObjects: {}
+  serializedVersion: 6
+  defaultSettings:
+    loadType: 0
+    sampleRateSetting: 0
+    sampleRateOverride: 0
+    compressionFormat: 0
+    quality: 0
+    conversionMode: 0
+  platformSettingOverrides: {}
+  forceToMono: 0
+  normalize: 1
+  preloadAudioData: 1
+  loadInBackground: 0
+  ambisonic: 0
+  3D: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 17256
+  packageName: Universal Sound FX
+  packageVersion: 1.6
+  assetPath: Assets/Universal Sound FX/VEHICLES/Space/Spacecraft_PassBy/SPACECRAFT_Glitch_05_Pulse_Noise_Passby_SS1_mono.wav
+  uploadId: 736765

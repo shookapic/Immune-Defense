@@ -1,0 +1,38 @@
+fileFormatVersion: 2
+guid: a4129201f0aa0fe4e8d5bd252f3e835a
+labels:
+- usfx
+- imphenzia
+- user interface
+- ui
+- gui
+- click
+- tap
+- mono
+AudioImporter:
+  externalObjects: {}
+  serializedVersion: 6
+  defaultSettings:
+    loadType: 0
+    sampleRateSetting: 0
+    sampleRateOverride: 0
+    compressionFormat: 0
+    quality: 0
+    conversionMode: 0
+  platformSettingOverrides: {}
+  forceToMono: 0
+  normalize: 1
+  preloadAudioData: 1
+  loadInBackground: 0
+  ambisonic: 0
+  3D: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 17256
+  packageName: Universal Sound FX
+  packageVersion: 1.6
+  assetPath: Assets/Universal Sound FX/USER_INTERFACES/Clicks_Taps/UI_Click_Tap_Short_mono.wav
+  uploadId: 736765

@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 1bc9b14ff230e2242b248daff64546f6
+ShaderImporter:
+  externalObjects: {}
+  defaultTextures: []
+  nonModifiableTextures: []
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 144288
+  packageName: AAA Projectiles Vol.2
+  packageVersion: 1.5.3
+  assetPath: Assets/Hovl Studio/HSFiles/Shaders/AddTrail.shader
+  uploadId: 745063

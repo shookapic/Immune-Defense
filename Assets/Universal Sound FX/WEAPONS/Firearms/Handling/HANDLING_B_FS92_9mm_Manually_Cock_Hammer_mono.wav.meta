@@ -1,0 +1,41 @@
+fileFormatVersion: 2
+guid: dbef8b298a79ac943aa0b875993dc2bf
+labels:
+- usfx
+- imphenzia
+- weapon
+- foley
+- handling
+- operate
+- reload
+- mono
+- gun
+- handgun
+- pistol
+AudioImporter:
+  externalObjects: {}
+  serializedVersion: 6
+  defaultSettings:
+    loadType: 0
+    sampleRateSetting: 0
+    sampleRateOverride: 0
+    compressionFormat: 0
+    quality: 0
+    conversionMode: 0
+  platformSettingOverrides: {}
+  forceToMono: 0
+  normalize: 1
+  preloadAudioData: 1
+  loadInBackground: 0
+  ambisonic: 0
+  3D: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 17256
+  packageName: Universal Sound FX
+  packageVersion: 1.6
+  assetPath: Assets/Universal Sound FX/WEAPONS/Firearms/Handling/HANDLING_B_FS92_9mm_Manually_Cock_Hammer_mono.wav
+  uploadId: 736765

@@ -1,0 +1,42 @@
+fileFormatVersion: 2
+guid: f0c8055678da8c14c9e39f65f88082b3
+labels:
+- usfx
+- imphenzia
+- mono
+- balloon
+- air
+- blow
+- toy
+- party
+- rub
+- squeek
+- rub
+- handle
+AudioImporter:
+  externalObjects: {}
+  serializedVersion: 6
+  defaultSettings:
+    loadType: 0
+    sampleRateSetting: 0
+    sampleRateOverride: 0
+    compressionFormat: 0
+    quality: 0
+    conversionMode: 0
+  platformSettingOverrides: {}
+  forceToMono: 0
+  normalize: 1
+  preloadAudioData: 1
+  loadInBackground: 0
+  ambisonic: 0
+  3D: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 17256
+  packageName: Universal Sound FX
+  packageVersion: 1.6
+  assetPath: Assets/Universal Sound FX/FOLEY/BALLOONS/BALLOON_Rub_04_mono.wav
+  uploadId: 736765

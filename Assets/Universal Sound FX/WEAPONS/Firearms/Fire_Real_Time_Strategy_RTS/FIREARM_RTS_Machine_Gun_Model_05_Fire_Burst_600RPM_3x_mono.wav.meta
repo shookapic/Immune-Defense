@@ -1,0 +1,40 @@
+fileFormatVersion: 2
+guid: 93db8d046339cd042aaf4d58562cab31
+labels:
+- usfx
+- imphenzia
+- weapon
+- machinegun
+- machine gun
+- gun
+- RTS
+- fire
+- loop
+- mono
+AudioImporter:
+  externalObjects: {}
+  serializedVersion: 6
+  defaultSettings:
+    loadType: 0
+    sampleRateSetting: 0
+    sampleRateOverride: 0
+    compressionFormat: 0
+    quality: 0
+    conversionMode: 0
+  platformSettingOverrides: {}
+  forceToMono: 0
+  normalize: 1
+  preloadAudioData: 1
+  loadInBackground: 0
+  ambisonic: 0
+  3D: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 17256
+  packageName: Universal Sound FX
+  packageVersion: 1.6
+  assetPath: Assets/Universal Sound FX/WEAPONS/Firearms/Fire_Real_Time_Strategy_RTS/FIREARM_RTS_Machine_Gun_Model_05_Fire_Burst_600RPM_3x_mono.wav
+  uploadId: 736765

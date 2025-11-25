@@ -1,0 +1,42 @@
+fileFormatVersion: 2
+guid: 5d5dfe756429bd942bfe8ee2f8214330
+labels:
+- usfx
+- imphenzia
+- mono
+- footstep
+- walk
+- boot
+- boots
+- glass
+- shattered
+- crushed
+- step
+- walking
+AudioImporter:
+  externalObjects: {}
+  serializedVersion: 6
+  defaultSettings:
+    loadType: 0
+    sampleRateSetting: 0
+    sampleRateOverride: 0
+    compressionFormat: 0
+    quality: 0
+    conversionMode: 0
+  platformSettingOverrides: {}
+  forceToMono: 0
+  normalize: 1
+  preloadAudioData: 1
+  loadInBackground: 0
+  ambisonic: 0
+  3D: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 17256
+  packageName: Universal Sound FX
+  packageVersion: 1.6
+  assetPath: Assets/Universal Sound FX/HUMAN/Footsteps/Boots_Glass_Shattered_Walk/FOOTSTEP_Boots_Glass_Shattered_Walk_Slow_RR4_mono.wav
+  uploadId: 736765

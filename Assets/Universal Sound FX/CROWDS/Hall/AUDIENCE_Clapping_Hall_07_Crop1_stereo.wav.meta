@@ -1,0 +1,39 @@
+fileFormatVersion: 2
+guid: cb19056f2e0a74641ac8b7f9236d70a0
+labels:
+- imphenzia
+- usfx
+- stereo
+- audience
+- audience
+- applause
+- applaude
+- ' clap'
+- clapping
+AudioImporter:
+  externalObjects: {}
+  serializedVersion: 6
+  defaultSettings:
+    loadType: 0
+    sampleRateSetting: 0
+    sampleRateOverride: 0
+    compressionFormat: 0
+    quality: 0
+    conversionMode: 0
+  platformSettingOverrides: {}
+  forceToMono: 0
+  normalize: 1
+  preloadAudioData: 1
+  loadInBackground: 0
+  ambisonic: 0
+  3D: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 17256
+  packageName: Universal Sound FX
+  packageVersion: 1.6
+  assetPath: Assets/Universal Sound FX/CROWDS/Hall/AUDIENCE_Clapping_Hall_07_Crop1_stereo.wav
+  uploadId: 736765

@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 7f614d6930bf3fb46b56f817a7b173c9
+timeCreated: 1473716437
+licenseType: Store
+TextScriptImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 17256
+  packageName: Universal Sound FX
+  packageVersion: 1.6
+  assetPath: Assets/Universal Sound FX/version_history.txt
+  uploadId: 736765

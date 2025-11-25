@@ -1,0 +1,44 @@
+fileFormatVersion: 2
+guid: 72fbef683a5270d4097a509f55167197
+labels:
+- usfx
+- imphenzia
+- vehicle
+- train
+- steam
+- locomotive
+- engine
+- car
+- passenger
+- outside
+- loop
+- mono
+- rail
+- railroad
+AudioImporter:
+  externalObjects: {}
+  serializedVersion: 6
+  defaultSettings:
+    loadType: 0
+    sampleRateSetting: 0
+    sampleRateOverride: 0
+    compressionFormat: 0
+    quality: 0
+    conversionMode: 0
+  platformSettingOverrides: {}
+  forceToMono: 0
+  normalize: 1
+  preloadAudioData: 1
+  loadInBackground: 0
+  ambisonic: 0
+  3D: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 17256
+  packageName: Universal Sound FX
+  packageVersion: 1.6
+  assetPath: Assets/Universal Sound FX/VEHICLES/Land/Trains/TRAIN_Steam_Train_Onboard_Outside_03_fast_short_loop_mono.wav
+  uploadId: 736765

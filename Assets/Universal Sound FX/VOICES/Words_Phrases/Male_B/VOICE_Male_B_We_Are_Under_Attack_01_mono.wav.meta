@@ -1,0 +1,41 @@
+fileFormatVersion: 2
+guid: 07ddbc6fbf0b1d9418ef5872bb35bf4f
+labels:
+- imphenzia
+- usfx
+- mono
+- voice
+- male
+- shout
+- loud
+- we
+- are
+- under
+- attack
+AudioImporter:
+  externalObjects: {}
+  serializedVersion: 6
+  defaultSettings:
+    loadType: 0
+    sampleRateSetting: 0
+    sampleRateOverride: 0
+    compressionFormat: 0
+    quality: 0
+    conversionMode: 0
+  platformSettingOverrides: {}
+  forceToMono: 0
+  normalize: 1
+  preloadAudioData: 1
+  loadInBackground: 0
+  ambisonic: 0
+  3D: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 17256
+  packageName: Universal Sound FX
+  packageVersion: 1.6
+  assetPath: Assets/Universal Sound FX/VOICES/Words_Phrases/Male_B/VOICE_Male_B_We_Are_Under_Attack_01_mono.wav
+  uploadId: 736765

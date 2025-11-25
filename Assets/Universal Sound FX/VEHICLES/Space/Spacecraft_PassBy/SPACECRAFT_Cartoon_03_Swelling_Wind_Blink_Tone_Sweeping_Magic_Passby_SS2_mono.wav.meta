@@ -1,0 +1,41 @@
+fileFormatVersion: 2
+guid: d14fdad2d7f122f4eb99212b6ad06719
+labels:
+- imphenzia
+- usfx
+- mono
+- spacecraft
+- engine
+- spaceship
+- scifi
+- passby
+- whoosh
+- swisch
+- flyby
+AudioImporter:
+  externalObjects: {}
+  serializedVersion: 6
+  defaultSettings:
+    loadType: 0
+    sampleRateSetting: 0
+    sampleRateOverride: 0
+    compressionFormat: 0
+    quality: 0
+    conversionMode: 0
+  platformSettingOverrides: {}
+  forceToMono: 0
+  normalize: 1
+  preloadAudioData: 1
+  loadInBackground: 0
+  ambisonic: 0
+  3D: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 17256
+  packageName: Universal Sound FX
+  packageVersion: 1.6
+  assetPath: Assets/Universal Sound FX/VEHICLES/Space/Spacecraft_PassBy/SPACECRAFT_Cartoon_03_Swelling_Wind_Blink_Tone_Sweeping_Magic_Passby_SS2_mono.wav
+  uploadId: 736765
