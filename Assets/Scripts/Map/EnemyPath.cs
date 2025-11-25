@@ -69,7 +69,8 @@ public class EnemyPath : MonoBehaviour
             {
                 // Cast from above to hit the collider accurately even if the mesh Y varies
                 var from = p + Vector3.up * 50f;
-                if (Physics.Raycast(from, Vector3.down, out RaycastHit hit, 100f))
+                // Use a layer mask of -5 (DefaultRaycastLayers) and explicitly Ignore triggers
+                if (Physics.Raycast(from, Vector3.down, out RaycastHit hit, 100f, Physics.DefaultRaycastLayers, QueryTriggerInteraction.Ignore))
                 {
                     p = hit.point;
                 }
