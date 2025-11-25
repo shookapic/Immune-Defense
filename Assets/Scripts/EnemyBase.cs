@@ -16,6 +16,7 @@ public class EnemyBase : MonoBehaviour
     {
         if (health <= 0)
         {
+            GameSystems.ResourceManager.Instance.AddBalance((int)money_ammount);
             Destroy(gameObject);
         }
     }
