@@ -6,7 +6,13 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/Towers.unity
-    guid: 2cda990e2423bbf4892e6590ba056729
+    path: Assets/Scenes/MainMenu.unity
+    guid: 7c209437142e4bc40a601ae8be806423
+  - enabled: 1
+    path: Assets/Scenes/DeckCreator.unity
+    guid: 6ae55ccf9af79064fb1eff604536ce46
+  - enabled: 1
+    path: Assets/Scenes/SkinLvlWithTowerPlacement.unity
+    guid: 5888233497681094c9cb42c400aa506c
   m_configObjects: {}
   m_UseUCBPForAssetBundles: 0

@@ -38,15 +38,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4000011289914344, guid: 29289ebc7c465d14abb284bce7ffa060, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.050735846
+      value: 0.05
       objectReference: {fileID: 0}
     - target: {fileID: 4000011289914344, guid: 29289ebc7c465d14abb284bce7ffa060, type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.050735846
+      value: 0.05
       objectReference: {fileID: 0}
     - target: {fileID: 4000011289914344, guid: 29289ebc7c465d14abb284bce7ffa060, type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.050735846
+      value: 0.05
       objectReference: {fileID: 0}
     - target: {fileID: 4000011289914344, guid: 29289ebc7c465d14abb284bce7ffa060, type: 3}
       propertyPath: m_LocalPosition.x
@@ -120,9 +120,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e93158f2e7d459046b4ee6f64356f8db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Tower
-  bullet: {fileID: 7978926997213389568, guid: 9d6ff76965eafff469b13ffb88b2f353, type: 3}
+  bulletPrefab: {fileID: 0}
   attackSpeed: 1
   range: 30
+  shootPoint: {fileID: 0}
+  rotatingPart: {fileID: 0}
 --- !u!135 &3156724993965851760
 SphereCollider:
   m_ObjectHideFlags: 0

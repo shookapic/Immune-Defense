@@ -1,0 +1,40 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b6c2c16eddee2d45b6dd31a0559408e, type: 3}
+  m_Name: Lungs
+  m_EditorClassIdentifier: Assembly-CSharp::LevelData
+  levelName: The Lungs
+  sceneName: SkinLvlWithTowerPlacement
+  levelDisplayName: Level 2:\nThe Lungs
+  description: The Lungs are a misty, branching labyrinth of bronchi and air sacs.
+    Constant airflow pushes particles around, causing enemies to drift unpredictably
+    between paths. Fog reduces visibility, occasionally obscuring enemy routes or
+    tower ranges. Some pathogens become airborne, floating across terrain instead
+    of following the ground pathways. The player must adapt to dynamic air currents
+    and use towers that excel in close-quarters combat, as chokepoints can be narrow
+    and volatile.
+  completed: 0
+  mapChallenges:
+  - Reduced vision
+  - Neighbour
+  easy:
+    startingLives: 30
+    startingResources: 150
+    enemySpawnInterval: 2.5
+  normal:
+    startingLives: 20
+    startingResources: 100
+    enemySpawnInterval: 2
+  hard:
+    startingLives: 10
+    startingResources: 75
+    enemySpawnInterval: 1.5
