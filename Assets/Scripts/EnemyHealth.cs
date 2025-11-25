@@ -4,6 +4,9 @@ public class EnemyHealth : MonoBehaviour
 {
     [Header("Enemy Health Settings")]
     public float health = 50;
+    
+    private bool isDead = false;
+    
     void Start()
     {
         
@@ -12,8 +15,10 @@ public class EnemyHealth : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (health <= 0)
+        if (health <= 0 && !isDead)
         {
+            isDead = true;
+            OnDeath();
             Destroy(gameObject);
         }
     }
@@ -21,5 +26,10 @@ public class EnemyHealth : MonoBehaviour
     public void TakeDamage(float damage_receive)
     {
         health -= damage_receive;
+    }
+
+    private void OnDeath()
+    {
+        // Enemy death - no UI notification needed
     }
 }

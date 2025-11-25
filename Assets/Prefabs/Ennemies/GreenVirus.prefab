@@ -103,7 +103,7 @@ MonoBehaviour:
   pathTag: Path
   hoverHeight: 0.6
   useRaycastToSurface: 1
-  speed: 30
+  speed: 100
 --- !u!1 &3436881866216731200
 GameObject:
   m_ObjectHideFlags: 0
