@@ -12,6 +12,8 @@ public class WaveSpawner : MonoBehaviour
         [Min(1)] public int count = 5;
         [Tooltip("Seconds between spawns for this entry")]
         public float spawnInterval = 0.5f;
+        [Tooltip("Movement speed for this enemy (0 = use prefab default)")]
+        [Min(0)] public float speed = 0f;
 
         [Header("Path (optional)")]
         public PathDefinition pathOverride;
@@ -53,9 +55,12 @@ public class WaveSpawner : MonoBehaviour
 
     void Awake()
     {
+        Debug.Log("[WaveSpawner] Awake called - initializing UI");
+        
         // Auto-create countdown UI if not assigned
         if (countdownUI == null)
         {
+            Debug.Log("[WaveSpawner] Creating WaveCountdownUI");
             GameObject uiObj = new GameObject("WaveCountdownUI");
             countdownUI = uiObj.AddComponent<WaveCountdownUI>();
             DontDestroyOnLoad(uiObj);
@@ -164,7 +169,18 @@ public class WaveSpawner : MonoBehaviour
                     if (enemy == null)
                         Debug.LogWarning($"[WaveSpawner] '{prefab.name}' has no EnemyPath component.");
                     else
-                        Debug.Log($"[WaveSpawner] Spawned '{prefab.name}' successfully at {spawnPosition}.");
+                    {
+                        // Apply custom speed if specified
+                        if (entry.speed > 0)
+                        {
+                            enemy.speed = entry.speed;
+                            Debug.Log($"[WaveSpawner] Spawned '{prefab.name}' at {spawnPosition} with speed {entry.speed}.");
+                        }
+                        else
+                        {
+                            Debug.Log($"[WaveSpawner] Spawned '{prefab.name}' successfully at {spawnPosition}.");
+                        }
+                    }
 
                     if (entry.spawnInterval > 0f)
                         yield return new WaitForSeconds(entry.spawnInterval);

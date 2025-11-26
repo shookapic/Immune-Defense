@@ -291,6 +291,7 @@ GameObject:
   - component: {fileID: 5214251610882957506}
   - component: {fileID: 7882457611160717291}
   - component: {fileID: 7298378675894204575}
+  - component: {fileID: 8740728127814777975}
   m_Layer: 7
   m_Name: Virus 2 (4)
   m_TagString: Enemy
@@ -308,7 +309,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 280, y: 280, z: 280}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 5214251610943598176}
@@ -381,6 +382,22 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 0}
+--- !u!114 &8740728127814777975
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5214251610882957508}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4c108bad1c812540a161c35f975535a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyPath
+  pathTag: Path
+  hoverHeight: 0.6
+  useRaycastToSurface: 1
+  speed: 2
 --- !u!1 &5214251610943598179
 GameObject:
   m_ObjectHideFlags: 0
