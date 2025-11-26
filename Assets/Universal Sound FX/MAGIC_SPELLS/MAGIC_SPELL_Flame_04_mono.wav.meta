@@ -1,0 +1,41 @@
+fileFormatVersion: 2
+guid: 27c92d3febe5c8c40869ac3748efb706
+labels:
+- usfx
+- imphenzia
+- mono
+- magic
+- spell
+- wizard
+- sourcerer
+- cast
+- magician
+- fantasy
+- flame
+AudioImporter:
+  externalObjects: {}
+  serializedVersion: 6
+  defaultSettings:
+    loadType: 0
+    sampleRateSetting: 0
+    sampleRateOverride: 0
+    compressionFormat: 0
+    quality: 0
+    conversionMode: 0
+  platformSettingOverrides: {}
+  forceToMono: 0
+  normalize: 1
+  preloadAudioData: 1
+  loadInBackground: 0
+  ambisonic: 0
+  3D: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 17256
+  packageName: Universal Sound FX
+  packageVersion: 1.6
+  assetPath: Assets/Universal Sound FX/MAGIC_SPELLS/MAGIC_SPELL_Flame_04_mono.wav
+  uploadId: 736765

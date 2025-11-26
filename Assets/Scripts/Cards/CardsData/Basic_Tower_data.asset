@@ -13,5 +13,22 @@ MonoBehaviour:
   m_Name: Basic_Tower_data
   m_EditorClassIdentifier: Assembly-CSharp::CardData
   towerName: Basic Tower
-  towerPrefab: {fileID: 8293876878943816118, guid: 3b90b33f475a5a2428365d9cf031e3ab, type: 3}
+  towerPrefab: {fileID: 1000013532432518, guid: cca29f1ffd25fa24f869812298198c93, type: 3}
   cost: 50
+  upgradeTiers:
+  - tierName: Level2
+    additionalCost: 10
+    rangeBonus: 10
+    attackSpeedMultiplier: 1.5
+    damageBonus: 1.5
+    overrideBulletPrefab: {fileID: 0}
+    overrideTowerPrefab: {fileID: 1000013256173212, guid: 76fb4fc998a307a4da3155b3353196f8, type: 3}
+    overrideVisualPrefab: {fileID: 0}
+  - tierName: Level3
+    additionalCost: 10
+    rangeBonus: 10
+    attackSpeedMultiplier: 1.5
+    damageBonus: 1.5
+    overrideBulletPrefab: {fileID: 0}
+    overrideTowerPrefab: {fileID: 1000010605678252, guid: 4a643c0a9909fce4d82818f673c4182a, type: 3}
+    overrideVisualPrefab: {fileID: 0}

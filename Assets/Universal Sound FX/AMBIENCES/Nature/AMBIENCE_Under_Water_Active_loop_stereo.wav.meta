@@ -1,0 +1,37 @@
+fileFormatVersion: 2
+guid: a91643e48424ad443a7401539556c61d
+labels:
+- usfx
+- imphenzia
+- under water
+- water
+- bubble
+- stereo
+- loop
+AudioImporter:
+  externalObjects: {}
+  serializedVersion: 6
+  defaultSettings:
+    loadType: 0
+    sampleRateSetting: 0
+    sampleRateOverride: 0
+    compressionFormat: 0
+    quality: 0
+    conversionMode: 0
+  platformSettingOverrides: {}
+  forceToMono: 0
+  normalize: 1
+  preloadAudioData: 1
+  loadInBackground: 0
+  ambisonic: 0
+  3D: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 17256
+  packageName: Universal Sound FX
+  packageVersion: 1.6
+  assetPath: Assets/Universal Sound FX/AMBIENCES/Nature/AMBIENCE_Under_Water_Active_loop_stereo.wav
+  uploadId: 736765

@@ -13,5 +13,22 @@ MonoBehaviour:
   m_Name: Tesla_Tower_data
   m_EditorClassIdentifier: Assembly-CSharp::CardData
   towerName: Tesla Tower
-  towerPrefab: {fileID: 3197560297304759837, guid: 460e49344c6015b45b283fc89e1e2eac, type: 3}
+  towerPrefab: {fileID: 1000011018392982, guid: 2ec982cd0b13f2f4194e9f1bedb70930, type: 3}
   cost: 50
+  upgradeTiers:
+  - tierName: Level2
+    additionalCost: 10
+    rangeBonus: 10
+    attackSpeedMultiplier: 1.5
+    damageBonus: 1.5
+    overrideBulletPrefab: {fileID: 0}
+    overrideTowerPrefab: {fileID: 1000011071183042, guid: 606062956f50b0041b4e401e149edc05, type: 3}
+    overrideVisualPrefab: {fileID: 0}
+  - tierName: Level3
+    additionalCost: 10
+    rangeBonus: 10
+    attackSpeedMultiplier: 1.5
+    damageBonus: 1.5
+    overrideBulletPrefab: {fileID: 0}
+    overrideTowerPrefab: {fileID: 1000011039027170, guid: 56df5fd121cca894ab4caa213ad7bc64, type: 3}
+    overrideVisualPrefab: {fileID: 0}

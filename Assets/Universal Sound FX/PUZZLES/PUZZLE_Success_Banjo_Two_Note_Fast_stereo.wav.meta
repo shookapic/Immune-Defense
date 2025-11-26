@@ -1,0 +1,40 @@
+fileFormatVersion: 2
+guid: 128a54a93f2d1924f98fc74045f78448
+labels:
+- usfx
+- imphenzia
+- puzzle
+- success
+- triumph
+- complete
+- done
+- match
+- stereo
+- banjo
+AudioImporter:
+  externalObjects: {}
+  serializedVersion: 6
+  defaultSettings:
+    loadType: 0
+    sampleRateSetting: 0
+    sampleRateOverride: 0
+    compressionFormat: 0
+    quality: 0
+    conversionMode: 0
+  platformSettingOverrides: {}
+  forceToMono: 0
+  normalize: 1
+  preloadAudioData: 1
+  loadInBackground: 0
+  ambisonic: 0
+  3D: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 17256
+  packageName: Universal Sound FX
+  packageVersion: 1.6
+  assetPath: Assets/Universal Sound FX/PUZZLES/PUZZLE_Success_Banjo_Two_Note_Fast_stereo.wav
+  uploadId: 736765
