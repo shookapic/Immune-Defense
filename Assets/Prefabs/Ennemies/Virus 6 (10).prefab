@@ -302,6 +302,7 @@ GameObject:
   - component: {fileID: -3517457829240570218}
   - component: {fileID: -853753004040361982}
   - component: {fileID: 4887953608460960148}
+  - component: {fileID: -3829453272512697104}
   m_Layer: 0
   m_Name: Virus 6 (10)
   m_TagString: Enemy
@@ -319,8 +320,8 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 280, y: 280, z: 280}
+  m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 8026675625025065233}
   - {fileID: 8026675625838959806}
@@ -409,6 +410,27 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 112
   m_CollisionDetection: 0
+--- !u!65 &-3829453272512697104
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8026675625049392206}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.0035, y: 0.0035, z: 0.0035}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &8026675625265068133
 GameObject:
   m_ObjectHideFlags: 0
