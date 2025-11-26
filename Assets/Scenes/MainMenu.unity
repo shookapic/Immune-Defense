@@ -1908,7 +1908,7 @@ MonoBehaviour:
   buttonClickSound: {fileID: 8300000, guid: dab0cdcf421308c42bc15c3e8eeb632a, type: 3}
   towerPlaceSound: {fileID: 8300000, guid: acadf9d2689d7134f8bb54c49d007930, type: 3}
   towerUpgradeSound: {fileID: 8300000, guid: e1c3bc920e430e5449fdeb91139ddc95, type: 3}
-  towerSellSound: {fileID: 8300000, guid: 63af593e0ab80574e9094f8bf21dc6bd, type: 3}
+  towerSellSound: {fileID: 0}
   enemyDeathSound: {fileID: 8300000, guid: 07f645617cb34f7489bea276bd1ed5c0, type: 3}
   projectileFireSound: {fileID: 8300000, guid: db042abb754c0ef40b797a84009a5d04, type: 3}
   persistAcrossScenes: 1
@@ -4094,7 +4094,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0.0009765625, y: -6.1304}
+  m_AnchoredPosition: {x: 0.0009765625, y: -6.130371}
   m_SizeDelta: {x: -70.8, y: -582.5568}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1673611232
