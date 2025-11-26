@@ -273,7 +273,7 @@ GameObject:
   - component: {fileID: 6474674567531744124}
   - component: {fileID: 2026500303982880563}
   - component: {fileID: 2889475417568011073}
-  - component: {fileID: 3150317022102712728}
+  - component: {fileID: -411606668731326939}
   m_Layer: 5
   m_Name: LevelPanel
   m_TagString: Untagged
@@ -331,8 +331,8 @@ MonoBehaviour:
   livesText: {fileID: 0}
   completedIndicator: {fileID: 2890011582903091305}
   completedText: {fileID: 4455363974827469196}
-  playButton: {fileID: 3150317022102712728}
---- !u!114 &3150317022102712728
+  playButton: {fileID: -411606668731326939}
+--- !u!114 &-411606668731326939
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -341,9 +341,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 4867228669787569700}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Script: {fileID: 11500000, guid: b597990cbc4c53b41b473ca931d1c2c3, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Button
+  m_EditorClassIdentifier: Assembly-CSharp::UI.AudioButton
   m_Navigation:
     m_Mode: 3
     m_WrapAround: 0

@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 987c5dfdb5869aa46b15665beeaa8dbb, type: 3}
+  m_Name: Laser_Tower_data
+  m_EditorClassIdentifier: Assembly-CSharp::CardData
+  towerName: Laser Tower
+  towerPrefab: {fileID: 1000012228927132, guid: 17af2791eb64e7c40818e4fca308ef69, type: 3}
+  cost: 100
+  upgradeTiers:
+  - tierName: Level2
+    additionalCost: 10
+    rangeBonus: 10
+    attackSpeedMultiplier: 1.5
+    damageBonus: 1.5
+    overrideBulletPrefab: {fileID: 0}
+    overrideTowerPrefab: {fileID: 1000010390399600, guid: 770597f9e56f34b4c8bfbd0090edbb28, type: 3}
+    overrideVisualPrefab: {fileID: 0}
+  - tierName: 
+    additionalCost: 0
+    rangeBonus: 0
+    attackSpeedMultiplier: 0
+    damageBonus: 0
+    overrideBulletPrefab: {fileID: 0}
+    overrideTowerPrefab: {fileID: 1000010350988284, guid: 09055dad0ae12e34696adb20c2dae18e, type: 3}
+    overrideVisualPrefab: {fileID: 0}

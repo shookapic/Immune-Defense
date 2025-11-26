@@ -1,0 +1,37 @@
+fileFormatVersion: 2
+guid: a81cb3244763d724c888f498c7ebbfb0
+labels:
+- imphenzia
+- usfx
+- stereo
+- loop
+- rain
+- water
+- weather
+AudioImporter:
+  externalObjects: {}
+  serializedVersion: 6
+  defaultSettings:
+    loadType: 0
+    sampleRateSetting: 0
+    sampleRateOverride: 0
+    compressionFormat: 0
+    quality: 0
+    conversionMode: 0
+  platformSettingOverrides: {}
+  forceToMono: 0
+  normalize: 1
+  preloadAudioData: 1
+  loadInBackground: 0
+  ambisonic: 0
+  3D: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 17256
+  packageName: Universal Sound FX
+  packageVersion: 1.6
+  assetPath: Assets/Universal Sound FX/ELEMENTS/Water/Rain/RAIN_Summer_Heavy_loop_stereo.wav
+  uploadId: 736765

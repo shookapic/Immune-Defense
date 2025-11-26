@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: d2d89a48f26d8e24fba34789fd97784e
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 168810
+  packageName: 3D Toon Lasers
+  packageVersion: 1.4
+  assetPath: Assets/Hovl Studio/3D Toon Lasers/Prefabs/Laser Toon Fire.prefab
+  uploadId: 755551

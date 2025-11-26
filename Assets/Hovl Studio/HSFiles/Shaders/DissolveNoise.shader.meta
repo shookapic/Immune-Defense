@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 145bae762d8de8f4c8fb1b284128fae7
+ShaderImporter:
+  externalObjects: {}
+  defaultTextures: []
+  nonModifiableTextures: []
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 168810
+  packageName: 3D Toon Lasers
+  packageVersion: 1.4
+  assetPath: Assets/Hovl Studio/HSFiles/Shaders/DissolveNoise.shader
+  uploadId: 755551
