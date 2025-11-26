@@ -5,7 +5,7 @@ public class DamageZone : MonoBehaviour
 {
     [Header("Settings")]
     [Tooltip("Amount of health to remove from the player when an enemy enters.")]
-    public int damageToPlayer = 10;
+    [SerializeField] private int damageToPlayer = 10;
 
     private void OnTriggerEnter(Collider other)
     {
