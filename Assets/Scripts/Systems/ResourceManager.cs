@@ -10,10 +10,12 @@ namespace GameSystems
     public static ResourceManager Instance { get; private set; }
 
     [Header("Starting values")]
-    [SerializeField] private int startingBalance = 200;
     [SerializeField] private int maxBalance = 9999;
-    [SerializeField] private int startingHealthPoints = 100;
     [SerializeField] private int maxHealthPoints = 200;
+
+    [Header("Cheat/Debug Settings")]
+    [Tooltip("Enable to ignore all balance/HP deductions and maintain infinite resources.")]
+    [SerializeField] private bool infiniteResourcesAndHP = false;
 
     public int Balance { get; private set; }
     public int HealthPoints { get; private set; }
@@ -31,20 +33,25 @@ namespace GameSystems
         }
         Instance = this;
         DontDestroyOnLoad(gameObject);
-
-        Balance = Mathf.Clamp(startingBalance, 0, maxBalance);
-        HealthPoints = Mathf.Clamp(startingHealthPoints, 0, maxHealthPoints);
     }
 
     public void AddHealthPoints(int amount)
     {
         if (amount <= 0) return;
-        HealthPoints = Mathf.Clamp(HealthPoints + amount, 0, maxHealthPoints);
+        if (infiniteResourcesAndHP)
+        {
+            HealthPoints = maxHealthPoints; // keep at max
+        }
+        else
+        {
+            HealthPoints = Mathf.Clamp(HealthPoints + amount, 0, maxHealthPoints);
+        }
         OnHealthPointsChanged?.Invoke(HealthPoints);
     }
 
     public void RemoveHealthPoints(int amount)
     {
+        if (infiniteResourcesAndHP) return; // ignore damage
         if (amount <= 0) return;
         HealthPoints = Mathf.Clamp(HealthPoints - amount, 0, maxHealthPoints);
         OnHealthPointsChanged?.Invoke(HealthPoints);
@@ -53,13 +60,21 @@ namespace GameSystems
     public void AddBalance(int amount)
     {
         if (amount <= 0) return;
-        Balance = Mathf.Clamp(Balance + amount, 0, maxBalance);
+        if (infiniteResourcesAndHP)
+        {
+            Balance = maxBalance; // keep at max
+        }
+        else
+        {
+            Balance = Mathf.Clamp(Balance + amount, 0, maxBalance);
+        }
         OnBalanceChanged?.Invoke(Balance);
     }
 
     // Tries to remove 'amount' from balance. Returns true if successful.
     public bool TrySpend(int amount)
     {
+        if (infiniteResourcesAndHP) return true; // always succeed, no deduction
         if (amount <= 0) return true; // nothing to spend
         if (amount > Balance) return false;
         Balance -= amount;
@@ -69,13 +84,27 @@ namespace GameSystems
 
     public void SetBalance(int amount)
     {
-        Balance = Mathf.Clamp(amount, 0, maxBalance);
+        if (infiniteResourcesAndHP)
+        {
+            Balance = maxBalance; // override to max
+        }
+        else
+        {
+            Balance = Mathf.Clamp(amount, 0, maxBalance);
+        }
         OnBalanceChanged?.Invoke(Balance);
     }
 
     public void SetHealthPoints(int amount)
     {
-        HealthPoints = Mathf.Clamp(amount, 0, maxHealthPoints);
+        if (infiniteResourcesAndHP)
+        {
+            HealthPoints = maxHealthPoints; // override to max
+        }
+        else
+        {
+            HealthPoints = Mathf.Clamp(amount, 0, maxHealthPoints);
+        }
         OnHealthPointsChanged?.Invoke(HealthPoints);
     }
 

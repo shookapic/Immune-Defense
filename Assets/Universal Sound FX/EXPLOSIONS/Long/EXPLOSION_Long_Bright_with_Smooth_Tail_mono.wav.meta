@@ -1,0 +1,29 @@
+fileFormatVersion: 2
+guid: fb1f6f083e8b9a84d94d793eb7a24f39
+AudioImporter:
+  externalObjects: {}
+  serializedVersion: 6
+  defaultSettings:
+    loadType: 0
+    sampleRateSetting: 0
+    sampleRateOverride: 44100
+    compressionFormat: 1
+    quality: 1
+    conversionMode: 0
+  platformSettingOverrides: {}
+  forceToMono: 0
+  normalize: 1
+  preloadAudioData: 1
+  loadInBackground: 0
+  ambisonic: 0
+  3D: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 17256
+  packageName: Universal Sound FX
+  packageVersion: 1.6
+  assetPath: Assets/Universal Sound FX/EXPLOSIONS/Long/EXPLOSION_Long_Bright_with_Smooth_Tail_mono.wav
+  uploadId: 736765

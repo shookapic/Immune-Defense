@@ -1,0 +1,35 @@
+fileFormatVersion: 2
+guid: 00b75d283af6c3b46ae3ec87008a9dbc
+labels:
+- usfx
+- imphenzia
+- squeel
+- mono
+- monster
+AudioImporter:
+  externalObjects: {}
+  serializedVersion: 6
+  defaultSettings:
+    loadType: 0
+    sampleRateSetting: 0
+    sampleRateOverride: 0
+    compressionFormat: 0
+    quality: 0
+    conversionMode: 0
+  platformSettingOverrides: {}
+  forceToMono: 0
+  normalize: 1
+  preloadAudioData: 1
+  loadInBackground: 0
+  ambisonic: 0
+  3D: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 17256
+  packageName: Universal Sound FX
+  packageVersion: 1.6
+  assetPath: Assets/Universal Sound FX/MONSTERS_CREATURES/MONSTER_Squeel_Deep_mono.wav
+  uploadId: 736765

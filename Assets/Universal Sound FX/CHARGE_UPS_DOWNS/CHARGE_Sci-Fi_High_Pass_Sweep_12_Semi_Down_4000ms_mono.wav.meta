@@ -1,0 +1,29 @@
+fileFormatVersion: 2
+guid: 0dcfd4fc8c451f14498646a97798cbe7
+AudioImporter:
+  externalObjects: {}
+  serializedVersion: 6
+  defaultSettings:
+    loadType: 0
+    sampleRateSetting: 0
+    sampleRateOverride: 44100
+    compressionFormat: 1
+    quality: 1
+    conversionMode: 0
+  platformSettingOverrides: {}
+  forceToMono: 0
+  normalize: 1
+  preloadAudioData: 1
+  loadInBackground: 0
+  ambisonic: 0
+  3D: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 17256
+  packageName: Universal Sound FX
+  packageVersion: 1.6
+  assetPath: Assets/Universal Sound FX/CHARGE_UPS_DOWNS/CHARGE_Sci-Fi_High_Pass_Sweep_12_Semi_Down_4000ms_mono.wav
+  uploadId: 736765

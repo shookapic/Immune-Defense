@@ -263,7 +263,7 @@ public class LevelUIManager : MonoBehaviour
             }
             else
             {
-                var legacy = go.GetComponentInChildren<UnityEngine.UI.Text>();
+                var legacy = go.GetComponentInChildren<Text>();
                 if (legacy != null)
                     legacy.text = challenge;
             }

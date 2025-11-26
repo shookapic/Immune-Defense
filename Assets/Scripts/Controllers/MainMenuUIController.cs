@@ -17,8 +17,10 @@ public class MainMenuUIController : MonoBehaviour
 
     public void OnBackToMainMenuClicked()
     {
-        _deckBuilderPanel.SetActive(false);
-        _levelSelectionPanel.SetActive(false);
+        if (_deckBuilderPanel != null)
+            _deckBuilderPanel.SetActive(false);
+        if (_levelSelectionPanel != null)
+            _levelSelectionPanel.SetActive(false);
     }
 
     public void OnBuildDeckClicked()

@@ -1,0 +1,41 @@
+fileFormatVersion: 2
+guid: da8f77dd829a43b4e8ae0fa7e113492a
+labels:
+- usfx
+- imphenzia
+- stereo
+- loop
+- ambience
+- forest
+- wind
+- leaves
+- trees
+- tree
+- nature
+AudioImporter:
+  externalObjects: {}
+  serializedVersion: 6
+  defaultSettings:
+    loadType: 0
+    sampleRateSetting: 0
+    sampleRateOverride: 0
+    compressionFormat: 0
+    quality: 0
+    conversionMode: 0
+  platformSettingOverrides: {}
+  forceToMono: 0
+  normalize: 1
+  preloadAudioData: 1
+  loadInBackground: 0
+  ambisonic: 0
+  3D: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 17256
+  packageName: Universal Sound FX
+  packageVersion: 1.6
+  assetPath: Assets/Universal Sound FX/AMBIENCES/Nature/AMBIENCE_Forest_Wind_Tree_Creak_34sec_loop_stereo.wav
+  uploadId: 736765

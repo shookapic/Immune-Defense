@@ -86,7 +86,7 @@ public class WaveCountdownUI : MonoBehaviour
         countdownTextObj.transform.SetParent(countdownPanel.transform, false);
         
         countdownText = countdownTextObj.AddComponent<TextMeshProUGUI>();
-        countdownText.text = "5";
+        countdownText.text = "";
         countdownText.fontSize = 72;
         countdownText.alignment = TextAlignmentOptions.Center;
         countdownText.color = new Color(1f, 0.8f, 0f); // Yellow/Orange
