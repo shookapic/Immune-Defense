@@ -6,9 +6,8 @@ public class DamageEffect : BulletEffect
 
     protected override void ApplyEffect(GameObject target)
     {
-        EnemyHealth health = target.GetComponent<EnemyHealth>();
-        // if (health != null)
-        //     health.TakeDamage(damage);
-        // DEALS DAMAGE TO ENEMY HIT
+        Debug.Log("Applying Damage Effect");
+        EnemyBase health = target.GetComponent<EnemyBase>();
+        health.TakeDamage(damage);
     }
 }
