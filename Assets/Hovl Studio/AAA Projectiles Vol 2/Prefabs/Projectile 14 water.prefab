@@ -14,9 +14,11 @@ GameObject:
   - component: {fileID: 54530307865729164}
   - component: {fileID: 135664649076355494}
   - component: {fileID: -6554692706855825855}
+  - component: {fileID: -5937725922406754941}
+  - component: {fileID: 3790183017139677782}
   m_Layer: 0
   m_Name: Projectile 14 water
-  m_TagString: Untagged
+  m_TagString: Bullet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -170,7 +172,7 @@ SphereCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -205,6 +207,32 @@ MonoBehaviour:
   m_ShadowLayerMask: 1
   m_RenderingLayers: 1
   m_ShadowRenderingLayers: 1
+--- !u!114 &-5937725922406754941
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1228652472414832}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 15c8fc9c24786ee46bfe70e540af0f01, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SingleTargetBullet
+  travelingSpeed: 80
+--- !u!114 &3790183017139677782
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1228652472414832}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5ab95a71c9b0934aa01fa9255b1c8ef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DamageEffect
+  damage: 10
 --- !u!1 &1715675216902642
 GameObject:
   m_ObjectHideFlags: 0

@@ -24591,9 +24591,11 @@ GameObject:
   - component: {fileID: 135178183695366598}
   - component: {fileID: 108625486811999762}
   - component: {fileID: -193519985040949819}
+  - component: {fileID: -8198168970688504165}
+  - component: {fileID: -2190579971808518223}
   m_Layer: 0
   m_Name: Projectile 21 green
-  m_TagString: Untagged
+  m_TagString: Bullet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -24681,7 +24683,7 @@ SphereCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -24781,6 +24783,32 @@ MonoBehaviour:
   m_ShadowLayerMask: 1
   m_RenderingLayers: 1
   m_ShadowRenderingLayers: 1
+--- !u!114 &-8198168970688504165
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1980571578861810}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 15c8fc9c24786ee46bfe70e540af0f01, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SingleTargetBullet
+  travelingSpeed: 80
+--- !u!114 &-2190579971808518223
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1980571578861810}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5ab95a71c9b0934aa01fa9255b1c8ef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DamageEffect
+  damage: 10
 --- !u!1 &2719122208117655751
 GameObject:
   m_ObjectHideFlags: 0

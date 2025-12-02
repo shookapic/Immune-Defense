@@ -63,6 +63,7 @@ public class HS_ProjectileMover : MonoBehaviour
         }
     }
 
+    /* Only used for demo purposes
     protected virtual void FixedUpdate()
     {
         if (speed != 0)
@@ -70,10 +71,12 @@ public class HS_ProjectileMover : MonoBehaviour
             rb.linearVelocity = transform.forward * speed;      
         }
     }
+    */
 
     //https ://docs.unity3d.com/ScriptReference/Rigidbody.OnCollisionEnter.html
     protected virtual void OnCollisionEnter(Collision collision)
     {
+        if (!collision.gameObject.CompareTag("Enemy")) return;
         //Lock all axes movement and rotation
         rb.constraints = RigidbodyConstraints.FreezeAll;
         //speed = 0;

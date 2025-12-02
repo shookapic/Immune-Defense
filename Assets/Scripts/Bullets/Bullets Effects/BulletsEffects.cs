@@ -17,5 +17,5 @@ public abstract class BulletEffect : MonoBehaviour
         bullet.OnHit -= ApplyEffect;
     }
 
-    protected abstract void ApplyEffect(GameObject target);
+    public abstract void ApplyEffect(GameObject target);
 }

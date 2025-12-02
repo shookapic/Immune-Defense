@@ -55,11 +55,11 @@ public class Tower : MonoBehaviour
 
     IEnumerator Shoot()
     {
-        if (bulletPrefab == null) yield return null;
+        if (bulletPrefab == null) yield break;
 
         GameObject target = FindNearestEnemy();
 
-        if (target == null) yield return null;
+        if (target == null) yield break;
         
         RotateTowards(target.transform.position);
             
