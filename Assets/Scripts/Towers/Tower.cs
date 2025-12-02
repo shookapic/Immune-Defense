@@ -1,5 +1,6 @@
 using System.Collections;
 using UnityEngine;
+using GameSystems;
 
 public class Tower : MonoBehaviour
 {
@@ -71,6 +72,7 @@ public class Tower : MonoBehaviour
             Bullet bulletScript = newBullet.GetComponent<Bullet>();
             if (bulletScript != null)
                 bulletScript.SetTarget(target);
+            AudioController.Instance.PlayProjectileFire();
             
             yield return new WaitForSeconds(multiShootOffsetSeconds);
         }
