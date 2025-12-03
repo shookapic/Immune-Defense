@@ -78,6 +78,7 @@ public class TowerUpgradeProgress : MonoBehaviour
         var parent = transform.parent;
         var position = transform.position;
         var rotation = transform.rotation;
+        bool wasSelected = TowerSelectionManager.Instance != null && TowerSelectionManager.Instance.SelectedTower == gameObject;
 
         var newRoot = Instantiate(newRootPrefab, position, rotation, parent);
         var newTower = newRoot.GetComponent<Tower>();
@@ -101,6 +102,12 @@ public class TowerUpgradeProgress : MonoBehaviour
             newInfo.sourceData = sourceData;
             newInfo.towerName = sourceData != null ? sourceData.towerName : newInfo.towerName;
             newInfo.cost = sourceData != null ? sourceData.cost : newInfo.cost;
+        }
+
+        // If this tower was selected, update the selection manager to point to the new tower
+        if (wasSelected && TowerSelectionManager.Instance != null)
+        {
+            TowerSelectionManager.Instance.SelectTower(newRoot);
         }
 
         Destroy(gameObject);

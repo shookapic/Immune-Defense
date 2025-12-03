@@ -1,3 +1,4 @@
+using GameSystems;
 using UnityEngine;
 
 public class EnemyBase : MonoBehaviour
@@ -16,6 +17,7 @@ public class EnemyBase : MonoBehaviour
     {
         if (health <= 0)
         {
+            AudioController.Instance.PlayEnemyDeath();
             Destroy(gameObject);
         }
     }

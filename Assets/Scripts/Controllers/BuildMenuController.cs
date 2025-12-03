@@ -25,6 +25,15 @@ public class BuildMenuController : MonoBehaviour, IPointerExitHandler
         hiddenAnchoredPos = inventoryPanel.anchoredPosition;
     }
 
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Escape) && isShown && !isAnimating)
+        {
+            StartCoroutine(Slide(inventoryPanel, shownAnchoredPos, hiddenAnchoredPos));
+            isShown = false;
+        }
+    }
+
     public void OnPointerExit(PointerEventData eventData)
     {
         if (autoCloseOnExit && isShown && !isAnimating)

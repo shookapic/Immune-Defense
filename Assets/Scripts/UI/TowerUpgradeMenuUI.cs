@@ -72,6 +72,15 @@ public class TowerUpgradeMenuUI : MonoBehaviour
         }
     }
 
+    void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Escape) && upgradeMenuPanel != null && upgradeMenuPanel.activeSelf)
+        {
+            HideMenu();
+            TowerSelectionManager.Instance?.DeselectTower();
+        }
+    }
+
     void OnDestroy()
     {
         if (TowerSelectionManager.Instance != null)
@@ -84,7 +93,10 @@ public class TowerUpgradeMenuUI : MonoBehaviour
     private void OnTowerSelected(GameObject tower)
     {
         RefreshUI();
-        ShowMenu();
+        if (upgradeMenuPanel != null && !upgradeMenuPanel.activeSelf)
+            ShowMenu();
+        else
+            RefreshUI(); // Already shown, just refresh
     }
 
     private void OnTowerDeselected()
@@ -235,7 +247,7 @@ public class TowerUpgradeMenuUI : MonoBehaviour
         if (info.ApplyUpgrade())
         {
             Debug.Log($"Tower upgraded! New tier: {info.upgradeProgress.CurrentTierIndex + 1}");
-            RefreshUI();
+            // RefreshUI will be called automatically via OnTowerSelected when selection updates
         }
     }
 
@@ -251,6 +263,7 @@ public class TowerUpgradeMenuUI : MonoBehaviour
             ResourceManager.Instance.AddBalance(refund);
 
         TowerSelectionManager.Instance.DeselectTower();
+        AudioController.Instance.PlayTowerSell();
         Destroy(tower);
     }
 

@@ -1,4 +1,6 @@
+using System.Collections;
 using UnityEngine;
+using GameSystems;
 
 public class Tower : MonoBehaviour
 {
@@ -8,38 +10,30 @@ public class Tower : MonoBehaviour
     [Header("Tower Settings")]
     public float attackSpeed = 1.0f; // shots per second
     public float range = 5f;         // detection range
-    public Transform shootPoint;     // point from which bullets are fired
-    public Transform rotatingPart;
+    public float turnSpeed = 5f;
+    public Transform[] shootPoint;     // point from which bullets are fired
+    public bool hasXRotation = false;
+    public bool hasYRotation = false;
+    public Transform rotatingPartX;
+    public Transform rotatingPartY;
+    public float multiShootOffsetSeconds = 0.1f;
 
     private float attackCooldown = 0f;
 
     void Update()
     {
         attackCooldown -= Time.deltaTime;
-
-        GameObject target = FindNearestEnemy();
-
-        if (target != null)
+        if (attackCooldown <= 0f)
         {
-            // RotateTowards(target.transform.position);
-
-            if (attackCooldown <= 0f)
-            {
-                Shoot(target);
-                attackCooldown = 1f / attackSpeed;
-            }
+            StartCoroutine(Shoot());
+            attackCooldown = 1f / attackSpeed;
         }
     }
 
-    public bool IsInRange(Vector3 targetPosition)
+    public bool IsInRange(Vector3 targetPosition, out float distance)
     {
-        return Vector3.Distance(transform.position, targetPosition) <= range;
-    }
-
-    private void OnDrawGizmosSelected()
-    {
-        Gizmos.color = Color.cyan;
-        Gizmos.DrawWireSphere(transform.position, range);
+        distance = Mathf.Abs(Vector3.Distance(transform.position, targetPosition));
+        return distance <= range;
     }
 
     GameObject FindNearestEnemy()
@@ -50,10 +44,9 @@ public class Tower : MonoBehaviour
 
         foreach (GameObject enemy in enemies)
         {
-            float distance = Vector3.Distance(transform.position, enemy.transform.position);
-            if (distance < shortestDistance && distance <= range)
+            if (IsInRange(enemy.transform.position, out float distance))
             {
-                shortestDistance = distance;
+                shortestDistance = distance < shortestDistance ? distance : shortestDistance;
                 nearest = enemy;
             }
         }
@@ -61,24 +54,50 @@ public class Tower : MonoBehaviour
         return nearest;
     }
 
-    void Shoot(GameObject target)
+    IEnumerator Shoot()
     {
-        if (bulletPrefab == null) return;
-        Transform spawn = shootPoint != null ? shootPoint : transform;
-        GameObject newBullet = Instantiate(bulletPrefab, spawn.position, spawn.rotation);
+        if (bulletPrefab == null) yield break;
 
-        Bullet bulletScript = newBullet.GetComponent<Bullet>();
-        if (bulletScript != null)
-            bulletScript.SetTarget(target);
+        GameObject target = FindNearestEnemy();
+
+        if (target == null) yield break;
+        
+        RotateTowards(target.transform.position);
+            
+        foreach(Transform sp in shootPoint)
+        {
+            Transform spawn = shootPoint != null ? sp : transform;
+            GameObject newBullet = Instantiate(bulletPrefab, spawn.position, spawn.rotation);
+
+            Bullet bulletScript = newBullet.GetComponent<Bullet>();
+            if (bulletScript != null)
+                bulletScript.SetTarget(target);
+            AudioController.Instance.PlayProjectileFire();
+            
+            yield return new WaitForSeconds(multiShootOffsetSeconds);
+        }
+
     }
-
     void RotateTowards(Vector3 targetPosition)
     {
-        if (rotatingPart == null) return;
+        if (rotatingPartX != null)
+        {
+            Vector3 dir = targetPosition - rotatingPartY.position;
+            Quaternion lookRotation = Quaternion.LookRotation(dir);
+            rotatingPartY.rotation = Quaternion.Lerp(rotatingPartY.rotation, lookRotation, 1f);
+        }
 
-        Vector3 direction = (targetPosition - rotatingPart.position).normalized;
-        direction.y = 0f;
-        Quaternion lookRotation = Quaternion.LookRotation(direction);
-        rotatingPart.rotation = Quaternion.Lerp(rotatingPart.rotation, lookRotation, Time.deltaTime * 5f);
+        if (rotatingPartY != null)
+        {
+            Vector3 dir = targetPosition - rotatingPartX.position;
+            Quaternion lookRotation = Quaternion.LookRotation(dir);
+            rotatingPartX.rotation = Quaternion.Lerp(rotatingPartX.rotation, lookRotation, 1f);
+        }
+    }
+
+    private void OnDrawGizmosSelected()
+    {
+        Gizmos.color = Color.cyan;
+        Gizmos.DrawWireSphere(transform.position, range);
     }
 }

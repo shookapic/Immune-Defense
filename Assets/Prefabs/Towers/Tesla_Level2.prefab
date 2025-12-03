@@ -165,11 +165,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e93158f2e7d459046b4ee6f64356f8db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Tower
-  bulletPrefab: {fileID: 8760184633270099838, guid: aac5a467004d5914f95ceffd4357820a, type: 3}
+  bulletPrefab: {fileID: 1034045548656336, guid: d897177194c6ab1458b9a394743f3281, type: 3}
   attackSpeed: 1
   range: 40
-  shootPoint: {fileID: 0}
-  rotatingPart: {fileID: 0}
+  turnSpeed: 5
+  shootPoint:
+  - {fileID: 4000012427229826}
+  hasXRotation: 0
+  hasYRotation: 0
+  rotatingPartX: {fileID: 0}
+  rotatingPartY: {fileID: 0}
+  multiShootOffsetSeconds: 0.1
 --- !u!114 &-493551074260176581
 MonoBehaviour:
   m_ObjectHideFlags: 0

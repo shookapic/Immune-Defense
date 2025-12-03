@@ -254,11 +254,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e93158f2e7d459046b4ee6f64356f8db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Tower
-  bulletPrefab: {fileID: 8760184633270099838, guid: aac5a467004d5914f95ceffd4357820a, type: 3}
+  bulletPrefab: {fileID: 1887302512045466, guid: be48c8f83bb52bd46b29bca4d5ff7e60, type: 3}
   attackSpeed: 1
   range: 40
-  shootPoint: {fileID: 0}
-  rotatingPart: {fileID: 0}
+  turnSpeed: 5
+  shootPoint:
+  - {fileID: 5854745020332265280}
+  hasXRotation: 0
+  hasYRotation: 0
+  rotatingPartX: {fileID: 0}
+  rotatingPartY: {fileID: 0}
+  multiShootOffsetSeconds: 0.1
 --- !u!114 &-4608252332673312078
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -319,7 +325,8 @@ Transform:
   m_LocalPosition: {x: -0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 5854745020332265280}
   m_Father: {fileID: 4000012358818554}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &33000010295263882
@@ -378,3 +385,34 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!1 &2615195606244419394
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5854745020332265280}
+  m_Layer: 0
+  m_Name: ShootPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5854745020332265280
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2615195606244419394}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 150.8, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4000011152031330}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

@@ -29,6 +29,14 @@ public class TowerPlacementController : MonoBehaviour
         }
     }
 
+    void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Escape) && SelectedTowerPrefab != null)
+        {
+            ClearSelection();
+        }
+    }
+
     public void SelectTower(GameObject prefab)
     {
         SelectedTowerPrefab = prefab;

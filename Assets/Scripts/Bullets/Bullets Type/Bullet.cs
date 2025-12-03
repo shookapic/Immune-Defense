@@ -14,7 +14,7 @@ public abstract class Bullet : MonoBehaviour
         // effects = GetComponents<BulletEffect>();
     }
 
-    protected virtual void Update()
+    private void FixedUpdate()
     {
         if (target == null)
         {

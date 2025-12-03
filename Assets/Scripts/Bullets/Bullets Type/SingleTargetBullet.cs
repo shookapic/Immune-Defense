@@ -18,12 +18,11 @@ public class SingleTargetBullet : Bullet
     private void OnTriggerEnter(Collider collision)
     {
         Debug.Log("OnTrigger, damage: " + damage);
-        if (collision.gameObject.CompareTag("Enemy"))
+        if (collision.gameObject != null && collision.gameObject.CompareTag("Enemy"))
         {
             //TriggerHit(collision.gameObject);
             collision.gameObject.GetComponent<EnemyBase>().TakeDamage(damage);
-            Destroy(gameObject);
-            
+            //Destroy(gameObject);
         }
     }
 
