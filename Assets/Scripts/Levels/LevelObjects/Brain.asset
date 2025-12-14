@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Brain
   m_EditorClassIdentifier: Assembly-CSharp::LevelData
   levelName: Brain
-  sceneName: SkinLvlWithTowerPlacement
+  sceneName: Brain
   levelDisplayName: Level 4:\nThe Brain
   description: "The Brain is the most protected biome, with delicate neural pathways
     pulsing with electricity and thought. The terrain is narrower but packed with

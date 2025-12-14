@@ -22,6 +22,7 @@ public class TowerPlacement : MonoBehaviour
     // Uses the selected prefab from TowerPlacementController
     public float placeableRadius = 1.5f; // How big the placement check is
     public LayerMask blockedLayers;      // What counts as unplaceable (e.g., path, other towers)
+    public bool debugPlacement = true;   // Show debug visualization
 
     private Camera mainCam;
 
@@ -50,7 +51,9 @@ public class TowerPlacement : MonoBehaviour
         Ray ray = mainCam.ScreenPointToRay(Input.mousePosition);
         if (Physics.Raycast(ray, out RaycastHit hit))
         {
-            Vector3 placePos = hit.point;
+            // CRITICAL FIX: Force placement at ground level (Y=0) to prevent placing on viruses
+            Vector3 placePos = new Vector3(hit.point.x, 0f, hit.point.z);
+            
             // Ensure a tower is selected
             var prefab = TowerPlacementController.Instance != null ? TowerPlacementController.Instance.SelectedTowerPrefab : null;
             if (prefab == null)
@@ -59,13 +62,79 @@ public class TowerPlacement : MonoBehaviour
                 return;
             }
 
-            // Check if overlapping with a Path or another Tower
-            Collider[] colliders = Physics.OverlapSphere(placePos, placeableRadius, blockedLayers);
-            foreach (var col in colliders)
+            // Get the tower's actual collider size from prefab
+            Collider prefabCollider = prefab.GetComponent<Collider>();
+            float checkRadius = placeableRadius;
+            
+            // If tower has a collider, use its actual size for more accurate checking
+            if (prefabCollider != null)
             {
-                if (col.CompareTag("Path") || col.CompareTag("Tower") || col.CompareTag("Enemy"))
+                if (prefabCollider is SphereCollider sphere)
                 {
-                    Debug.Log("❌ Cannot place here — path or another tower!");
+                    checkRadius = Mathf.Max(sphere.radius * prefab.transform.localScale.x, placeableRadius);
+                }
+                else if (prefabCollider is BoxCollider box)
+                {
+                    // Use the largest dimension of the box
+                    float maxSize = Mathf.Max(box.size.x * prefab.transform.localScale.x, 
+                                             box.size.z * prefab.transform.localScale.z) / 2f;
+                    checkRadius = Mathf.Max(maxSize, placeableRadius);
+                }
+                else if (prefabCollider is CapsuleCollider capsule)
+                {
+                    checkRadius = Mathf.Max(capsule.radius * prefab.transform.localScale.x, placeableRadius);
+                }
+            }
+
+            // Check from ground up to catch towers and viruses at different heights
+            // Use a tall cylinder-like check to catch towers with colliders high up
+            Vector3 checkCenter = placePos + Vector3.up * 2f; // Check 2 units above ground (center of tall check)
+            
+            // IMPROVED: Check ALL colliders in the placement area with larger radius
+            Collider[] allColliders = Physics.OverlapSphere(checkCenter, checkRadius * 2f); // Double radius for safety
+            
+            if (allColliders.Length > 0)
+            {
+                Debug.Log($"[TowerPlacement] Found {allColliders.Length} colliders at placement position (radius: {checkRadius})");
+            }
+            
+            foreach (var col in allColliders)
+            {
+                // Skip if it's the ground itself
+                if (col.gameObject == hit.collider.gameObject) continue;
+                
+                // Block if it's a path
+                if (col.CompareTag("Path"))
+                {
+                    Debug.Log("❌ Cannot place here — on the path!");
+                    return;
+                }
+                
+                // Block if there's already a tower
+                if (col.CompareTag("Tower"))
+                {
+                    Debug.Log("❌ Cannot place here — tower already exists!");
+                    return;
+                }
+                
+                // Block if there's an enemy/virus
+                if (col.CompareTag("Enemy"))
+                {
+                    Debug.Log("❌ Cannot place here — virus in the way!");
+                    return;
+                }
+                
+                // Also check by GameObject name or component as fallback
+                if (col.gameObject.GetComponent<agentFollow>() != null)
+                {
+                    Debug.Log("❌ Cannot place here — virus detected (by script)!");
+                    return;
+                }
+                
+                // Check if there's a tower component
+                if (col.gameObject.GetComponent<TowerInfo>() != null)
+                {
+                    Debug.Log("❌ Cannot place here — tower detected (by component)!");
                     return;
                 }
             }
@@ -113,6 +182,22 @@ public class TowerPlacement : MonoBehaviour
             // ✅ Place tower
             GameObject newTower = Instantiate(prefab, placePos, Quaternion.identity);
             newTower.tag = "Tower";
+            
+            // Ensure ALL colliders are enabled and NOT triggers
+            Collider[] newTowerColliders = newTower.GetComponentsInChildren<Collider>();
+            bool hasCollider = false;
+            foreach (var col in newTowerColliders)
+            {
+                col.enabled = true;
+                col.isTrigger = false; // Force solid collider
+                hasCollider = true;
+                Debug.Log($"[TowerPlacement] Tower collider: {col.GetType().Name}, enabled={col.enabled}, isTrigger={col.isTrigger}");
+            }
+            
+            if (!hasCollider)
+            {
+                Debug.LogError($"⚠️ Tower prefab '{prefab.name}' has NO COLLIDER! Add a collider to prevent stacking.");
+            }
 
             // Attach TowerInfo with cost/name if available from repository deck
             if (DeckRepository.Instance != null && DeckRepository.Instance.StoredDeck != null)
@@ -136,6 +221,33 @@ public class TowerPlacement : MonoBehaviour
 
             // record placement time to prevent immediate duplicate placements
             RecordPlacement();
+        }
+    }
+    
+    // Visualize the placement check radius
+    private void OnDrawGizmos()
+    {
+        if (!debugPlacement) return;
+        
+        if (mainCam == null) mainCam = Camera.main;
+        if (mainCam == null) return;
+        
+        Ray ray = mainCam.ScreenPointToRay(Input.mousePosition);
+        if (Physics.Raycast(ray, out RaycastHit hit))
+        {
+            Vector3 checkCenter = hit.point + Vector3.up * 2f;
+            float checkRadius = placeableRadius * 2f;
+            
+            Gizmos.color = Color.yellow;
+            Gizmos.DrawWireSphere(checkCenter, checkRadius);
+            
+            // Draw a vertical line to show the check goes upward
+            Gizmos.color = Color.red;
+            Gizmos.DrawLine(hit.point, checkCenter);
+            
+            // Draw sphere at ground level too
+            Gizmos.color = Color.cyan;
+            Gizmos.DrawWireSphere(hit.point, checkRadius);
         }
     }
 }

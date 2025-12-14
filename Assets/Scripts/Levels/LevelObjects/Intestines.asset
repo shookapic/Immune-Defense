@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Intestines
   m_EditorClassIdentifier: Assembly-CSharp::LevelData
   levelName: Intestines
-  sceneName: SkinLvlWithTowerPlacement
+  sceneName: Intestines
   levelDisplayName: Level 3:\nThe Intestines
   description: The Intestines form a warm, winding tunnel system with twists, bends,
     and pockets of nutrient-rich fluid. Enemy bacteria multiply rapidly here, creating

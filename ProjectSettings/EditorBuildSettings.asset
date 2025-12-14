@@ -12,7 +12,16 @@ EditorBuildSettings:
     path: Assets/Scenes/DeckCreator.unity
     guid: 6ae55ccf9af79064fb1eff604536ce46
   - enabled: 1
-    path: Assets/Scenes/SkinLvlWithTowerPlacement.unity
+    path: Assets/Scenes/Lungs.unity
     guid: 5888233497681094c9cb42c400aa506c
+  - enabled: 1
+    path: Assets/Scenes/Brain.unity
+    guid: 878295d9c7928474bacffcec15a39514
+  - enabled: 1
+    path: Assets/Scenes/Intestines.unity
+    guid: 62bbce3e094b80e45971031a4c59e116
+  - enabled: 1
+    path: Assets/Scenes/SkinLvlWithTowerPlacement.unity
+    guid: c5acbb3fd4135bd4fa585655ebb2242a
   m_configObjects: {}
   m_UseUCBPForAssetBundles: 0

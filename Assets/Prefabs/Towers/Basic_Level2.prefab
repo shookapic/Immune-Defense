@@ -377,6 +377,7 @@ GameObject:
   - component: {fileID: 4063901825728927548}
   - component: {fileID: 3419568343969549016}
   - component: {fileID: 8224992864107784217}
+  - component: {fileID: 122916056053847544}
   m_Layer: 0
   m_Name: Basic_Level2
   m_TagString: Tower
@@ -498,8 +499,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 196.47708, y: 31.291876, z: 170.1542}
-  m_Center: {x: -1.5737343, y: 15.645938, z: -0.0000038146973}
+  m_Size: {x: 196.47708, y: 150.47203, z: 170.1542}
+  m_Center: {x: -1.5737343, y: 34.54984, z: 0}
 --- !u!114 &-1907708496528680375
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -536,6 +537,7 @@ MonoBehaviour:
   hasYRotation: 1
   rotatingPartX: {fileID: 4000012987983198}
   rotatingPartY: {fileID: 4000014006183716}
+  multiShootOffsetSeconds: 0.1
 --- !u!114 &3419568343969549016
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -566,6 +568,28 @@ MonoBehaviour:
   cost: 0
   sourceData: {fileID: 11400000, guid: 9b65764bfa1c49644a16b1ac19da563f, type: 2}
   upgradeProgress: {fileID: 0}
+--- !u!64 &122916056053847544
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1000013256173212}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4300000, guid: 3a5d592d4c49e234a8ec599bf0e33656, type: 3}
 --- !u!1 &6941697066800011655
 GameObject:
   m_ObjectHideFlags: 0

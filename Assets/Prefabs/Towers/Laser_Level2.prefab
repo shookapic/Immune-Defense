@@ -108,6 +108,7 @@ GameObject:
   - component: {fileID: -3578269536135830758}
   - component: {fileID: -5597778836743881727}
   - component: {fileID: 5481998480973926713}
+  - component: {fileID: -4407369221036285919}
   m_Layer: 0
   m_Name: Laser_Level2
   m_TagString: Tower
@@ -229,8 +230,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 196.47708, y: 31.291876, z: 170.1542}
-  m_Center: {x: -1.5737343, y: 15.645938, z: -0.0000038146973}
+  m_Size: {x: 196.47708, y: 195.67314, z: 231.40471}
+  m_Center: {x: -1.5737343, y: 43.02927, z: 30.62522}
 --- !u!114 &-7853444300486547387
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -298,6 +299,28 @@ MonoBehaviour:
   cost: 0
   sourceData: {fileID: 11400000, guid: 67f9a4a49c311da4dbe7b9ad075631be, type: 2}
   upgradeProgress: {fileID: 0}
+--- !u!64 &-4407369221036285919
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1000010390399600}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4300000, guid: e23e25bfa369167479153b9f54ab4752, type: 3}
 --- !u!1 &1000011297296942
 GameObject:
   m_ObjectHideFlags: 0

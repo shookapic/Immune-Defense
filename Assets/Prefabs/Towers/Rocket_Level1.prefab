@@ -17,6 +17,7 @@ GameObject:
   - component: {fileID: 5003442113689638423}
   - component: {fileID: 7161931516125071106}
   - component: {fileID: -3527283394120654950}
+  - component: {fileID: -1610485276685270594}
   m_Layer: 0
   m_Name: Rocket_Level1
   m_TagString: Tower
@@ -138,8 +139,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 196.47708, y: 31.291876, z: 170.1542}
-  m_Center: {x: -1.5737343, y: 15.645938, z: -0.0000038146973}
+  m_Size: {x: 196.47708, y: 165.99417, z: 170.1542}
+  m_Center: {x: -1.5737343, y: 51.338066, z: 0}
 --- !u!114 &-908395521397904621
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -207,6 +208,28 @@ MonoBehaviour:
   cost: 0
   sourceData: {fileID: 11400000, guid: e9dc5f3b1d9db84459a98ce160234ab2, type: 2}
   upgradeProgress: {fileID: 0}
+--- !u!64 &-1610485276685270594
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1000010238097244}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4300000, guid: 64d97d559ee3c274882d59046ccd6781, type: 3}
 --- !u!1 &1000010595974672
 GameObject:
   m_ObjectHideFlags: 0

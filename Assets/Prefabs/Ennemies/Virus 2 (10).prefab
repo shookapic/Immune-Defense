@@ -528,10 +528,11 @@ GameObject:
   - component: {fileID: 5157822310328097701}
   - component: {fileID: -5196422061647302286}
   - component: {fileID: -1388490853438291912}
-  - component: {fileID: -6740124343471646132}
   - component: {fileID: -227954031897364288}
   - component: {fileID: 660654713717946496}
   - component: {fileID: 2466169157367326625}
+  - component: {fileID: 5947915259947948361}
+  - component: {fileID: 852657127298691822}
   m_Layer: 7
   m_Name: Virus 2 (10)
   m_TagString: Enemy
@@ -622,22 +623,6 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 0}
---- !u!114 &-6740124343471646132
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5157822310328097703}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a4c108bad1c812540a161c35f975535a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::EnemyPath
-  pathTag: Path
-  hoverHeight: 0.6
-  useRaycastToSurface: 1
-  speed: 2
 --- !u!114 &-227954031897364288
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -700,6 +685,44 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.0035, y: 0.0035, z: 0.0035}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &5947915259947948361
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5157822310328097703}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 882b8a0cf6483594db45a47cf0946152, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::agentFollow
+  spawner: {fileID: 0}
+  pathTag: Path
+  speed: 2
+  waypointThreshold: 0.5
+--- !u!64 &852657127298691822
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5157822310328097703}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 0}
 --- !u!1 &5157822310366067099
 GameObject:
   m_ObjectHideFlags: 0

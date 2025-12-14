@@ -4,6 +4,21 @@ using UnityEngine;
 
 public class WaveSpawner : MonoBehaviour
 {
+    // NOUVEAU CHAMP : La destination finale pour tous les ennemis
+    [Header("Agent Destination")]
+    [Tooltip("The Transform that all spawned enemies will move towards.")]
+    public Transform globalTarget; 
+
+    // COMPTEUR pour le suivi des ennemis actifs
+    [HideInInspector] 
+    public int activeEnemyCount = 0; 
+    
+    // Méthode appelée par l'ennemi lorsqu'il est détruit (arrivée ou mort)
+    public void DecrementActiveEnemyCount()
+    {
+        activeEnemyCount--;
+    }
+
     [System.Serializable]
     public class WaveEntry
     {
@@ -15,8 +30,8 @@ public class WaveSpawner : MonoBehaviour
         [Tooltip("Movement speed for this enemy (0 = use prefab default)")]
         [Min(0)] public float speed = 0f;
 
-        [Header("Path (optional)")]
-        public PathDefinition pathOverride;
+        // [Header("Path (optional)")]
+        // public PathDefinition pathOverride; // Conservé pour la complétude si vous l'utilisez ailleurs
 
         [Header("Spawn (optional)")]
         public Transform spawnPoint;
@@ -51,22 +66,16 @@ public class WaveSpawner : MonoBehaviour
     public WaveProgressUI progressUI;
 
     private Coroutine runRoutine;
-    private int currentWaveEnemyCount;
 
     void Awake()
     {
-        Debug.Log("[WaveSpawner] Awake called - initializing UI");
-        
         // Auto-create countdown UI if not assigned
         if (countdownUI == null)
         {
-            Debug.Log("[WaveSpawner] Creating WaveCountdownUI");
             GameObject uiObj = new GameObject("WaveCountdownUI");
             countdownUI = uiObj.AddComponent<WaveCountdownUI>();
             DontDestroyOnLoad(uiObj);
         }
-
-        // Don't create progress UI - removed per user request
     }
 
     void OnEnable()
@@ -80,154 +89,134 @@ public class WaveSpawner : MonoBehaviour
     }
 
     IEnumerator RunWaves()
-{
-    yield return new WaitForSeconds(delayBeforeFirstWave);
-
-    // ✅ Cache the original prefab references before entering the loop
-    Dictionary<WaveEntry, GameObject> originalPrefabs = new Dictionary<WaveEntry, GameObject>();
-    foreach (var wave in waves)
     {
-        foreach (var entry in wave.entries)
+        if (globalTarget == null)
         {
-            if (entry.enemyPrefab != null)
-                originalPrefabs[entry] = entry.enemyPrefab;
+            Debug.LogError("[WaveSpawner] ERROR: Global Target is not assigned. Please assign the EndPoint Transform.");
+            yield break;
         }
-    }
 
-    do
-    {
-        Debug.Log("[WaveSpawner] Starting wave cycle.");
-
+        yield return new WaitForSeconds(delayBeforeFirstWave);
+        
+        // Caching des prefabs
+        Dictionary<WaveEntry, GameObject> originalPrefabs = new Dictionary<WaveEntry, GameObject>();
         foreach (var wave in waves)
         {
-            // Show countdown UI before wave starts
-            if (countdownUI != null && wave.countdownTime > 0f)
-            {
-                Debug.Log($"[WaveSpawner] Starting countdown for '{wave.waveName}' ({wave.countdownTime}s)");
-                countdownUI.StartCountdown(wave.waveName, wave.countdownTime);
-                yield return new WaitForSeconds(wave.countdownTime);
-            }
-
-            Debug.Log($"[WaveSpawner] Starting wave: {wave.waveName}");
-
-            // Calculate total enemy count for this wave
-            currentWaveEnemyCount = 0;
             foreach (var entry in wave.entries)
             {
-                currentWaveEnemyCount += entry.count;
+                if (entry.enemyPrefab != null)
+                    originalPrefabs[entry] = entry.enemyPrefab;
             }
+        }
 
-            foreach (var entry in wave.entries)
+        do
+        {
+            foreach (var wave in waves)
             {
-                // ✅ Restore prefab reference in case Unity lost it
-                if (entry == null) continue;
-                if (!originalPrefabs.TryGetValue(entry, out GameObject prefab) || prefab == null)
+                // Gestion du DÉCOMPTE AVANT LA VAGUE
+                if (countdownUI != null && wave.countdownTime > 0f)
                 {
-                    Debug.LogWarning($"[WaveSpawner] Prefab reference for wave '{wave.waveName}' was lost. Skipping entry.");
-                    continue;
+                    countdownUI.StartCountdown(wave.waveName, wave.countdownTime);
+                    yield return new WaitForSeconds(wave.countdownTime);
                 }
 
-                for (int i = 0; i < entry.count; i++)
+                // Initialisation du compteur d'ennemis
+                int totalEnemiesToSpawn = 0;
+                foreach (var entry in wave.entries)
                 {
-                    // ✅ Determine spawn position
-                    Vector3 spawnPosition;
+                    totalEnemiesToSpawn += entry.count;
+                }
+                activeEnemyCount = totalEnemiesToSpawn; 
 
-                    if (entry.spawnPoint != null)
-                        spawnPosition = entry.spawnPoint.position;
-                    else
+                foreach (var entry in wave.entries)
+                {
+                    if (entry == null) continue;
+                    
+                    GameObject prefab;
+                    if (!originalPrefabs.TryGetValue(entry, out prefab) || prefab == null)
                     {
-                        GameObject[] pathObjects = GameObject.FindGameObjectsWithTag("Path");
-                        if (pathObjects.Length > 0)
-                        {
-                            GameObject leftmost = pathObjects[0];
-                            foreach (var obj in pathObjects)
-                            {
-                                if (obj.transform.position.x < leftmost.transform.position.x)
-                                    leftmost = obj;
-                            }
-                            spawnPosition = leftmost.transform.position;
-                        }
-                        else
-                        {
-                            spawnPosition = transform.position;
-                            Debug.LogWarning("[WaveSpawner] No Path objects found in scene. Using spawner position.");
-                        }
-                    }
-
-                    spawnPosition.y += entry.spawnHeightOffset;
-
-                    // ✅ Instantiate from *original prefab asset*, never from runtime clone
-                    var go = Instantiate(prefab, spawnPosition, Quaternion.identity);
-
-                    if (go == null)
-                    {
-                        Debug.LogWarning("[WaveSpawner] Instantiate failed (prefab may be missing).");
+                        Debug.LogWarning($"[WaveSpawner] Prefab reference for wave was lost. Skipping entry.");
                         continue;
                     }
-
-                    var enemy = go.GetComponent<EnemyPath>() ?? go.GetComponentInChildren<EnemyPath>();
-                    if (enemy == null)
-                        Debug.LogWarning($"[WaveSpawner] '{prefab.name}' has no EnemyPath component.");
-                    else
+                    
+                    for (int i = 0; i < entry.count; i++)
                     {
-                        // Apply custom speed if specified
-                        if (entry.speed > 0)
-                        {
-                            enemy.speed = entry.speed;
-                            Debug.Log($"[WaveSpawner] Spawned '{prefab.name}' at {spawnPosition} with speed {entry.speed}.");
-                        }
+                        Vector3 spawnPosition;
+                        if (entry.spawnPoint != null)
+                            spawnPosition = entry.spawnPoint.position;
                         else
-                        {
-                            Debug.Log($"[WaveSpawner] Spawned '{prefab.name}' successfully at {spawnPosition}.");
-                        }
-                    }
+                            spawnPosition = transform.position; 
+                        
+                        spawnPosition.y += entry.spawnHeightOffset; 
 
-                    if (entry.spawnInterval > 0f)
-                        yield return new WaitForSeconds(entry.spawnInterval);
-                    else
-                        yield return null;
+                        var go = Instantiate(prefab, spawnPosition, Quaternion.identity);
+
+                        var agentScript = go.GetComponent<agentFollow>();
+
+                        if (agentScript == null)
+                        {
+                            // CRITIQUE : L'ennemi n'a pas le script de suivi -> Échec du spawn
+                            Debug.LogError($"[WaveSpawner] ERROR: Prefab '{prefab.name}' is missing agentFollow script. Decrementing active count.");
+                            DecrementActiveEnemyCount(); 
+                            Destroy(go);
+                            continue;
+                        }
+                        
+                        // 1. ASSIGNATION DE LA RÉFÉRENCE AU SPAWNER
+                        agentScript.spawner = this;      
+
+                        // 2. CONFIGURATION ET DÉMARRAGE DU MOUVEMENT via la nouvelle méthode
+                        // Si entry.speed est à 0 ou négatif, utiliser la valeur par défaut du prefab
+                        float finalSpeed = (entry.speed > 0) ? entry.speed : 2f; // Default to 2 if not specified
+                        agentScript.ConfigureAndStart(finalSpeed, globalTarget);
+                        
+                        if (entry.spawnInterval > 0f)
+                            yield return new WaitForSeconds(entry.spawnInterval);
+                        else
+                            yield return null;
+                    }
                 }
+                
+                Debug.Log($"[WaveSpawner] Completed spawning wave: {wave.waveName}");
+                
+                // ATTENDRE QUE TOUS LES ENNEMIS SOIENT DÉTRUITS
+                yield return StartCoroutine(WaitForAllEnemiesDestroyed());
+                
+                if (wave.delayAfterWave > 0f)
+                    yield return new WaitForSeconds(wave.delayAfterWave);
+            }
+            
+            if (loopWaves)
+            {
+                Debug.Log("[WaveSpawner] Wave cycle completed — restarting loop.");
+                yield return new WaitForSeconds(1f);
             }
 
-            Debug.Log($"[WaveSpawner] Completed spawning wave: {wave.waveName}");
-            
-            // Wait for all enemies to be destroyed before continuing
-            yield return StartCoroutine(WaitForAllEnemiesDestroyed());
-            
-            Debug.Log($"[WaveSpawner] All enemies destroyed for wave: {wave.waveName}");
-
-            if (wave.delayAfterWave > 0f)
-                yield return new WaitForSeconds(wave.delayAfterWave);
-        }
-
-        if (loopWaves)
-        {
-            Debug.Log("[WaveSpawner] Wave cycle completed — restarting loop.");
-            yield return new WaitForSeconds(1f);
-        }
-
-    } while (loopWaves);
-}
-
+        } while (loopWaves);
+    }
+    
+    // COROUTINE POUR ATTENDRE QUE activeEnemyCount ATTEIGNE ZÉRO
     IEnumerator WaitForAllEnemiesDestroyed()
     {
-        // Wait a frame to ensure all spawned enemies are registered
-        yield return null;
+        yield return new WaitForSeconds(0.5f);
         
-        while (true)
+        Debug.Log($"[WaveSpawner] Waiting for {activeEnemyCount} enemies to be destroyed...");
+        
+        float timeout = 60f; // Timeout après 60 secondes pour éviter blocage infini
+        float elapsed = 0f;
+        
+        while (activeEnemyCount > 0)
         {
-            // Find all enemies in the scene
-            EnemyPath[] enemies = FindObjectsByType<EnemyPath>(FindObjectsSortMode.None);
+            yield return new WaitForSeconds(0.5f);
+            elapsed += 0.5f;
             
-            if (enemies.Length == 0)
+            if (elapsed >= timeout)
             {
-                Debug.Log("[WaveSpawner] No more enemies in scene.");
+                Debug.LogError($"[WaveSpawner] TIMEOUT! {activeEnemyCount} enemies still active after {timeout}s. Force continuing to next wave.");
+                activeEnemyCount = 0; // Force reset
                 break;
             }
-            
-            Debug.Log($"[WaveSpawner] Waiting for {enemies.Length} enemies to be destroyed...");
-            yield return new WaitForSeconds(0.5f); // Check every 0.5 seconds
         }
+        Debug.Log("[WaveSpawner] All enemies destroyed. Starting next phase/wave.");
     }
-
 }

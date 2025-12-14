@@ -106,6 +106,7 @@ GameObject:
   - component: {fileID: 5936912248481745012}
   - component: {fileID: -4608252332673312078}
   - component: {fileID: -4364371782561739425}
+  - component: {fileID: -8109895598677158444}
   m_Layer: 0
   m_Name: Tesla_Level1
   m_TagString: Tower
@@ -227,8 +228,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 196.47708, y: 31.291876, z: 170.1542}
-  m_Center: {x: -1.5737343, y: 15.645938, z: -0.0000038146973}
+  m_Size: {x: 196.47708, y: 202.93135, z: 170.1542}
+  m_Center: {x: -1.5737343, y: 58.887566, z: 0}
 --- !u!114 &-3070556291664153594
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -295,6 +296,28 @@ MonoBehaviour:
   cost: 0
   sourceData: {fileID: 11400000, guid: 958039b46d027514890972f0e765086b, type: 2}
   upgradeProgress: {fileID: 0}
+--- !u!64 &-8109895598677158444
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1000011018392982}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4300000, guid: 1015ac51b01675443a133858969b5126, type: 3}
 --- !u!1 &1000012671532888
 GameObject:
   m_ObjectHideFlags: 0

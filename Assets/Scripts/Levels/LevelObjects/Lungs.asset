@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Lungs
   m_EditorClassIdentifier: Assembly-CSharp::LevelData
   levelName: The Lungs
-  sceneName: SkinLvlWithTowerPlacement
+  sceneName: Lungs
   levelDisplayName: Level 2:\nThe Lungs
   description: The Lungs are a misty, branching labyrinth of bronchi and air sacs.
     Constant airflow pushes particles around, causing enemies to drift unpredictably
