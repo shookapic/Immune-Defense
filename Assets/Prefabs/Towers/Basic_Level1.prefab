@@ -349,13 +349,14 @@ MonoBehaviour:
   bulletPrefab: {fileID: 1519322442116508, guid: 2ad01737a079ffa4dba46f20712e5807, type: 3}
   attackSpeed: 1
   range: 40
-  turnSpeed: 5
+  turnSpeed: 3
   shootPoint:
   - {fileID: 6400311796991083818}
   hasXRotation: 1
   hasYRotation: 1
   rotatingPartX: {fileID: 4000010030303412}
   rotatingPartY: {fileID: 4000013651405058}
+  multiShootOffsetSeconds: 0.1
 --- !u!114 &-7859328762123368639
 MonoBehaviour:
   m_ObjectHideFlags: 0
