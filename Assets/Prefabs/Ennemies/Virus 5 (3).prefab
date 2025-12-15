@@ -15,9 +15,9 @@ GameObject:
   - component: {fileID: -6677634709186321715}
   - component: {fileID: 7712929313050188710}
   - component: {fileID: 1396354831780017797}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Virus 5 (3)
-  m_TagString: Enemy
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -170,7 +170,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4018897946529761537}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: joint21
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -202,7 +202,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4018897947134880215}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: joint22
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -234,7 +234,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4018897947341746523}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: joint25
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -267,7 +267,7 @@ GameObject:
   - component: {fileID: 4018897947556345697}
   - component: {fileID: 4018897947556345711}
   - component: {fileID: 4018897947556345696}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Virus_3_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -384,7 +384,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4018897947633756959}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Rig_3_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -416,7 +416,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4018897947746417057}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: joint24
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -448,7 +448,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4018897947893539823}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Mesh
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -480,7 +480,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4018897947939914976}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: joint23
   m_TagString: Untagged
   m_Icon: {fileID: 0}

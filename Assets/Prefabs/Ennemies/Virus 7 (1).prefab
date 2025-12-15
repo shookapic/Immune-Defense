@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2937868297063701490}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: joint47
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -41,7 +41,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2937868297106890514}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: joint46
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -74,7 +74,7 @@ GameObject:
   - component: {fileID: 2937868297429386373}
   - component: {fileID: 2937868297429386375}
   - component: {fileID: 2937868297429386372}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Virus_5_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -193,7 +193,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2937868297482362264}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: joint45
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -225,7 +225,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2937868297543026456}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: joint44
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -257,7 +257,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2937868297600179336}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: joint43
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -296,9 +296,9 @@ GameObject:
   - component: {fileID: 115944977434621509}
   - component: {fileID: 7737467367478107080}
   - component: {fileID: 2104233819086226506}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Virus 7 (1)
-  m_TagString: Enemy
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -451,7 +451,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2937868298043599839}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: joint48
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -483,7 +483,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2937868298277134795}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: joint49
   m_TagString: Untagged
   m_Icon: {fileID: 0}

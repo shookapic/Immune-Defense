@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 4000013955212086}
   - component: {fileID: 33000013372336354}
   - component: {fileID: 23000013390411538}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Rocket3_Guns
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -112,7 +112,7 @@ GameObject:
   - component: {fileID: 4000012238043390}
   - component: {fileID: 33000012454044832}
   - component: {fileID: 23000013793324192}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Rocket3_platform
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -202,7 +202,7 @@ GameObject:
   - component: {fileID: 4000014087234862}
   - component: {fileID: 33000011099576162}
   - component: {fileID: 23000010444387172}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: shield_r3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -291,7 +291,7 @@ GameObject:
   - component: {fileID: 4000010324733186}
   - component: {fileID: 33000010710517876}
   - component: {fileID: 23000013611952192}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Rocket3_Main
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -388,7 +388,7 @@ GameObject:
   - component: {fileID: -2239109328332515816}
   - component: {fileID: 4681772659313626594}
   - component: {fileID: 7970682117544011258}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Rocket_Level3
   m_TagString: Tower
   m_Icon: {fileID: 0}
@@ -619,7 +619,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4759843368560391390}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: SP2 (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -650,7 +650,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8574146819623987272}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: SP1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -681,7 +681,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6031837438840632074}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: SP2 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -712,7 +712,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6261330126396837399}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: SP2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -743,7 +743,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4070290057958359023}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: SP1 (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -774,7 +774,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3655437617487681320}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: SP3 (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -805,7 +805,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3884731594930069387}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: SP1 (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -836,7 +836,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8608896579284590597}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: SP1 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -867,7 +867,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5048716418599127578}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: SP3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -898,7 +898,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3478506687320990854}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: SP2 (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -929,7 +929,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7680827629031060296}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: SP3 (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -960,7 +960,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8734166245880215267}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: SP3 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}

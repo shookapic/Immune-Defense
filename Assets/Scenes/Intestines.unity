@@ -10302,6 +10302,7 @@ MonoBehaviour:
   blockedLayers:
     serializedVersion: 2
     m_Bits: 72
+  debugPlacement: 1
 --- !u!4 &787765730
 Transform:
   m_ObjectHideFlags: 0
@@ -10540,7 +10541,8 @@ MonoBehaviour:
   placeableRadius: 1.5
   blockedLayers:
     serializedVersion: 2
-    m_Bits: 72
+    m_Bits: 200
+  debugPlacement: 1
 --- !u!114 &857420442
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10558,7 +10560,7 @@ MonoBehaviour:
   placeableRadius: 1.5
   blockedLayers:
     serializedVersion: 2
-    m_Bits: 72
+    m_Bits: 200
 --- !u!114 &857420443
 MonoBehaviour:
   m_ObjectHideFlags: 0

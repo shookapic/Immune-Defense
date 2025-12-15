@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8379065497639315533}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: joint59
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -42,7 +42,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8379065497670840875}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: joint61
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -74,7 +74,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8379065497691589190}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: joint66
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -106,7 +106,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8379065497835177735}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: joint62
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -144,9 +144,9 @@ GameObject:
   - component: {fileID: 9032457409349823241}
   - component: {fileID: -6154260049458738184}
   - component: {fileID: -2291998660277578690}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Virus 9 (3)
-  m_TagString: Enemy
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -299,7 +299,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8379065498004675943}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: joint63
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -330,7 +330,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8379065498827588307}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: joint65
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -364,7 +364,7 @@ GameObject:
   - component: {fileID: 8379065498946361561}
   - component: {fileID: 8379065498946361567}
   - component: {fileID: 8379065498946361566}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Virus_5_3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -485,7 +485,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8379065499196168147}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: joint67
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -516,7 +516,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8379065499280085648}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: joint64
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -548,7 +548,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8379065499337786666}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: joint60
   m_TagString: Untagged
   m_Icon: {fileID: 0}

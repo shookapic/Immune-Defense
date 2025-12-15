@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 4000013082952028}
   - component: {fileID: 33000012373591514}
   - component: {fileID: 23000013813733318}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Basic1_turretTop
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -101,7 +101,7 @@ GameObject:
   - component: {fileID: 4000013651405058}
   - component: {fileID: 33000011851761860}
   - component: {fileID: 23000012797407374}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Basic1_gun
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -198,7 +198,7 @@ GameObject:
   - component: {fileID: -7859328762123368639}
   - component: {fileID: -909751459958917665}
   - component: {fileID: -1481346318702190585}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Basic_Level1
   m_TagString: Tower
   m_Icon: {fileID: 0}
@@ -421,7 +421,7 @@ GameObject:
   - component: {fileID: 4000013368301868}
   - component: {fileID: 33000012125912124}
   - component: {fileID: 23000010631519176}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: shield_b1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -510,7 +510,7 @@ GameObject:
   - component: {fileID: 4000010030303412}
   - component: {fileID: 33000010107004024}
   - component: {fileID: 23000011468872490}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Basic1_turretLower
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -598,7 +598,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6400311796991083818}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: ShootPoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -632,7 +632,7 @@ GameObject:
   - component: {fileID: 3405758075444040063}
   - component: {fileID: 7835727544489587737}
   - component: {fileID: 2057401737786259581}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Selected
   m_TagString: Untagged
   m_Icon: {fileID: 0}

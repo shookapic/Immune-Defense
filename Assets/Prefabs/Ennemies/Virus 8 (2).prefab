@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3149142763526937282}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: joint57
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -41,7 +41,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3149142763534971588}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: joint54
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -74,7 +74,7 @@ GameObject:
   - component: {fileID: 3149142763705559111}
   - component: {fileID: 3149142763705559161}
   - component: {fileID: 3149142763705559110}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Virus_5_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -195,7 +195,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3149142763823452949}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: joint56
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -227,7 +227,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3149142763998985716}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: joint55
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -259,7 +259,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3149142764015354127}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: joint52
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -291,7 +291,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3149142764281136020}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: joint51
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -323,7 +323,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3149142764437048117}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: joint58
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -354,7 +354,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3149142764598583691}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: joint50
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -393,9 +393,9 @@ GameObject:
   - component: {fileID: -6187117442733988167}
   - component: {fileID: -4104106061758341647}
   - component: {fileID: -8179170872023593742}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Virus 8 (2)
-  m_TagString: Enemy
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -548,7 +548,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3149142765014953929}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: joint53
   m_TagString: Untagged
   m_Icon: {fileID: 0}

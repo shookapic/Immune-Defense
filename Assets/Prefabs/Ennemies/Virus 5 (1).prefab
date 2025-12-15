@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2250240747208069094}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: joint25
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -42,7 +42,7 @@ GameObject:
   - component: {fileID: 2250240747639004888}
   - component: {fileID: 2250240747639004890}
   - component: {fileID: 2250240747639004889}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Virus_3_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -159,7 +159,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2250240747828071293}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: joint24
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -191,7 +191,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2250240748244221014}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: joint22
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -223,7 +223,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2250240748393715068}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Rig_3_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -255,7 +255,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2250240748452727479}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: joint23
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -287,7 +287,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2250240748704813843}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: joint21
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -326,7 +326,7 @@ GameObject:
   - component: {fileID: 3414396621313321338}
   - component: {fileID: -5886146742104682275}
   - component: {fileID: 3408052200604169350}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Virus 5 (1)
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -497,7 +497,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2250240749014025434}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Mesh
   m_TagString: Untagged
   m_Icon: {fileID: 0}

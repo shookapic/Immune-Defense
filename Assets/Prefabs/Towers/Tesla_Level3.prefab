@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 4000013987035574}
   - component: {fileID: 33000013366580458}
   - component: {fileID: 23000013935115358}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Tesla3_orbRight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -107,7 +107,7 @@ GameObject:
   - component: {fileID: -3470218175416276739}
   - component: {fileID: -4481936241879101017}
   - component: {fileID: 8744564213069780397}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Tesla_Level3
   m_TagString: Tower
   m_Icon: {fileID: 0}
@@ -330,7 +330,7 @@ GameObject:
   - component: {fileID: 4000011664790522}
   - component: {fileID: 33000013198649172}
   - component: {fileID: 23000012114231178}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: shield_t3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -419,7 +419,7 @@ GameObject:
   - component: {fileID: 4000010674423066}
   - component: {fileID: 33000014159421022}
   - component: {fileID: 23000011426951320}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: tesla3_orbLeft
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -508,7 +508,7 @@ GameObject:
   - component: {fileID: 4000010424949674}
   - component: {fileID: 33000011834771632}
   - component: {fileID: 23000010990686542}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Tesla3_turret
   m_TagString: Untagged
   m_Icon: {fileID: 0}

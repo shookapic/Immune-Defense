@@ -18,7 +18,7 @@ GameObject:
   - component: {fileID: -6045293876345554959}
   - component: {fileID: -3849452710815467607}
   - component: {fileID: 3059723553122492688}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Basic_Level3
   m_TagString: Tower
   m_Icon: {fileID: 0}
@@ -243,7 +243,7 @@ GameObject:
   - component: {fileID: 4000010308992680}
   - component: {fileID: 33000013586700858}
   - component: {fileID: 23000014088843870}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Basic3_gunsUp
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -334,7 +334,7 @@ GameObject:
   - component: {fileID: 4000012906524708}
   - component: {fileID: 33000013588288104}
   - component: {fileID: 23000011624934488}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: shield_b3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -423,7 +423,7 @@ GameObject:
   - component: {fileID: 4000013928557678}
   - component: {fileID: 33000010706885334}
   - component: {fileID: 23000012557994970}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Basic3_lowerTurret
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -513,7 +513,7 @@ GameObject:
   - component: {fileID: 4000010516823376}
   - component: {fileID: 33000012218734002}
   - component: {fileID: 23000011360156482}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Basic3_upperTurret
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -604,7 +604,7 @@ GameObject:
   - component: {fileID: 4000011125758088}
   - component: {fileID: 33000013705999756}
   - component: {fileID: 23000010190268284}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Basic3_gunsLow
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -693,7 +693,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8685795121481086811}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: ShootPointRight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -724,7 +724,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2135445704032064973}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: ShootPointLeft
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -755,7 +755,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1043781811845528345}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: ShootPointLeft
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -786,7 +786,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5850236928034373992}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: ShootPointRight
   m_TagString: Untagged
   m_Icon: {fileID: 0}

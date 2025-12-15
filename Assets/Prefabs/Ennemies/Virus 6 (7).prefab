@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2176790947913359427}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: joint26
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -42,7 +42,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2176790947968551860}
   - component: {fileID: 2176790947968551851}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: tent_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -137,7 +137,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2176790948073686898}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: joint36
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -168,7 +168,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2176790948144039044}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: V4_Rig3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -201,7 +201,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2176790948184664646}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: joint40
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -233,7 +233,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2176790948252114176}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: joint28
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -265,7 +265,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2176790948382017059}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: joint37
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -297,7 +297,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2176790948441523810}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: joint27
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -329,7 +329,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2176790948551646596}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: joint33
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -361,7 +361,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2176790948554797772}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: joint27
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -393,7 +393,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2176790948574704498}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: joint39
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -425,7 +425,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2176790948575753598}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: joint30
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -456,7 +456,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2176790948603701234}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: joint30
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -487,7 +487,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2176790948606793484}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: joint35
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -519,7 +519,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2176790948704905326}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: joint34
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -551,7 +551,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2176790948871396887}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: joint32
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -583,7 +583,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2176790948885594760}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: joint29
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -615,7 +615,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2176790948911634542}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: joint41
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -647,7 +647,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2176790948972125229}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: V4_Rig1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -680,7 +680,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2176790949065101348}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: joint38
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -712,7 +712,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2176790949136561268}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: joint31
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -744,7 +744,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2176790949137649278}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: joint28
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -776,7 +776,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2176790949141728744}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: joint29
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -809,7 +809,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2176790949246423556}
   - component: {fileID: 2176790949246423611}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: tent_4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -905,7 +905,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2176790949268179973}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Mesh
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -937,7 +937,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2176790949270845466}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: joint42
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -969,7 +969,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2176790949286377708}
   - component: {fileID: 2176790949286377699}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: tent_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1064,7 +1064,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2176790949433940347}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: joint26
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1097,7 +1097,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2176790949475768962}
   - component: {fileID: 2176790949475768961}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: tent_3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1199,9 +1199,9 @@ GameObject:
   - component: {fileID: 4678865904441892920}
   - component: {fileID: 2104771399007296328}
   - component: {fileID: 1942923487105734275}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Virus 6 (7)
-  m_TagString: Enemy
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1358,7 +1358,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2176790949868365428}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: V4_Rig2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1390,7 +1390,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2176790949888142678}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: V4_Rig4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1426,7 +1426,7 @@ GameObject:
   - component: {fileID: 2176790950001717044}
   - component: {fileID: 2176790950001717045}
   - component: {fileID: 2176790950001717046}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Body
   m_TagString: Untagged
   m_Icon: {fileID: 0}

@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4425405206455665829}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: joint19
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -41,7 +41,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4425405206834230540}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: joint20
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -78,9 +78,9 @@ GameObject:
   - component: {fileID: -5288374243695978630}
   - component: {fileID: 8219806628373277239}
   - component: {fileID: 2139777555451415585}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Virus 4 (1)
-  m_TagString: Enemy
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -233,7 +233,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4425405207068598741}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Rig_3_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -265,7 +265,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4425405207228885706}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: joint18
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -297,7 +297,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4425405207238652088}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: joint17
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -329,7 +329,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4425405207464250217}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Mesh
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -363,7 +363,7 @@ GameObject:
   - component: {fileID: 4425405207856893636}
   - component: {fileID: 4425405207856893634}
   - component: {fileID: 4425405207856893637}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Virus_3_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -480,7 +480,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4425405207965492150}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: joint16
   m_TagString: Untagged
   m_Icon: {fileID: 0}

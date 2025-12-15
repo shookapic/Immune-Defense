@@ -18,7 +18,7 @@ GameObject:
   - component: {fileID: 7161931516125071106}
   - component: {fileID: -3527283394120654950}
   - component: {fileID: -1610485276685270594}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Rocket_Level1
   m_TagString: Tower
   m_Icon: {fileID: 0}
@@ -241,7 +241,7 @@ GameObject:
   - component: {fileID: 4000010214608780}
   - component: {fileID: 33000014028731732}
   - component: {fileID: 23000012389175086}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Rocket1_Platform
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -331,7 +331,7 @@ GameObject:
   - component: {fileID: 4000012350157152}
   - component: {fileID: 33000010247481282}
   - component: {fileID: 23000010703703806}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: shield_r1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -420,7 +420,7 @@ GameObject:
   - component: {fileID: 4000013821050248}
   - component: {fileID: 33000013025675474}
   - component: {fileID: 23000013302417940}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Rocket1_Guns
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -511,7 +511,7 @@ GameObject:
   - component: {fileID: 4000012096402234}
   - component: {fileID: 33000013497535626}
   - component: {fileID: 23000013714479066}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Rocket1_Turret
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -599,7 +599,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2354705892261296189}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: ShootPointLeft
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -630,7 +630,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3077091249686199310}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: ShootPointRight
   m_TagString: Untagged
   m_Icon: {fileID: 0}

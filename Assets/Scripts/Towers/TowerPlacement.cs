@@ -51,8 +51,8 @@ public class TowerPlacement : MonoBehaviour
         Ray ray = mainCam.ScreenPointToRay(Input.mousePosition);
         if (Physics.Raycast(ray, out RaycastHit hit))
         {
-            // CRITICAL FIX: Force placement at ground level (Y=0) to prevent placing on viruses
-            Vector3 placePos = new Vector3(hit.point.x, 0f, hit.point.z);
+            // Use the actual ground hit point for placement
+            Vector3 placePos = hit.point;
             
             // Ensure a tower is selected
             var prefab = TowerPlacementController.Instance != null ? TowerPlacementController.Instance.SelectedTowerPrefab : null;

@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6183770359670136220}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: joint45
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -43,7 +43,7 @@ GameObject:
   - component: {fileID: 6183770359737055580}
   - component: {fileID: 6183770359737055650}
   - component: {fileID: 6183770359737055581}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Virus_5_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -162,7 +162,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6183770360004410269}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: joint49
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -193,7 +193,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6183770360190181975}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: joint46
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -224,7 +224,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6183770360270406566}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: joint47
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -256,7 +256,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6183770360280093916}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: joint43
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -289,7 +289,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6183770360519417700}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: joint44
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -321,7 +321,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6183770361121478209}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: joint48
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -359,9 +359,9 @@ GameObject:
   - component: {fileID: -6782865509343677145}
   - component: {fileID: 6291356651788328830}
   - component: {fileID: 3470841548180456107}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Virus 7 (3)
-  m_TagString: Enemy
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

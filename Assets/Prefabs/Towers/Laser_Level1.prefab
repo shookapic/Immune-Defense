@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 4000012777767528}
   - component: {fileID: 33000010481146738}
   - component: {fileID: 23000011303631002}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: laser1_Xrotation
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -101,7 +101,7 @@ GameObject:
   - component: {fileID: 4000012717983016}
   - component: {fileID: 33000013605662380}
   - component: {fileID: 23000011709232252}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: laser1_platform
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -191,7 +191,7 @@ GameObject:
   - component: {fileID: 4000011147035688}
   - component: {fileID: 33000012232678446}
   - component: {fileID: 23000013225020506}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: laser1_gun
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -287,7 +287,7 @@ GameObject:
   - component: {fileID: -1531780835490450905}
   - component: {fileID: -1312041034490937948}
   - component: {fileID: -7980361397152346297}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Laser_Level1
   m_TagString: Tower
   m_Icon: {fileID: 0}
@@ -509,7 +509,7 @@ GameObject:
   - component: {fileID: 4000010873670176}
   - component: {fileID: 33000011955208632}
   - component: {fileID: 23000012439634558}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: laser1_Yrotation
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -599,7 +599,7 @@ GameObject:
   - component: {fileID: 4000014207303132}
   - component: {fileID: 33000011221646832}
   - component: {fileID: 23000010533544796}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: shield_L1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
