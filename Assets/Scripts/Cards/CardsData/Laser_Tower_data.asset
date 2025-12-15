@@ -25,10 +25,10 @@ MonoBehaviour:
     overrideTowerPrefab: {fileID: 1000010390399600, guid: 770597f9e56f34b4c8bfbd0090edbb28, type: 3}
     overrideVisualPrefab: {fileID: 0}
   - tierName: 
-    additionalCost: 0
-    rangeBonus: 0
-    attackSpeedMultiplier: 0
-    damageBonus: 0
+    additionalCost: 10
+    rangeBonus: 10
+    attackSpeedMultiplier: 1.5
+    damageBonus: 1.5
     overrideBulletPrefab: {fileID: 0}
     overrideTowerPrefab: {fileID: 1000010350988284, guid: 09055dad0ae12e34696adb20c2dae18e, type: 3}
     overrideVisualPrefab: {fileID: 0}

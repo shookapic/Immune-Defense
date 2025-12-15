@@ -169,7 +169,7 @@ MonoBehaviour:
   bulletPrefab: {fileID: 1253354654402752, guid: 4f2c211b3d32c5f4fa7eb7687e824ca7, type: 3}
   attackSpeed: 1
   range: 40
-  turnSpeed: 5
+  turnSpeed: 3
   shootPoint:
   - {fileID: 3077091249686199310}
   - {fileID: 2354705892261296189}
